@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import './semantic-ui-css.min';
 import './bootstrap.min';
+import ClimateChangeGraph from './components/ClimateChangeGraph';
 
 export default class App extends Component {
 
@@ -25,7 +26,7 @@ export default class App extends Component {
   
   return (
     <div className="App">
-  
+        <ClimateChangeGraph emission={this.state.emission} />
     </div>
     );
   }
