@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component }from 'react';
 import './App.css';
-import './semantic-ui-css.min';
-import './bootstrap.min';
+import 'semantic-ui-css/semantic.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import ClimateChangeGraph from './components/ClimateChangeGraph';
 
 export default class App extends Component {
