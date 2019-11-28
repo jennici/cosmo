@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import './semantic-ui-css.min';
+import './bootstrap.min';
 
-function App() {
+export default class App extends Component {
+
+  state = {
+    emission: [], //How do we want to name our main object in the state?
+    loading: true
+  }
+
+  async componentDidMount() {
+    const url = "https://my.api.mockaroo.com/co2.json?key=8eb9e6f0";
+    const response = await fetch(url);
+    const data = await response.json();
+    this.setState({ 
+        emission: data.results, 
+        loading: false 
+    });
+  } 
+
+  render(){
+
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  
     </div>
-  );
+    );
+  }
 }
-
-export default App;
