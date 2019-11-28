@@ -1,4 +1,11 @@
 import React, { Component } from 'react'
+import { 
+    VictoryChart, 
+    VictoryZoomContainer, 
+    VictoryLine, 
+    VictoryBrushContainer,
+    VictoryAxis 
+} from 'victory';
 
 export default class ClimateChangeGraph extends Component {
     
