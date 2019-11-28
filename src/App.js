@@ -3,12 +3,14 @@ import './App.css';
 import 'semantic-ui-css/semantic.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import ClimateChangeGraph from './components/ClimateChangeGraph';
+import CO2Emission from './components/ClimateChangeGraph';
 
 export default class App extends Component {
 
   state = {
     emission: [], //How do we want to name our main object in the state?
-    loading: true
+    loading: true,
+    isEmpty: true
   }
 
   async componentDidMount() {
@@ -21,12 +23,21 @@ export default class App extends Component {
     });
   } 
 
+  triggerCO2EmissionState = () => {
+    this.setState({
+      ...this.state,
+      isEmpty: false,
+      isCO2: true
+  });
+}
+
   render(){
 
   
   return (
     <div className="App">
-        <ClimateChangeGraph emission={this.state.emission} />
+        <Menu co2={this.triggerCO2EmissionState} />
+        <CO2Emission emission={this.state.emission} />
     </div>
     );
   }

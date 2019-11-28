@@ -7,7 +7,7 @@ import {
     VictoryAxis 
 } from 'victory';
 
-export default class ClimateChangeGraph extends Component {
+export default class CO2Emission extends Component {
     
     constructor() {
         super();
@@ -26,17 +26,6 @@ export default class ClimateChangeGraph extends Component {
 
         return (
             <div>
-                <div class="ui secondary pointing menu">
-                    <a class="active item">
-                        Global CO2 emissions
-                    </a>
-                    <a class="item">
-                        Global Temperature
-                    </a>
-                    <a class="item">
-                        Glacier Size
-                    </a>
-                </div>
                 <div class="ui segment">
                     <div>
                         <VictoryChart width={600} height={470} scale={{ x: "time" }}
