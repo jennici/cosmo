@@ -2,8 +2,10 @@ import React, { Component }from 'react';
 import './App.css';
 import 'semantic-ui-css/semantic.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import ClimateChangeGraph from './components/ClimateChangeGraph';
+import Menu from './components/Menu';
 import CO2Emission from './components/ClimateChangeGraph';
+import GlobalTemperature from './components/GlobalTemperature';
+import GlacierSize from './components/GlacierSize';
 
 export default class App extends Component {
 
@@ -31,13 +33,31 @@ export default class App extends Component {
   });
 }
 
+triggerGlobalTemperatureState = () => {
+  this.setState({
+    ...this.state,
+    isEmpty: false,
+    isTemp: true
+});
+}
+
+triggerGlacierSizeState = () => {
+  this.setState({
+    ...this.state,
+    isEmpty: false,
+    isGlacier: true
+});
+}
+
   render(){
 
   
   return (
     <div className="App">
-        <Menu co2={this.triggerCO2EmissionState} />
+        <Menu co2={this.triggerCO2EmissionState} temp={this.triggerGlobalTemperatureState} glacier={this.triggerGlacierSizeState} />
         <CO2Emission emission={this.state.emission} />
+        <GlobalTemperature emission={this.state.emission} />
+        <GlacierSize emission={this.state.emission} />
     </div>
     );
   }
