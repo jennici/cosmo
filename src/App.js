@@ -22,7 +22,7 @@ export default class App extends Component {
     const response = await fetch(url);
     const data = await response.json();
     this.setState({ 
-        emission: data.results, 
+        emission: data, 
         loading: false 
     });
     console.log(this.state.emission);

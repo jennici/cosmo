@@ -28,7 +28,7 @@ export default class CO2Emission extends Component {
             <div>
                 <div className="ui segment">
                     <div className="ui two wide grid" style={{width:"50%"}}>
-                        <VictoryChart width={600} height={470} scale={{ x: emission.Year }}
+                        <VictoryChart width={600} height={470} scale={{ x: "time" }}
                             containerComponent={
                                 <VictoryZoomContainer
                                     zoomDimension="x"
@@ -42,7 +42,7 @@ export default class CO2Emission extends Component {
                                     data: { stroke: "tomato" }
                                 }}
                                 data={[
-                                    { a: new Date(1982, 1, 1), b: 125 },
+                                    { a: emission.Year, b: emissions["Gas Fuel"] },
                                     { a: new Date(1987, 1, 1), b: 257 },
                                     { a: new Date(1993, 1, 1), b: 345 },
                                     { a: new Date(1997, 1, 1), b: 515 },
