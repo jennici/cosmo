@@ -4,16 +4,16 @@ export default class Menu extends Component {
     render() {
         return (
             <div>
-                <div class="ui secondary pointing menu">
-                    <a class="active item" onClick={this.props.co2}>
+                <div className="ui secondary pointing menu">
+                    <button className="active item" onClick={this.props.co2}>
                         Global CO2 emissions
-                    </a>
-                    <a class="item" onClick={this.props.temp}>
+                    </button>
+                    <button className="item" onClick={this.props.temp}>
                         Global Temperature
-                    </a>
-                    <a class="item" onClick={this.props.glacier}>
+                    </button>
+                    <button className="item" onClick={this.props.glacier}>
                         Glacier Size
-                    </a>
+                    </button>
                 </div>
             </div>
         )

@@ -12,7 +12,9 @@ export default class App extends Component {
   state = {
     emission: [], //How do we want to name our main object in the state?
     loading: true,
-    isEmpty: true
+    isCO2: true,
+    isTemp: false,
+    isGlacier: false
   }
 
   async componentDidMount() {
@@ -23,12 +25,12 @@ export default class App extends Component {
         emission: data.results, 
         loading: false 
     });
+    console.log(this.state.emission);
   } 
 
   triggerCO2EmissionState = () => {
     this.setState({
       ...this.state,
-      isEmpty: false,
       isCO2: true
   });
 }
@@ -36,7 +38,7 @@ export default class App extends Component {
 triggerGlobalTemperatureState = () => {
   this.setState({
     ...this.state,
-    isEmpty: false,
+    isCO2: false,
     isTemp: true
 });
 }
@@ -44,20 +46,30 @@ triggerGlobalTemperatureState = () => {
 triggerGlacierSizeState = () => {
   this.setState({
     ...this.state,
-    isEmpty: false,
+    isCO2: false,
     isGlacier: true
 });
 }
 
   render(){
-
+    let currentChart=<CO2Emission emission={this.state.emission} />
+    if(this.state.isCO2)
+    {
+      currentChart=<CO2Emission emission={this.state.emission} />
+    } 
+    if(this.state.isTemp)
+    {
+      currentChart=<GlobalTemperature emission={this.state.emission} />
+    }
+    if(this.state.isGlacier)
+    {
+      currentChart=<GlacierSize emission={this.state.emission} />
+    }
   
   return (
     <div className="App">
         <Menu co2={this.triggerCO2EmissionState} temp={this.triggerGlobalTemperatureState} glacier={this.triggerGlacierSizeState} />
-        <CO2Emission emission={this.state.emission} />
-        <GlobalTemperature emission={this.state.emission} />
-        <GlacierSize emission={this.state.emission} />
+        {currentChart}
     </div>
     );
   }
