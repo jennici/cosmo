@@ -28,7 +28,7 @@ export default class CO2Emission extends Component {
             <div>
                 <div class="ui segment">
                     <div>
-                        <VictoryChart width={600} height={470} scale={{ x: "time" }}
+                        <VictoryChart width={400} height={300} scale={{ x: "time" }}
                             containerComponent={
                                 <VictoryZoomContainer
                                     zoomDimension="x"
