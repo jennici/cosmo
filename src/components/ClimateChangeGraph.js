@@ -42,7 +42,7 @@ export default class CO2Emission extends Component {
                                     data: { stroke: "tomato" }
                                 }}
                                 data={[
-                                    { a: emission.Year, b: emissions["Gas Fuel"] },
+                                    { a: emission.Year, b: emission["Gas Fuel"] },
                                     { a: new Date(1987, 1, 1), b: 257 },
                                     { a: new Date(1993, 1, 1), b: 345 },
                                     { a: new Date(1997, 1, 1), b: 515 },
