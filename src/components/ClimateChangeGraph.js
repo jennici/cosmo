@@ -9,8 +9,8 @@ import {
 
 export default class CO2Emission extends Component {
     
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
           zoomDomain: { x: [new Date(1990, 1, 1), new Date(2009, 1, 1)] }
         };
@@ -22,7 +22,10 @@ export default class CO2Emission extends Component {
 
     render() {
 
-        let emission = this.props.emission;
+        const emission = this.props.emission;
+        if (emission === undefined) return <p>No data avaiable.</p>
+        console.log(emission)
+        
 
         return (
             <div>
@@ -42,14 +45,7 @@ export default class CO2Emission extends Component {
                                     data: { stroke: "tomato" }
                                 }}
                                 data={[
-                                    { a: emission.Year, b: emission["Gas Fuel"] },
-                                    { a: new Date(1987, 1, 1), b: 257 },
-                                    { a: new Date(1993, 1, 1), b: 345 },
-                                    { a: new Date(1997, 1, 1), b: 515 },
-                                    { a: new Date(2001, 1, 1), b: 132 },
-                                    { a: new Date(2005, 1, 1), b: 305 },
-                                    { a: new Date(2011, 1, 1), b: 270 },
-                                    { a: new Date(2015, 1, 1), b: 470 }
+                                    { a: new Date(emission.Year), b: emission["Gas Fuel"] }
                                 ]}
                                 x="a"
                                 y="b"
@@ -75,14 +71,7 @@ export default class CO2Emission extends Component {
                                 data: { stroke: "tomato" }
                             }}
                             data={[
-                                { key: new Date(1982, 1, 1), b: 125 },
-                                { key: new Date(1987, 1, 1), b: 257 },
-                                { key: new Date(1993, 1, 1), b: 345 },
-                                { key: new Date(1997, 1, 1), b: 515 },
-                                { key: new Date(2001, 1, 1), b: 132 },
-                                { key: new Date(2005, 1, 1), b: 305 },
-                                { key: new Date(2011, 1, 1), b: 270 },
-                                { key: new Date(2015, 1, 1), b: 470 }
+                                { key: new Date(emission.Year), b: emission["Gas Fuel"] }
                 	        ]}
                             x="key"
                             y="b"
@@ -102,14 +91,7 @@ export default class CO2Emission extends Component {
                                     data: { stroke: "tomato" }
                                 }}
                                 data={[
-                                    { a: new Date(1982, 1, 1), b: 125 },
-                                    { a: new Date(1987, 1, 1), b: 257 },
-                                    { a: new Date(1993, 1, 1), b: 345 },
-                                    { a: new Date(1997, 1, 1), b: 515 },
-                                    { a: new Date(2001, 1, 1), b: 132 },
-                                    { a: new Date(2005, 1, 1), b: 305 },
-                                    { a: new Date(2011, 1, 1), b: 270 },
-                                    { a: new Date(2015, 1, 1), b: 470 }
+                                    { a: new Date(emission.Year), b: emission["Gas Fuel"] }
                                 ]}
                                 x="a"
                                 y="b"
@@ -135,14 +117,7 @@ export default class CO2Emission extends Component {
                                 data: { stroke: "tomato" }
                             }}
                             data={[
-                                { key: new Date(1982, 1, 1), b: 125 },
-                                { key: new Date(1987, 1, 1), b: 257 },
-                                { key: new Date(1993, 1, 1), b: 345 },
-                                { key: new Date(1997, 1, 1), b: 515 },
-                                { key: new Date(2001, 1, 1), b: 132 },
-                                { key: new Date(2005, 1, 1), b: 305 },
-                                { key: new Date(2011, 1, 1), b: 270 },
-                                { key: new Date(2015, 1, 1), b: 470 }
+                                { key: new Date(emission.Year), b: emission["Gas Fuel"] }
                 	        ]}
                             x="key"
                             y="b"

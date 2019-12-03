@@ -1,7 +1,15 @@
 import React, { Component } from 'react'
 
 export default class Menu extends Component {
+    handleClick = () => {
+        const { itemId, onClick } = this.props;
+        onClick(itemId);
+    }
+
     render() {
+
+        const { active } = this.props;
+
         return (
             <div>
                 <div className="ui secondary pointing menu">

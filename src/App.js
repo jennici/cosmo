@@ -52,6 +52,15 @@ triggerGlacierSizeState = () => {
 }
 
   render(){
+
+  if (this.state.loading) {
+      return <div>loading...</div>;
+  }
+
+  if (!this.state.emission) {
+      return <div>didn't get Climate Change Graph</div>;
+  }
+
     let currentChart=<CO2Emission emission={this.state.emission} />
     if(this.state.isCO2)
     {
