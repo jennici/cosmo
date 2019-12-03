@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
 import './semantic-ui-css.min';
 import './bootstrap.min';
