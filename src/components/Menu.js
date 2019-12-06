@@ -5,25 +5,25 @@ export default class Menu extends Component {
     render() {
 
         // Get the container element
-        var itemContainer = document.getElementById("myMenu");
+        //var itemContainer = document.getElementById("myMenu");
 
         // Get all buttons with class="item" inside the container
-        var items = itemContainer.getElementsByClassName("item");
+        //var items = itemContainer.getElementsByClassName("item");
 
         // Loop through the buttons and add the active class to the current/clicked button
-        for (var i = 0; i < items.length; i++) {
-            items[i].addEventListener("click", function() {
-            var current = document.getElementsByClassName("active");
+        //for (var i = 0; i < items.length; i++) {
+            //items[i].addEventListener("click", function() {
+            //var current = document.getElementsByClassName("active");
         
             // If there's no active class
-            if (current.length > 0) {
-                current[0].className = current[0].className.replace(" active", "");
-            }
+            //if (current.length > 0) {
+            //    current[0].className = current[0].className.replace("active");
+            //}
         
             // Add the active class to the current/clicked button
-            this.className += " active";
-            });
-        } 
+            //this.className += " active";
+            //});
+        //} 
 
         return (
             <div>

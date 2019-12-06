@@ -24,14 +24,20 @@ export default class CO2Emission extends Component {
 
         const emission = this.props.emission;
         if (emission === undefined) return <p>No data avaiable.</p>
-        console.log(emission["Gas Fuel"])
-        
+        console.log(emission.Year)
+
+        const dataLineChart = [
+            {
+                x: (emission.Year), y: emission["Gas Fuel"],
+              },
+            ];
+  
 
         return (
             <div>
                 <div className="ui segment">
                     <div className="ui two wide grid" style={{width:"50%"}}>
-                        <VictoryChart width={600} height={470} scale={{ x: "time" }}
+                        <VictoryChart data={dataLineChart} height={250} scale={{ x: "time" }}
                             containerComponent={
                                 <VictoryZoomContainer
                                     zoomDimension="x"
@@ -44,11 +50,7 @@ export default class CO2Emission extends Component {
                                 style={{
                                     data: { stroke: "tomato" }
                                 }}
-                                data={[
-                                    { a: new Date(emission.Year, 1, 1), b: emission["Gas Fuel"]}
-                                ]}
-                                x="a"
-                                y="b"
+                                data={dataLineChart}
                             />
 
                         </VictoryChart>
@@ -70,11 +72,7 @@ export default class CO2Emission extends Component {
                             style={{
                                 data: { stroke: "tomato" }
                             }}
-                            data={[
-                                { key: new Date(emission.Year, 1, 1), b: emission["Gas Fuel"] }
-                	        ]}
-                            x="key"
-                            y="b"
+                            data={dataLineChart}
                         />
                         </VictoryChart>
                         <VictoryChart width={600} height={470} scale={{ x: "time" }}
@@ -90,11 +88,7 @@ export default class CO2Emission extends Component {
                                 style={{
                                     data: { stroke: "tomato" }
                                 }}
-                                data={[
-                                    { a: new Date(emission.Year), b: emission["Gas Fuel"] }
-                                ]}
-                                x="a"
-                                y="b"
+                                data={dataLineChart}
                             />
 
                         </VictoryChart>
@@ -116,11 +110,7 @@ export default class CO2Emission extends Component {
                             style={{
                                 data: { stroke: "tomato" }
                             }}
-                            data={[
-                                { key: new Date(emission.Year), b: emission["Gas Fuel"] }
-                	        ]}
-                            x="key"
-                            y="b"
+                            data={dataLineChart}
                         />
                         </VictoryChart>
                     </div>

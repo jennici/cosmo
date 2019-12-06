@@ -26,7 +26,7 @@ export default class App extends Component {
         emission: data, 
         loading: false 
     });
-    console.log(this.state.emission["Gas Fuel"]);
+    console.log(this.state.emission);
   } 
 
   triggerCO2EmissionState = () => {
@@ -89,3 +89,19 @@ triggerGlacierSizeState = () => {
     );
   }
 }
+
+/* Wjere does this code need to go? It should return an array in which the date object 
+  is declared as a new instance of the JS Date object (i.e. new Date(“2018–08–13T17:34:28.779Z”)).
+  
+export const getSingleStockChart = (state, stockId) => {
+  return state.transactions.allIds.reduce((result, transId) => {
+    if (state.transactions.byId[transId].stockId == stockId)
+      result.push({
+        x: new Date(state.transactions.byId[transId].seedDate),
+        y: state.transactions.byId[transId].price
+      })
+    return result
+  }, [])
+}
+
+*/
