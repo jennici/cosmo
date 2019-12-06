@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/cosmopolitan/static/css/main.2e368867.chunk.css",
-    "main.js": "/cosmopolitan/static/js/main.85508abc.chunk.js",
-    "main.js.map": "/cosmopolitan/static/js/main.85508abc.chunk.js.map",
-    "runtime-main.js": "/cosmopolitan/static/js/runtime-main.117ef8f2.js",
-    "runtime-main.js.map": "/cosmopolitan/static/js/runtime-main.117ef8f2.js.map",
-    "static/css/2.3d7ca5b7.chunk.css": "/cosmopolitan/static/css/2.3d7ca5b7.chunk.css",
-    "static/js/2.5b7234e2.chunk.js": "/cosmopolitan/static/js/2.5b7234e2.chunk.js",
-    "static/js/2.5b7234e2.chunk.js.map": "/cosmopolitan/static/js/2.5b7234e2.chunk.js.map",
-    "index.html": "/cosmopolitan/index.html",
-    "precache-manifest.05f00bbbdea3002d7dc4cef04e144f03.js": "/cosmopolitan/precache-manifest.05f00bbbdea3002d7dc4cef04e144f03.js",
-    "service-worker.js": "/cosmopolitan/service-worker.js",
-    "static/css/2.3d7ca5b7.chunk.css.map": "/cosmopolitan/static/css/2.3d7ca5b7.chunk.css.map",
-    "static/css/main.2e368867.chunk.css.map": "/cosmopolitan/static/css/main.2e368867.chunk.css.map",
-    "static/media/semantic.css": "/cosmopolitan/static/media/outline-icons.ef60a4f6.woff"
+    "main.css": "/cosmo/static/css/main.5e4e9510.chunk.css",
+    "main.js": "/cosmo/static/js/main.86914ebf.chunk.js",
+    "main.js.map": "/cosmo/static/js/main.86914ebf.chunk.js.map",
+    "runtime-main.js": "/cosmo/static/js/runtime-main.e28158b7.js",
+    "runtime-main.js.map": "/cosmo/static/js/runtime-main.e28158b7.js.map",
+    "static/css/2.fcaf600d.chunk.css": "/cosmo/static/css/2.fcaf600d.chunk.css",
+    "static/js/2.05de59db.chunk.js": "/cosmo/static/js/2.05de59db.chunk.js",
+    "static/js/2.05de59db.chunk.js.map": "/cosmo/static/js/2.05de59db.chunk.js.map",
+    "index.html": "/cosmo/index.html",
+    "precache-manifest.85c5521eee066369aca6482c8d5ec147.js": "/cosmo/precache-manifest.85c5521eee066369aca6482c8d5ec147.js",
+    "service-worker.js": "/cosmo/service-worker.js",
+    "static/css/2.fcaf600d.chunk.css.map": "/cosmo/static/css/2.fcaf600d.chunk.css.map",
+    "static/css/main.5e4e9510.chunk.css.map": "/cosmo/static/css/main.5e4e9510.chunk.css.map",
+    "static/media/semantic.css": "/cosmo/static/media/outline-icons.ef60a4f6.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.117ef8f2.js",
-    "static/css/2.3d7ca5b7.chunk.css",
-    "static/js/2.5b7234e2.chunk.js",
-    "static/css/main.2e368867.chunk.css",
-    "static/js/main.85508abc.chunk.js"
+    "static/js/runtime-main.e28158b7.js",
+    "static/css/2.fcaf600d.chunk.css",
+    "static/js/2.05de59db.chunk.js",
+    "static/css/main.5e4e9510.chunk.css",
+    "static/js/main.86914ebf.chunk.js"
   ]
 }
