@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "473e1eff0a60b5c94e68070afb379dbc",
+    "revision": "1df438a7e266f41ea0348cb38ec39571",
     "url": "/cosmo/index.html"
   },
   {
-    "revision": "31173944a2fdb007c2ee",
+    "revision": "bedbfeaca37acb574bb4",
     "url": "/cosmo/static/css/2.fcaf600d.chunk.css"
   },
   {
-    "revision": "182eb73f80e723478025",
-    "url": "/cosmo/static/css/main.5e4e9510.chunk.css"
+    "revision": "699df7dd617472f7ca7b",
+    "url": "/cosmo/static/css/main.817a8c9f.chunk.css"
   },
   {
-    "revision": "31173944a2fdb007c2ee",
-    "url": "/cosmo/static/js/2.05de59db.chunk.js"
+    "revision": "bedbfeaca37acb574bb4",
+    "url": "/cosmo/static/js/2.19457405.chunk.js"
   },
   {
-    "revision": "182eb73f80e723478025",
-    "url": "/cosmo/static/js/main.86914ebf.chunk.js"
+    "revision": "699df7dd617472f7ca7b",
+    "url": "/cosmo/static/js/main.1b40d8ff.chunk.js"
   },
   {
     "revision": "1eb2568d730df45afcd5",
