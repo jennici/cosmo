@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
-import './semantic-ui-css.min';
-import './bootstrap.min';
+import 'semantic-ui-css/semantic.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 export default class App extends Component {
 
