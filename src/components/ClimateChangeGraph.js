@@ -24,7 +24,7 @@ export default class CO2Emission extends Component {
 
         const emission = this.props.emission;
         if (emission === undefined) return <p>No data avaiable.</p>
-        console.log(emission)
+        console.log(emission["Gas Fuel"])
         
 
         return (
@@ -45,7 +45,7 @@ export default class CO2Emission extends Component {
                                     data: { stroke: "tomato" }
                                 }}
                                 data={[
-                                    { a: new Date(emission.Year), b: emission["Gas Fuel"] }
+                                    { a: new Date(emission.Year, 1, 1), b: emission["Gas Fuel"]}
                                 ]}
                                 x="a"
                                 y="b"
@@ -71,7 +71,7 @@ export default class CO2Emission extends Component {
                                 data: { stroke: "tomato" }
                             }}
                             data={[
-                                { key: new Date(emission.Year), b: emission["Gas Fuel"] }
+                                { key: new Date(emission.Year, 1, 1), b: emission["Gas Fuel"] }
                 	        ]}
                             x="key"
                             y="b"

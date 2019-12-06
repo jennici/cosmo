@@ -14,7 +14,8 @@ export default class App extends Component {
     loading: true,
     isCO2: true,
     isTemp: false,
-    isGlacier: false
+    isGlacier: false,
+    active: true
   }
 
   async componentDidMount() {
@@ -25,13 +26,14 @@ export default class App extends Component {
         emission: data, 
         loading: false 
     });
-    console.log(this.state.emission);
+    console.log(this.state.emission["Gas Fuel"]);
   } 
 
   triggerCO2EmissionState = () => {
     this.setState({
       ...this.state,
-      isCO2: true
+      isCO2: true,
+      active: true
   });
 }
 
@@ -39,7 +41,8 @@ triggerGlobalTemperatureState = () => {
   this.setState({
     ...this.state,
     isCO2: false,
-    isTemp: true
+    isTemp: true,
+    active: true
 });
 }
 
@@ -47,12 +50,14 @@ triggerGlacierSizeState = () => {
   this.setState({
     ...this.state,
     isCO2: false,
-    isGlacier: true
+    isGlacier: true,
+    active: true
 });
 }
 
   render(){
 
+    //check if app and data are loading
   if (this.state.loading) {
       return <div>loading...</div>;
   }
@@ -61,18 +66,19 @@ triggerGlacierSizeState = () => {
       return <div>didn't get Climate Change Graph</div>;
   }
 
-    let currentChart=<CO2Emission emission={this.state.emission} />
+    //current Chart is shown
+    let currentChart=<CO2Emission emission={this.state.emission} co2={this.state.isCO2} active={this.state.active} />
     if(this.state.isCO2)
     {
-      currentChart=<CO2Emission emission={this.state.emission} />
+      currentChart=<CO2Emission emission={this.state.emission} co2={this.state.isCO2} active={this.state.active} />
     } 
     if(this.state.isTemp)
     {
-      currentChart=<GlobalTemperature emission={this.state.emission} />
+      currentChart=<GlobalTemperature emission={this.state.emission} temp={this.state.isTemp} active={this.state.active} />
     }
     if(this.state.isGlacier)
     {
-      currentChart=<GlacierSize emission={this.state.emission} />
+      currentChart=<GlacierSize emission={this.state.emission} glacier={this.state.isGlacier} active={this.state.active} />
     }
   
   return (
