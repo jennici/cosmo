@@ -10,7 +10,10 @@ import GlacierSize from './components/GlacierSize';
 export default class App extends Component {
 
   state = {
-    emission: [], //How do we want to name our main object in the state?
+    emission: [],
+    temperature: [],
+    glaciersize: [],
+    sealevel: [],
     loading: true,
     isCO2: true,
     isTemp: false,
@@ -18,15 +21,44 @@ export default class App extends Component {
     active: true
   }
 
-  async componentDidMount() {
-    const url = "https://my.api.mockaroo.com/co2.json?key=8eb9e6f0";
-    const response = await fetch(url);
-    const data = await response.json();
+    async componentDidMount() {
+    const url1 = "https://my.api.mockaroo.com/co2.json?key=8eb9e6f0";
+    const url2 = "https://my.api.mockaroo.com/temp.json?key=8eb9e6f0";
+    const url3 = "https://my.api.mockaroo.com/glaciersize.json?key=8eb9e6f0";
+    const url4 = "https://my.api.mockaroo.com/sealevel.json?key=8eb9e6f0";
+
+    const response1 = await fetch(url1);
+    const data1 = await response1.json();
     this.setState({ 
-        emission: data, 
+        emission: data1, 
         loading: false 
     });
+
+    const response2 = await fetch(url2);
+    const data2 = await response2.json();
+    this.setState({
+        temperature: data2,
+        loading: false
+    });
+
+    const response3 = await fetch(url3);
+    const data3 = await response3.json();
+    this.setState({
+        glaciersize: data3,
+        loading: false
+    });
+
+    const response4 = await fetch(url4);
+    const data4 = await response4.json();
+    this.setState({
+        sealevel: data4,
+        loading: false
+    });
+
     console.log(this.state.emission);
+    console.log(this.state.temperature);
+    console.log(this.state.glaciersize);
+    console.log(this.state.sealevel);
   } 
 
   triggerCO2EmissionState = () => {
@@ -62,7 +94,7 @@ triggerGlacierSizeState = () => {
       return <div>loading...</div>;
   }
 
-  if (!this.state.emission) {
+  if (!this.state.emission || !this.state.temperature || !this.state.glaciersize || !this.state.sealevel) {
       return <div>didn't get Climate Change Graph</div>;
   }
 
@@ -74,11 +106,11 @@ triggerGlacierSizeState = () => {
     } 
     if(this.state.isTemp)
     {
-      currentChart=<GlobalTemperature emission={this.state.emission} temp={this.state.isTemp} active={this.state.active} />
+      currentChart=<GlobalTemperature temperature={this.state.temperature} temp={this.state.isTemp} active={this.state.active} />
     }
     if(this.state.isGlacier)
     {
-      currentChart=<GlacierSize emission={this.state.emission} glacier={this.state.isGlacier} active={this.state.active} />
+      currentChart=<GlacierSize glaciersize={this.state.glaciersize} glacier={this.state.isGlacier} active={this.state.active} />
     }
   
   return (
@@ -89,19 +121,3 @@ triggerGlacierSizeState = () => {
     );
   }
 }
-
-/* Wjere does this code need to go? It should return an array in which the date object 
-  is declared as a new instance of the JS Date object (i.e. new Date(“2018–08–13T17:34:28.779Z”)).
-  
-export const getSingleStockChart = (state, stockId) => {
-  return state.transactions.allIds.reduce((result, transId) => {
-    if (state.transactions.byId[transId].stockId == stockId)
-      result.push({
-        x: new Date(state.transactions.byId[transId].seedDate),
-        y: state.transactions.byId[transId].price
-      })
-    return result
-  }, [])
-}
-
-*/

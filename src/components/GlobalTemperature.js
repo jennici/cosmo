@@ -22,7 +22,13 @@ export default class GlobalTemperature extends Component {
 
     render() {
 
-        let emission = this.props.emission;
+        const temperature = this.props.temperature;
+        if (temperature === undefined) return <p>No data avaiable.</p>
+
+        // map every row from emission (array) to x and y values
+        const dataLineChart = temperature.map(item => {
+            return { x: item["Year"], y: item["Mean cumulative mass balance"]}
+        });
         
         return (
             <div>
@@ -41,18 +47,7 @@ export default class GlobalTemperature extends Component {
                                 style={{
                                     data: { stroke: "tomato" }
                                 }}
-                                data={[
-                                    { a: emission.Year, b: emission["Gas Fuel"] },
-                                    { a: new Date(1987, 1, 1), b: 257 },
-                                    { a: new Date(1993, 1, 1), b: 345 },
-                                    { a: new Date(1997, 1, 1), b: 515 },
-                                    { a: new Date(2001, 1, 1), b: 132 },
-                                    { a: new Date(2005, 1, 1), b: 305 },
-                                    { a: new Date(2011, 1, 1), b: 270 },
-                                    { a: new Date(2015, 1, 1), b: 470 }
-                                ]}
-                                x="a"
-                                y="b"
+                                data={dataLineChart}
                             />
 
                         </VictoryChart>
@@ -101,18 +96,7 @@ export default class GlobalTemperature extends Component {
                                 style={{
                                     data: { stroke: "tomato" }
                                 }}
-                                data={[
-                                    { a: new Date(1982, 1, 1), b: 125 },
-                                    { a: new Date(1987, 1, 1), b: 257 },
-                                    { a: new Date(1993, 1, 1), b: 345 },
-                                    { a: new Date(1997, 1, 1), b: 515 },
-                                    { a: new Date(2001, 1, 1), b: 132 },
-                                    { a: new Date(2005, 1, 1), b: 305 },
-                                    { a: new Date(2011, 1, 1), b: 270 },
-                                    { a: new Date(2015, 1, 1), b: 470 }
-                                ]}
-                                x="a"
-                                y="b"
+                                data={dataLineChart}
                             />
 
                         </VictoryChart>

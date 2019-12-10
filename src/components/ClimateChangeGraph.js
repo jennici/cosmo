@@ -24,13 +24,13 @@ export default class CO2Emission extends Component {
 
         const emission = this.props.emission;
         if (emission === undefined) return <p>No data avaiable.</p>
-        console.log(emission.Year)
 
-        const dataLineChart = [
-            {
-                x: (emission.Year), y: emission["Gas Fuel"],
-              },
-            ];
+        // map every row from emission (array) to x and y values
+        const dataLineChart = emission.map(item => {
+            return { x: item["Year"], y: item["Gas Fuel"]}
+        });
+
+        // maybe we need a key for x to brush the data??
   
 
         return (
