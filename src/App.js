@@ -6,18 +6,51 @@ import 'bootstrap/dist/css/bootstrap.css';
 export default class App extends Component {
 
   state = {
-    emission: [], //How do we want to name our main object in the state?
+    emission: [],
+    temperature: [],
+    glaciersize: [],
+    sealevel: [],
     loading: true
   }
 
   async componentDidMount() {
-    const url = "https://my.api.mockaroo.com/co2.json?key=8eb9e6f0";
-    const response = await fetch(url);
-    const data = await response.json();
+    const url1 = "https://my.api.mockaroo.com/co2.json?key=8eb9e6f0";
+    const url2 = "https://my.api.mockaroo.com/temp.json?key=8eb9e6f0";
+    const url3 = "https://my.api.mockaroo.com/glaciersize.json?key=8eb9e6f0";
+    const url4 = "https://my.api.mockaroo.com/sealevel.json?key=8eb9e6f0";
+
+    const response1 = await fetch(url1);
+    const data1 = await response1.json();
     this.setState({ 
-        emission: data.results, 
+        emission: data1, 
         loading: false 
     });
+
+    const response2 = await fetch(url2);
+    const data2 = await response2.json();
+    this.setState({
+        temperature: data2,
+        loading: false
+    });
+
+    const response3 = await fetch(url3);
+    const data3 = await response3.json();
+    this.setState({
+        glaciersize: data3,
+        loading: false
+    });
+
+    const response4 = await fetch(url4);
+    const data4 = await response4.json();
+    this.setState({
+        sealevel: data4,
+        loading: false
+    });
+
+    console.log(this.state.emission);
+    console.log(this.state.temperature);
+    console.log(this.state.glaciersize);
+    console.log(this.state.sealevel);
   } 
 
   render(){
