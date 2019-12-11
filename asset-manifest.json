@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cosmo/static/css/main.817a8c9f.chunk.css",
-    "main.js": "/cosmo/static/js/main.1b40d8ff.chunk.js",
-    "main.js.map": "/cosmo/static/js/main.1b40d8ff.chunk.js.map",
+    "main.js": "/cosmo/static/js/main.41625995.chunk.js",
+    "main.js.map": "/cosmo/static/js/main.41625995.chunk.js.map",
     "runtime-main.js": "/cosmo/static/js/runtime-main.e28158b7.js",
     "runtime-main.js.map": "/cosmo/static/js/runtime-main.e28158b7.js.map",
     "static/css/2.fcaf600d.chunk.css": "/cosmo/static/css/2.fcaf600d.chunk.css",
     "static/js/2.19457405.chunk.js": "/cosmo/static/js/2.19457405.chunk.js",
     "static/js/2.19457405.chunk.js.map": "/cosmo/static/js/2.19457405.chunk.js.map",
     "index.html": "/cosmo/index.html",
-    "precache-manifest.cb175a7d8e8948a2a828a0ad65312135.js": "/cosmo/precache-manifest.cb175a7d8e8948a2a828a0ad65312135.js",
+    "precache-manifest.6f9e24f0e81ad86048c2dc9327503dd5.js": "/cosmo/precache-manifest.6f9e24f0e81ad86048c2dc9327503dd5.js",
     "service-worker.js": "/cosmo/service-worker.js",
     "static/css/2.fcaf600d.chunk.css.map": "/cosmo/static/css/2.fcaf600d.chunk.css.map",
     "static/css/main.817a8c9f.chunk.css.map": "/cosmo/static/css/main.817a8c9f.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.fcaf600d.chunk.css",
     "static/js/2.19457405.chunk.js",
     "static/css/main.817a8c9f.chunk.css",
-    "static/js/main.1b40d8ff.chunk.js"
+    "static/js/main.41625995.chunk.js"
   ]
 }
