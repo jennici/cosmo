@@ -57,6 +57,8 @@ export default class App extends Component {
     this.setState({
       ...this.state,
       isCO2: true,
+      isGlacier: false,
+      isTemp: false,
       active: true
   });
 }
@@ -66,6 +68,7 @@ triggerGlobalTemperatureState = () => {
     ...this.state,
     isCO2: false,
     isTemp: true,
+    isGlacier: false,
     active: true
 });
 }
@@ -75,6 +78,7 @@ triggerGlacierSizeState = () => {
     ...this.state,
     isCO2: false,
     isGlacier: true,
+    isTemp: false,
     active: true
 });
 }
