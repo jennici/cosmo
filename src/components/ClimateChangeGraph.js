@@ -12,7 +12,8 @@ export default class CO2Emission extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          zoomDomain: { x: [new Date(1990, 1, 1), new Date(2009, 1, 1)] }
+          zoomDomain: { x: [new Date(1990, 1, 1), new Date(2009, 1, 1)] },
+          isCO2: []
         };
       }
 
@@ -29,8 +30,6 @@ export default class CO2Emission extends Component {
         const dataLineChart = emission.map(item => {
             return { x: item["Year"], y: item["Gas Fuel"]}
         });
-
-        // maybe we need a key for x to brush the data??
   
 
         return (

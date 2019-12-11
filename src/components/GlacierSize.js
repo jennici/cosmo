@@ -12,7 +12,8 @@ export default class GlacierSize extends Component {
     constructor() {
         super();
         this.state = {
-          zoomDomain: { x: [new Date(1990, 1, 1), new Date(2009, 1, 1)] }
+          zoomDomain: { x: [new Date(1990, 1, 1), new Date(2009, 1, 1)] },
+          isGlacier: []
         };
       }
 

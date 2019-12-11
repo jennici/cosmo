@@ -12,7 +12,8 @@ export default class GlobalTemperature extends Component {
     constructor() {
         super();
         this.state = {
-          zoomDomain: { x: [new Date(1990, 1, 1), new Date(2009, 1, 1)] }
+          zoomDomain: { x: [new Date(1990, 1, 1), new Date(2009, 1, 1)] },
+          isTemp: []
         };
       }
 
@@ -69,6 +70,7 @@ export default class GlobalTemperature extends Component {
                             style={{
                                 data: { stroke: "tomato" }
                             }}
+                            // do we need this for all brushing?
                             data={[
                                 { key: new Date(1982, 1, 1), b: 125 },
                                 { key: new Date(1987, 1, 1), b: 257 },
