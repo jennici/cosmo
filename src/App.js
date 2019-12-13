@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import './App.css';
 import 'semantic-ui-css/semantic.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import Navigation from "./components/Navigation"
+import Card from "./components/Card"
 
 export default class App extends Component {
 
@@ -49,7 +51,8 @@ export default class App extends Component {
   
   return (
     <div className="App">
-  
+        <Navigation />
+        <Card />
     </div>
     );
   }
