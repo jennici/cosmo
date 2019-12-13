@@ -47,10 +47,10 @@ export default class App extends Component {
         loading: false
     });
 
-    console.log(this.state.emission);
-    console.log(this.state.temperature);
-    console.log(this.state.glaciersize);
-    console.log(this.state.sealevel);
+    //console.log(this.state.emission);
+    //console.log(this.state.temperature);
+    //console.log(this.state.glaciersize);
+    //console.log(this.state.sealevel);
   } 
 
   triggerCO2EmissionState = () => {
@@ -111,7 +111,7 @@ triggerGlacierSizeState = () => {
   
   return (
     <div className="App">
-        <Menu co2={this.triggerCO2EmissionState} temp={this.triggerGlobalTemperatureState} glacier={this.triggerGlacierSizeState} />
+        <Menu co2={this.triggerCO2EmissionState()} temp={this.triggerGlobalTemperatureState()} glacier={this.triggerGlacierSizeState()} />
         {currentChart}
     </div>
     );

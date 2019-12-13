@@ -28,13 +28,13 @@ export default class Menu extends Component {
         return (
             <div>
                 <div className="ui secondary pointing menu" id="myMenu">
-                    <button className="active item" onClick={this.props.co2 && this.props.active}>
+                    <button className="active item" onClick={() => this.props.co2 && this.props.active}>
                         Global CO2 emissions
                     </button>
-                    <button className="item" onClick={this.props.temp && this.props.active}>
+                    <button className="item" onClick={() => this.props.temp && this.props.active}>
                         Global Temperature
                     </button>
-                    <button className="item" onClick={this.props.glacier && this.props.active}>
+                    <button className="item" onClick={() => this.props.glacier && this.props.active}>
                         Glacier Size
                     </button>
                 </div>
