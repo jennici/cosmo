@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import logo from '../../src/pictures/logo.png'
 import meltingice from '../../src/pictures/meltingice.png'
 import '../../src/css/cosmo.css'
+import { Link } from 'react-router-dom'
 
 class Navbar extends Component {
     render() {
@@ -15,10 +16,10 @@ class Navbar extends Component {
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item active">
-                                <a class="nav-link" href="https://www.cosmopolitan.com/">style <span class="sr-only">(current)</span></a>
+                                <Link class="nav-link" to="/style">style <span class="sr-only">(current)</span></Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://www.cosmopolitan.com/">beauty</a>
+                                <Link class="nav-link" to="/beauty">beauty</Link>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="https://www.cosmopolitan.com/">sex</a>
