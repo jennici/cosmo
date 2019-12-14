@@ -2,41 +2,44 @@ import React, { Component } from 'react'
 
 export default class Menu extends Component {
 
-    render() {
+    constructor(props) {
+        super(props);
+        this.state = {clicked_index: 0};
+        this.clickHandler = this.clickHandler.bind(this);
+      }
+      
+      clickHandler(index){
+        console.log(index)
+          this.setState({clicked_index: index});
+      };
 
-        // Get the container element
-        //var itemContainer = document.getElementById("myMenu");
+      render() {
 
-        // Get all buttons with class="item" inside the container
-        //var items = itemContainer.getElementsByClassName("item");
+        if (props.clicked) 
+            
 
-        // Loop through the buttons and add the active class to the current/clicked button
-        //for (var i = 0; i < items.length; i++) {
-            //items[i].addEventListener("click", function() {
-            //var current = document.getElementsByClassName("active");
-        
-            // If there's no active class
-            //if (current.length > 0) {
-            //    current[0].className = current[0].className.replace("active");
-            //}
-        
-            // Add the active class to the current/clicked button
-            //this.className += " active";
-            //});
-        //} 
 
         return (
             <div>
                 <div className="ui secondary pointing menu" id="myMenu">
-                    <button className="active item" onClick={() => this.props.co2 && this.props.active}>
+                    <button 
+                        className="active item"
+                        onClick={() => this.props.co2() }
+                    >
                         Global CO2 emissions
                     </button>
-                    <button className="item" onClick={() => this.props.temp && this.props.active}>
+                    <button 
+                        className="item" 
+                        onClick={() => this.props.temp() }
+                    >
                         Global Temperature
                     </button>
-                    <button className="item" onClick={() => this.props.glacier && this.props.active}>
+                    <button 
+                        className="item" 
+                        onClick={() => this.props.glacier() }
+                    >
                         Glacier Size
-                    </button>
+                    </button>                    
                 </div>
             </div>
         )

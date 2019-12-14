@@ -12,7 +12,7 @@ export default class CO2Emission extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          zoomDomain: { x: [new Date(1990, 1, 1), new Date(2009, 1, 1)] },
+          zoomDomain: { x: [new Date(1950, 1, 1), new Date(2014, 1, 1)] },
           isCO2: []
         };
       }
@@ -28,7 +28,10 @@ export default class CO2Emission extends Component {
 
         // map every row from emission (array) to x and y values
         const dataLineChart = emission.map(item => {
-            return { x: item["Year"], y: item["Gas Fuel"]}
+            return { 
+                Year: new Date(item["Year"], 1, 1), 
+                Value: parseInt(item["Gas Fuel"])
+            };
         });
   
 
@@ -36,7 +39,11 @@ export default class CO2Emission extends Component {
             <div>
                 <div className="ui segment">
                     <div className="ui two wide grid" style={{width:"50%"}}>
-                        <VictoryChart data={dataLineChart} height={250} scale={{ x: "time" }}
+                    <VictoryChart 
+                            padding={{ top: 5, left: 50, right: 50, bottom: 30 }}
+                            width={400}
+                            height={250} 
+                            scale={{ x: "time" }}
                             containerComponent={
                                 <VictoryZoomContainer
                                     zoomDimension="x"
@@ -50,12 +57,16 @@ export default class CO2Emission extends Component {
                                     data: { stroke: "tomato" }
                                 }}
                                 data={dataLineChart}
-                            />
+                                x="Year"
+                                y="Value"
+                            /> 
+                    </VictoryChart>
 
-                        </VictoryChart>
-                        <VictoryChart
-                            padding={{ top: 0, left: 50, right: 50, bottom: 30 }}
-                            width={600} height={100} scale={{ x: "time" }}
+                    <VictoryChart
+                            padding={{ top: 5, left: 50, right: 50, bottom: 30 }}
+                            width={600} 
+                            height={100} 
+                            scale={{ x: "time" }}
                             containerComponent={
                                 <VictoryBrushContainer
                                     brushDimension="x"
@@ -72,46 +83,10 @@ export default class CO2Emission extends Component {
                                 data: { stroke: "tomato" }
                             }}
                             data={dataLineChart}
+                            x="Year"
+                            y="Value"
                         />
-                        </VictoryChart>
-                        <VictoryChart width={600} height={470} scale={{ x: "time" }}
-                            containerComponent={
-                                <VictoryZoomContainer
-                                    zoomDimension="x"
-                                    zoomDomain={this.state.zoomDomain}
-                                    onZoomDomainChange={this.handleZoom.bind(this)}
-                                />
-                            }
-                        >
-                            <VictoryLine
-                                style={{
-                                    data: { stroke: "tomato" }
-                                }}
-                                data={dataLineChart}
-                            />
-
-                        </VictoryChart>
-                        <VictoryChart
-                            padding={{ top: 0, left: 50, right: 50, bottom: 30 }}
-                            width={600} height={100} scale={{ x: "time" }}
-                            containerComponent={
-                                <VictoryBrushContainer
-                                    brushDimension="x"
-                                    brushDomain={this.state.zoomDomain}
-                                    onBrushDomainChange={this.handleZoom.bind(this)}
-                                />
-                            }
-                        >
-                        <VictoryAxis
-                            tickFormat={(x) => new Date(x).getFullYear()}
-                        />
-                        <VictoryLine
-                            style={{
-                                data: { stroke: "tomato" }
-                            }}
-                            data={dataLineChart}
-                        />
-                        </VictoryChart>
+                    </VictoryChart>
                     </div>
                 </div>
             </div>

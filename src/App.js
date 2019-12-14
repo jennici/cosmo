@@ -95,23 +95,48 @@ triggerGlacierSizeState = () => {
   }
 
     //current Chart is shown
-    let currentChart=<CO2Emission emission={this.state.emission} co2={this.state.isCO2} active={this.state.active} />
-    if(this.state.isCO2)
-    {
-      currentChart=<CO2Emission emission={this.state.emission} co2={this.state.isCO2} active={this.state.active} />
+    let currentChart = (
+      <CO2Emission 
+          emission={this.state.emission} 
+          co2={this.state.isCO2} 
+          active={this.state.active} 
+        />
+    );
+    if(this.state.isCO2) {
+      currentChart = (
+        <CO2Emission 
+            emission={this.state.emission} 
+            co2={this.state.isCO2} 
+            active={this.state.active} 
+          />
+      );
     } 
-    if(this.state.isTemp)
-    {
-      currentChart=<GlobalTemperature temperature={this.state.temperature} temp={this.state.isTemp} active={this.state.active} />
+    if(this.state.isTemp) {
+      currentChart = (
+        <GlobalTemperature 
+            temperature={this.state.temperature} 
+            temp={this.state.isTemp} 
+            active={this.state.active} 
+          />
+      );
     }
-    if(this.state.isGlacier)
-    {
-      currentChart=<GlacierSize glaciersize={this.state.glaciersize} glacier={this.state.isGlacier} active={this.state.active} />
+    if(this.state.isGlacier) {
+      currentChart = (
+        <GlacierSize 
+            glaciersize={this.state.glaciersize}
+            glacier={this.state.isGlacier} 
+            active={this.state.active} 
+          />
+      );
     }
   
   return (
     <div className="App">
-        <Menu co2={this.triggerCO2EmissionState()} temp={this.triggerGlobalTemperatureState()} glacier={this.triggerGlacierSizeState()} />
+        <Menu 
+            co2={this.triggerCO2EmissionState} 
+            temp={this.triggerGlobalTemperatureState} 
+            glacier={this.triggerGlacierSizeState} 
+        />
         {currentChart}
     </div>
     );
