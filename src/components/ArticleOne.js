@@ -1,6 +1,10 @@
 import React, { Component } from "react";
-import ReactDOM from 'react-dom';
 import semantic from 'semantic-ui';
+
+export default class ArticleOne extends Component {
+  state = {
+      loading: true,
+  }
 
 render() {
     return (
