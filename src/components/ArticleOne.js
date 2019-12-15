@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import semantic from 'semantic-ui';
+import semantic from 'semantic-ui'; // whats wrong here?
 
 export default class ArticleOne extends Component {
   state = {
@@ -51,4 +51,4 @@ render() {
 
 
         /* for an image can take up the width of its container, use: class="ui fluid image" */
-             /* Text container with header */
+             // Text container with header 
