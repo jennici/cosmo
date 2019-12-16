@@ -4,7 +4,8 @@ import {
     VictoryZoomContainer, 
     VictoryLine, 
     VictoryBrushContainer,
-    VictoryAxis 
+    VictoryAxis,
+    VictoryTooltip 
 } from 'victory';
 import info from "../pictures/information-button.png";
 
@@ -35,17 +36,17 @@ export default class CO2Emission extends Component {
             };
         });
 
-        info = () => {
-            $('.ui.longer.modal').modal('show');
-            return (
-                <div class="ui modal">
-                    <div class="header">Header</div>
-                    <div class="scrolling content">
-                        <p>Very long content goes here</p>
-                    </div>
-                </div>
-            )
-        }
+        // info = () => {
+        //     $('.ui.longer.modal').modal('show');
+        //     return (
+        //         <div class="ui modal">
+        //             <div class="header">Header</div>
+        //             <div class="scrolling content">
+        //                 <p>Very long content goes here</p>
+        //             </div>
+        //         </div>
+        //     )
+        // }
   
 
         return (
