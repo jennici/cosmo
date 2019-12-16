@@ -28,7 +28,7 @@ class Navbar extends Component {
                                 <Link class="nav-link" to="/politics">politics</Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://www.cosmopolitan.com/">climate</a>
+                                <Link class="nav-link" to="/climate">climate</Link>
                             </li>
                         </ul>
                     </div>

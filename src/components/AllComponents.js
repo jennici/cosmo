@@ -6,6 +6,7 @@ import Beauty from './Beauty'
 import { Route, Switch } from "react-router-dom"
 import Sex from './Sex'
 import Politics from './Politics'
+import Climate from './Climate'
 
 class AllComponents extends Component{
     render(){
@@ -30,8 +31,8 @@ class AllComponents extends Component{
                 <Politics />
                 </Route>
 
-                <Route path="/beauty">
-                <Beauty />
+                <Route path="/climate">
+                <Climate />
                 </Route>
 
                 </Switch>
