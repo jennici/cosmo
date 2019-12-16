@@ -3,7 +3,7 @@ import './App.css';
 import 'semantic-ui-css/semantic.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import AllComponents from './components/AllComponents';
-
+import earth from "./pictures/loading_earth2.gif"
 
 export default class App extends Component {
 
@@ -52,7 +52,15 @@ export default class App extends Component {
 
      //check if app and data are loading
      if (this.state.loading) {
-      return <div>loading...</div>;
+      return <div>
+                <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '60vh'}}>
+                  <img src={earth} style={{width: "300px"}} alt="crying earth" />
+                </div>
+                <div>
+                  <p className="loading">    loading...</p>
+                  
+                </div>
+              </div>;
       }
 
       if (!this.state.emission || !this.state.temperature || !this.state.glaciersize || !this.state.sealevel) {

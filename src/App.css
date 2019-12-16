@@ -22,3 +22,13 @@
 .sr-only{
   color: #ff4c49;
 }
+.loading{
+  display: 'flex';
+  text-align: center;
+  justify-content:'center';
+  font-family: "Futura", sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 25px;
+  color: #575A89;
+}

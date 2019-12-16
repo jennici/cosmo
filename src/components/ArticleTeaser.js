@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import '../css/cosmo.css'
 
 export default class ArticleTeaser extends Component {
     state={

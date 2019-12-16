@@ -5,29 +5,31 @@ import { Link } from 'react-router-dom'
 
 class Navbar extends Component {
     render() {
+
         return (
             <div>
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="https://www.cosmopolitan.com/"><img src={logo} className="nav-logo" style={{ height: "30px", width: "auto" }} alt="logo" /></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                    <Link className="nav-link" to="/"><img src={logo} classNameName="nav-logo" style={{ height: "30px", width: "auto" }} alt="logo" /></Link>
+                    {/*Make Toggler working*/}
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <Link class="nav-link" to="/style">style<span class="sr-only">(current)</span></Link>
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                        <ul className="navbar-nav">
+                            <li className="nav-item">
+                                <Link className="nav-link" activeClassName="chosen" to="/style">style</Link>
                             </li>
-                            <li class="nav-item">
-                                <Link class="nav-link" to="/beauty">beauty</Link>
+                            <li className="nav-item">
+                                <Link className="nav-link" activeClassName="chosen" to="/beauty">beauty</Link>
                             </li>
-                            <li class="nav-item">
-                                <Link class="nav-link" to="/sex">sex</Link>
+                            <li className="nav-item">
+                                <Link className="nav-link" activeClassName="chosen" to="/sex">sex</Link>
                             </li>
-                            <li class="nav-item">
-                                <Link class="nav-link" to="/politics">politics</Link>
+                            <li className="nav-item">
+                                <Link className="nav-link" activeClassName="chosen" to="/politics">politics</Link>
                             </li>
-                            <li class="nav-item">
-                                <Link class="nav-link" to="/climate">climate</Link>
+                            <li className="nav-item">
+                                <Link className="nav-link" activeClassName="chosen" to="/climate">climate</Link>
                             </li>
                         </ul>
                     </div>

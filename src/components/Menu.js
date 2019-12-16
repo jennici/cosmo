@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import '../../src/css/cosmo.css';
 
 export default class Menu extends Component {
 
@@ -23,19 +24,22 @@ export default class Menu extends Component {
             <div>
                 <div className="ui secondary pointing menu" id="myMenu">
                     <button 
-                        className="active item"
+                        className="item"
+                        activeClassName="chosen"
                         onClick={() => this.props.co2() }
                     >
                         Global CO2 emissions
                     </button>
                     <button 
                         className="item" 
+                        activeClassName="chosen"
                         onClick={() => this.props.temp() }
                     >
                         Global Temperature
                     </button>
                     <button 
                         className="item" 
+                        activeClassName="chosen"
                         onClick={() => this.props.glacier() }
                     >
                         Glacier Size
