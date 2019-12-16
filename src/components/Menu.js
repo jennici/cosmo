@@ -22,7 +22,7 @@ export default class Menu extends Component {
 
         return (
             <div>
-                <div className="ui secondary pointing menu" id="myMenu">
+                <div className="ui secondary pointing menu" id="myMenu" style={{marginTop: "15%"}}>
                     <button 
                         className="item"
                         onClick={() => this.props.co2() }

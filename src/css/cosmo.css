@@ -1,6 +1,7 @@
 .navbar{
   border-bottom: 2px;
   border-bottom-color: #ff4c49;
+  padding: 0.2em;
 }
 .nav-link, .item{
     font-family: "Futura", sans-serif;
@@ -42,6 +43,7 @@
     letter-spacing: 4px;
   }
 
+  /*Menu component*/
   button.item:focus, .item a.chosen,
   .item a:hover {
     border-bottom-width: 1px;
@@ -50,6 +52,19 @@
     outline: none;
   }
 
+  /*Graph components*/
   .graph {
     color: #575A89;
+  }
+
+  .ui.circular.button {
+    border-radius: 20em;
+  }
+
+  i.icon, i.icons {
+    font-size: 2em;
+  }
+
+  .ui.button{
+    line-height: 2em;
   }

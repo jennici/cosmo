@@ -51,12 +51,12 @@ export default class CO2Emission extends Component {
 
         return (
             <div>
-                <div className="row">
-                    <h1 className="graph">Global CO2 emissions from fossil fuels</h1>
-                    <button className="circular ui icon button" style={{padding: "0.5em"}} onClick={() => this.info() }> {/*use a modal pop up*/}
+                <h1 className="graph">Global CO2 emissions from fossil fuels  
+                    <button className="circular ui icon button" style={{padding: "1.6em", marginLeft: "2%"}} onClick={() => this.info() }> {/*use a modal pop up*/}
                         <i className="info icon" style={{color: "#575A89"}}></i>
                     </button>
-                </div>
+                </h1>
+                
                 <div className="ui segment">
                     <div className="ui two wide grid" style={{width:"50%"}}>
                     <VictoryChart 

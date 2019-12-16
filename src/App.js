@@ -3,7 +3,7 @@ import './App.css';
 import 'semantic-ui-css/semantic.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import AllComponents from './components/AllComponents';
-import earth from "./pictures/loading_earth2.gif"
+import earth from "./pictures/loading_earth2.gif";
 
 export default class App extends Component {
 
@@ -33,13 +33,39 @@ export default class App extends Component {
 
     const response4 = await fetch(url4);
     const data4 = await response4.json();
+
+    /*if (isNaN(data1)){
+    const dataset1 = "./Dataset1_Global-CO2-Emissions-from-Fossil-Fuels.json";
+    const response1 = await fetch(dataset1);
+    const data1 = await response1.json();
+    
+
+    if (isNaN(data2)){
+    const dataset2 = "./Dataset2_Global-Temperature-Time-Series.json";
+    const response2 = await fetch(dataset2);
+    const data2 = await response2.json();
+    
+
+    if (isNaN(data3)){
+    const dataset3 = "./Dataset3_Glaciers-Size.json";
+    const response3 = await fetch(dataset3);
+    const data3 = await response3.json();
+    
+
+    if (isNaN(data4)){
+    const dataset4 = "./Dataset4_Sea-Level.json";
+    const response4 = await fetch(dataset4);
+    const data4 = await response4.json();
+    */
+
     this.setState({
-        emission: data1,
-        temperature: data2,
-        glaciersize: data3,
-        sealevel: data4,
-        loading: false
-    });
+      emission: data1,
+      temperature: data2,
+      glaciersize: data3,
+      sealevel: data4,
+      loading: false
+  });
+//}}}};
 
     //console.log(this.state.emission);
     //console.log(this.state.temperature);
