@@ -13,6 +13,7 @@ import picaxi2 from '../pictures/picaxi2.png';
 import pickat from '../pictures/pickat.png';
 import pickat2 from '../pictures/pickat2.png';
 import piceco from '../pictures/piceco.png';
+import piceco2 from '../pictures/piceco2.png';
 import ShareButton from '../components/ShareButton';
 
 export default class ArticleOne extends Component {
@@ -135,6 +136,12 @@ render() {
             <a href="https://ecotools.com/" target="_blank" rel="noopener noreferrer" className="ui huge image">
                 <img src={piceco} alt="huge" style={{margin:'auto', padding:'2%'}} />
             </a>
+
+            <div>
+                <img src={piceco2} className="ui huge image" alt="huge" style={{margin:'auto', padding:'2%'}}/>
+            </div>
+
+            {/* ARTICLE TEASER "INTERNAL" LINK */}
 
             <h3 style={{fontFamily:'Source Sans Pro, Helvetica', fontSize:'20px', fontWeight:'bold', padding:'4%'}}> You just stepped into the eco-friendly makeup game. Next stop: vegan skincare!</h3>
 
