@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import 'semantic-ui-css/semantic.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import ArticleOne from './components/ArticleOne'
 
 export default class App extends Component {
 
@@ -58,7 +59,7 @@ export default class App extends Component {
   
   return (
     <div className="App">
-  
+  <ArticleOne />
     </div>
     );
   }
