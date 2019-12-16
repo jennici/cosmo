@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import 'semantic-ui-css/semantic.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import picmakeup from '../pictures/picmakeup.png'
-import picjowett from '../pictures/picjowett.png'
-import picarrow from '../pictures/picarrow.svg'
-import ShareButton from '../components/ShareButton'
+import picmakeup from '../pictures/picmakeup.png';
+import picjowett from '../pictures/picjowett.png';
+import picarrow from '../pictures/picarrow.svg';
+import piccoverfx from '../pictures/piccoverfx.png';
+import ShareButton from '../components/ShareButton';
 
 export default class ArticleOne extends Component {
   state = {
@@ -30,24 +31,26 @@ render() {
             <ShareButton />
         </div>
 
-        <div className="ui text container"> 
+        <div className="ui text container" style={{fontFamily:'Source Sans Pro, Helvetica, Arial', fontSize:'20px', padding:'2%'}}> 
             <p>
             Ready to embrace a vegan lifestyle? It's never been easier. 
             Yup, more and more beauty brands are jumping on the vegan hype and ditching animal-derived ingredients all together. 
             If you're thinking about making the switch, here's where to start...
             </p>
+
+            <h2 style={{fontFamily:'Futura, Helvetica', fontSize:'30px', fontWeight:'800', letterSpacing:'2.55px', color:'#ff4c49', padding:'4%'}}> 1. Cover FX </h2>
+            
             <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-                consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-                In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede link
-                mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
-                eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam
-                lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
-                laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
-                ultricies nisi.
+            Created and developed by former chief chemist and MD at MAC cosmetics, it's no surprise that Cover FX products have become some of our most-reached for makeup. 
+            The entire range is cruelty-free and vegan (with the exception of MintTint FX & MintGlaze FX).
             </p>
+
+            <h3 style={{fontFamily:'Source Sans Pro, Helvetica', fontSize:'20px', fontWeight:'bold'}}> Hero products: </h3>
+
+            <div>
+                <img src={piccoverfx} className="ui huge image" alt="huge" style={{margin:'auto', padding:'2%'}}/>
+            </div>
+
         </div>
       </React.Fragment>
     );
