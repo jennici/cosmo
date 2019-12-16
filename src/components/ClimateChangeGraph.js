@@ -7,7 +7,7 @@ import {
     VictoryAxis,
     VictoryTooltip 
 } from 'victory';
-import info from "../pictures/information-button.png";
+import '../../src/css/cosmo.css';
 
 export default class CO2Emission extends Component {
     
@@ -51,9 +51,12 @@ export default class CO2Emission extends Component {
 
         return (
             <div>
-                <button className="info-btn " onClick={() => this.info() }> {/*use a modal pop up*/}
-                    <img src={info} style={{align: "right"}} alt="click here for more information about the graph" />
-                </button>
+                <div className="row">
+                    <h1 className="graph">Global CO2 emissions from fossil fuels</h1>
+                    <button className="circular ui icon button" style={{padding: "0.5em"}} onClick={() => this.info() }> {/*use a modal pop up*/}
+                        <i className="info icon" style={{color: "#575A89"}}></i>
+                    </button>
+                </div>
                 <div className="ui segment">
                     <div className="ui two wide grid" style={{width:"50%"}}>
                     <VictoryChart 

@@ -49,3 +49,7 @@
     border-bottom-style: solid;
     outline: none;
   }
+
+  .graph {
+    color: #575A89;
+  }

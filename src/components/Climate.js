@@ -80,12 +80,14 @@ class Climate extends Component{
             <div>
                 <img src={meltingice} style={{ float: "right" }} alt="melting ice" />
                 <img src={climate} style={{width: "100%"}} alt="climatepic" />
-                <Menu 
-                    co2={this.triggerCO2EmissionState} 
-                    temp={this.triggerGlobalTemperatureState} 
-                    glacier={this.triggerGlacierSizeState} 
-                />
-                {currentChart}
+                <div style={{marginLeft: "5em", marginRight: "5em", height: "100%"}}>
+                    <Menu 
+                        co2={this.triggerCO2EmissionState} 
+                        temp={this.triggerGlobalTemperatureState} 
+                        glacier={this.triggerGlacierSizeState} 
+                    />
+                    {currentChart}
+                </div>
                 <ArticleTeaser />
             </div>
         )
