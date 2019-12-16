@@ -9,6 +9,7 @@ import Politics from './Politics'
 import Climate from './Climate'
 
 class AllComponents extends Component{
+
     render(){
         return(
             <div>
@@ -32,7 +33,7 @@ class AllComponents extends Component{
                 </Route>
 
                 <Route path="/climate">
-                <Climate />
+                <Climate emission={this.props.emission} temperature={this.props.temperature} glaciersize={this.props.glaciersize} />
                 </Route>
 
                 </Switch>
