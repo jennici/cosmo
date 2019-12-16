@@ -11,12 +11,12 @@ import picinika2 from '../pictures/picinika2.png';
 import picaxi from '../pictures/picaxi.png';
 import picaxi2 from '../pictures/picaxi2.png';
 import pickat from '../pictures/pickat.png';
+import pickat2 from '../pictures/pickat2.png';
 import piceco from '../pictures/piceco.png';
 import ShareButton from '../components/ShareButton';
 
 export default class ArticleOne extends Component {
   state = {
-
   }
 
 render() {
@@ -117,6 +117,10 @@ render() {
             <a href="https://www.katvondbeauty.com/" target="_blank" rel="noopener noreferrer" className="ui huge image">
                 <img src={pickat} alt="huge" style={{margin:'auto', padding:'2%'}} />
             </a>
+
+            <div>
+                <img src={pickat2} className="ui huge image" alt="huge" style={{margin:'auto', padding:'2%'}}/>
+            </div>
 
             {/* ECO TOOLS */}
 
