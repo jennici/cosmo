@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import 'semantic-ui-css/semantic.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import ArticleTwo from './components/ArticleOne'
+import ArticleTwo from './components/ArticleTwo'
 
 export default class App extends Component {
 
