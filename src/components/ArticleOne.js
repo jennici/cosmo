@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import picmakeup from '../pictures/picmakeup.png'
 import picjowett from '../pictures/picjowett.png'
 import picarrow from '../pictures/picarrow.svg'
+import ShareButton from '../components/ShareButton'
 
 export default class ArticleOne extends Component {
   state = {
@@ -11,7 +12,6 @@ export default class ArticleOne extends Component {
   }
 
 render() {
-
 
     return (
       <React.Fragment>
@@ -26,20 +26,9 @@ render() {
             <img src={picmakeup} className="ui huge image" alt="huge" style={{margin:'auto', padding:'2%'}}/>
         </div>
 
-       {/* <div style={{padding:'2px'}}>
-            <button className="ui circular facebook icon button">
-                <i className="facebook icon"></i>
-            </button>
-            <button className="ui circular twitter icon button">
-                <i className="twitter icon"></i>
-            </button>
-            <button className="ui circular linkedin icon button">
-                <i className="linkedin icon"></i>
-            </button>
-            <button className="ui circular instagram icon button">
-                <i className="instagram icon"></i>
-            </button>
-           </div> */}
+        <div>
+            <ShareButton />
+        </div>
 
         <div className="ui text container"> 
             <p>
