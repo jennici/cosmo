@@ -22,7 +22,7 @@ class Navbar extends Component {
                                 <Link class="nav-link" to="/beauty">beauty</Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://www.cosmopolitan.com/">sex</a>
+                                <Link class="nav-link" to="/sex">sex</Link>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="https://www.cosmopolitan.com/">politics</a>

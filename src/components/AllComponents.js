@@ -4,6 +4,7 @@ import Style from './Style'
 import Footer from './Footer'
 import Beauty from './Beauty'
 import { Route, Switch } from "react-router-dom"
+import Sex from './Sex'
 
 class AllComponents extends Component{
     render(){
@@ -19,7 +20,19 @@ class AllComponents extends Component{
                 <Route path="/beauty">
                 <Beauty />
                 </Route>
-                
+
+                <Route path="/sex">
+                <Sex />
+                </Route>
+
+                <Route path="/beauty">
+                <Beauty />
+                </Route>
+
+                <Route path="/beauty">
+                <Beauty />
+                </Route>
+
                 </Switch>
                 <Footer />
             </div>

@@ -1,10 +1,11 @@
 import React, {Component} from 'react'
+import beauty from '../pictures/beauty.png'
 
 class Beauty extends Component{
     render(){
         return(
             <div>
-                <h1>Beauty</h1>
+                <img src={beauty} alt="beautypic" />
             </div>
         )
     }
