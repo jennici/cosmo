@@ -4,7 +4,8 @@ import {
     VictoryZoomContainer, 
     VictoryLine, 
     VictoryBrushContainer,
-    VictoryAxis 
+    VictoryAxis,
+    VictoryTooltip
 } from 'victory';
 
 export default class GlobalTemperature extends Component {
@@ -56,8 +57,8 @@ export default class GlobalTemperature extends Component {
                                     data: { stroke: "tomato" }
                                 }}
                                 data={dataLineChart}
-                                labels={({ dataLineChart }) => `Mean: ${dataLineChart.y}`}
-                                labelComponent={<VictoryTooltip  cornerRadius={({ dataLineChart }) => dataLineChart.x * 2} />}
+                                //labels={({ dataLineChart }) => `Mean: ${dataLineChart.y}`}
+                                //labelComponent={<VictoryTooltip  cornerRadius={({ dataLineChart }) => dataLineChart.x * 2} />}
                                 x="Year"
                                 y="Value"
                             /> 

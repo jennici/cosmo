@@ -74,8 +74,8 @@ export default class CO2Emission extends Component {
                                     data: { stroke: "tomato" }
                                 }}
                                 data={dataLineChart}
-                                labels={({ dataLineChart }) => `Gas Fuel: ${dataLineChart.y}`}
-                                labelComponent={<VictoryTooltip  cornerRadius={({ dataLineChart }) => dataLineChart.x * 2} />}
+                                //labels={({ dataLineChart }) => `Gas Fuel: ${dataLineChart.y}`}
+                                //labelComponent={<VictoryTooltip  cornerRadius={({ dataLineChart }) => dataLineChart.x * 2} />}
                                 x="Year"
                                 y="Value"
                             /> 
