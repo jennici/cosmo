@@ -6,8 +6,8 @@ import Menu from './components/Menu';
 import CO2Emission from './components/ClimateChangeGraph';
 import GlobalTemperature from './components/GlobalTemperature';
 import GlacierSize from './components/GlacierSize';
-import Navigation from "./components/Navigation"
-import Card from "./components/Card"
+import AllComponents from './components/AllComponents';
+
 
 export default class App extends Component {
 
@@ -125,8 +125,7 @@ triggerGlacierSizeState = () => {
   
   return (
     <div className="App">
-        <Navigation />
-        <Card />
+        <AllComponents />
         <Menu 
             co2={this.triggerCO2EmissionState} 
             temp={this.triggerGlobalTemperatureState} 

@@ -1,0 +1,43 @@
+.navbar{
+  border-bottom: 2px;
+  border-bottom-color: #ff4c49;
+}
+.nav-link{
+    font-family: "Futura", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 15px;
+  
+  }
+  
+  .nav-item{
+    width: 50%;
+  }
+  
+  .navbar-nav{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+  }
+  .sr-only{
+    color: #ff4c49;
+  }
+
+  .card{
+    background: #fff5f2;
+    font-family: "Futura", sans-serif;
+    color: #ff4c49;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 70px;
+    border: none;
+  }
+
+  h1{
+    padding: 50px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 4px;
+  }
