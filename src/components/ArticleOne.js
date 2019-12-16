@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import 'semantic-ui-css/semantic.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import pic1 from '../pictures/pic1.png'
 
 export default class ArticleOne extends Component {
   state = {
@@ -21,7 +22,7 @@ render() {
         </div>
 
         <div>
-            <img src="/images/wireframe/image.png" class="ui huge image" />  
+            <img src={pic1} class="ui huge image" />  
         </div>
 
         <button class="ui circular facebook icon button">
