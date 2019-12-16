@@ -13,10 +13,8 @@ export default class CommentSection extends Component {
         }
     
         return (
-        <div>
-            
+        <div>  
         </div>
-        ) //insert here: expression
-
+        )
     }
 }

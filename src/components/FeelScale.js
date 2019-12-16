@@ -3,23 +3,16 @@ import semantic from 'semantic-ui'; // whats wrong here?
 
 export default class FeelScale extends Component {
     state = {
-        loading: true,
     }
+  
+  render() {
+  
+      return (
+          <React.Fragment>
 
-    render() {
-
-        if (this.state.loading) {
-            return <div>loading...</div>;
-        }
-    
-        return (
-        <div>
-            
-        </div>
-        ) //insert here: expression
-
-    }
-
+          </React.Fragment>
+      ); 
+   }
 }
 
 /* HOW SOOMPI DOES IT:

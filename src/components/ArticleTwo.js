@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import 'semantic-ui-css/semantic.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import picmakeup from '../pictures/picmakeup.png'; // ändern in richtiges bild
 
 
 export default class ArticleTwo extends Component {
