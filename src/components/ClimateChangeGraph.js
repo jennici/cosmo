@@ -6,6 +6,7 @@ import {
     VictoryBrushContainer,
     VictoryAxis 
 } from 'victory';
+import info from "../pictures/information-button.png";
 
 export default class CO2Emission extends Component {
     
@@ -33,10 +34,25 @@ export default class CO2Emission extends Component {
                 Value: parseInt(item["Gas Fuel"])
             };
         });
+
+        info = () => {
+            $('.ui.longer.modal').modal('show');
+            return (
+                <div class="ui modal">
+                    <div class="header">Header</div>
+                    <div class="scrolling content">
+                        <p>Very long content goes here</p>
+                    </div>
+                </div>
+            )
+        }
   
 
         return (
             <div>
+                <button className="info-btn " onClick={() => this.info() }> {/*use a modal pop up*/}
+                    <img src={info} style={{align: "right"}} alt="click here for more information about the graph" />
+                </button>
                 <div className="ui segment">
                     <div className="ui two wide grid" style={{width:"50%"}}>
                     <VictoryChart 
@@ -57,6 +73,8 @@ export default class CO2Emission extends Component {
                                     data: { stroke: "tomato" }
                                 }}
                                 data={dataLineChart}
+                                labels={({ dataLineChart }) => `Gas Fuel: ${dataLineChart.y}`}
+                                labelComponent={<VictoryTooltip  cornerRadius={({ dataLineChart }) => dataLineChart.x * 2} />}
                                 x="Year"
                                 y="Value"
                             /> 

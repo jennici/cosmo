@@ -17,8 +17,7 @@ export default class App extends Component {
     loading: true,
     isCO2: true,
     isTemp: false,
-    isGlacier: false,
-    active: true
+    isGlacier: false
   }
 
     async componentDidMount() {
@@ -58,8 +57,7 @@ export default class App extends Component {
       ...this.state,
       isCO2: true,
       isGlacier: false,
-      isTemp: false,
-      active: true
+      isTemp: false
   });
 }
 
@@ -68,8 +66,7 @@ triggerGlobalTemperatureState = () => {
     ...this.state,
     isCO2: false,
     isTemp: true,
-    isGlacier: false,
-    active: true
+    isGlacier: false
 });
 }
 
@@ -78,8 +75,7 @@ triggerGlacierSizeState = () => {
     ...this.state,
     isCO2: false,
     isGlacier: true,
-    isTemp: false,
-    active: true
+    isTemp: false
 });
 }
 

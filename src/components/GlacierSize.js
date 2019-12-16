@@ -56,6 +56,8 @@ export default class GlacierSize extends Component {
                                     data: { stroke: "tomato" }
                                 }}
                                 data={dataLineChart}
+                                labels={({ dataLineChart }) => `Mean: ${dataLineChart.y}`}
+                                labelComponent={<VictoryTooltip  cornerRadius={({ dataLineChart }) => dataLineChart.x * 2} />}
                                 x="Year"
                                 y="Value"
                             /> 
