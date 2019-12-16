@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import semantic from 'semantic-ui'; // whats wrong here?
+import 'semantic-ui-css/semantic.css';
+// import 'bootstrap/dist/css/bootstrap.css';
 
 export default class ArticleOne extends Component {
   state = {
