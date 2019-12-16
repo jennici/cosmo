@@ -34,3 +34,10 @@
     padding: 70px;
     border: none;
   }
+
+  h1{
+    padding: 50px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 4px;
+  }
