@@ -23,28 +23,19 @@ export default class App extends Component {
 
     const response1 = await fetch(url1);
     const data1 = await response1.json();
-    this.setState({ 
-        emission: data1, 
-        loading: false 
-    });
 
     const response2 = await fetch(url2);
     const data2 = await response2.json();
-    this.setState({
-        temperature: data2,
-        loading: false
-    });
 
     const response3 = await fetch(url3);
     const data3 = await response3.json();
-    this.setState({
-        glaciersize: data3,
-        loading: false
-    });
 
     const response4 = await fetch(url4);
     const data4 = await response4.json();
     this.setState({
+        emission: data1,
+        temperature: data2,
+        glaciersize: data3,
         sealevel: data4,
         loading: false
     });
