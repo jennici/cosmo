@@ -15,17 +15,23 @@ render() {
     return (
       <React.Fragment>
 
-        <div>
-          <h1 className="ui header">13 vegan makeup brands you need to know about</h1> 
+       {/* <div>
+          <h1 className="ui header" style={{backgroundColor:'#fff5f2', padding:'10%', fontSize:'42.5px', fontWeight:'800', fontFamily:'Helvetica, Arial'}}>13 vegan makeup brands you need to know about</h1> 
         </div>
 
         <div>
-            <img src={picjowett} class="ui avatar image" alt="author avatar"/>
+            <img src={picjowett} className="ui avatar image" alt="author avatar"/>
+            <span> by VICTORIA JOWETT</span>
+       </div> */}
+
+        <div className="ui header" style={{backgroundColor:'#fff5f2', padding:'10%', fontSize:'42.5px', fontWeight:'800', fontFamily:'Helvetica, Arial'}}>
+          <h1>13 vegan makeup brands you need to know about</h1> 
+          <img src={picjowett} className="ui avatar image" alt="author avatar"/>
             <span> by VICTORIA JOWETT</span>
         </div>
 
         <div>
-            <img src={picmakeup} className="ui huge image" alt="huge" style={{margin: 'auto'}}/>
+            <img src={picmakeup} className="ui huge image" alt="huge" style={{margin: 'auto', padding: '3%'}}/>
         </div>
 
         <button className="ui circular facebook icon button">
