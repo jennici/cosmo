@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import 'semantic-ui-css/semantic.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import ArticleOne from './components/ArticleOne'
+import ArticleTwo from './components/ArticleOne'
 
 export default class App extends Component {
 
@@ -47,10 +47,9 @@ export default class App extends Component {
 
   render(){
 
-  
   return (
     <div className="App">
-  <ArticleOne />
+        <ArticleTwo />
     </div>
     );
   }

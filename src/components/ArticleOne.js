@@ -143,9 +143,9 @@ render() {
 
             {/* ARTICLE TEASER "INTERNAL" LINK */}
 
-            <h3 style={{fontFamily:'Source Sans Pro, Helvetica', fontSize:'20px', fontWeight:'bold', padding:'4%'}}> You just stepped into the eco-friendly makeup game. Next stop: vegan skincare!</h3>
+            <h3 style={{fontFamily:'Source Sans Pro, Helvetica', fontSize:'20px', fontWeight:'normal', padding:'2%'}}> As you just stepped into the eco-friendly makeup game, the next stop is right around the corner: vegan skincare!</h3>
 
-            <h3 style={{fontFamily:'Source Sans Pro, Helvetica', fontSize:'20px', fontWeight:'bold'}}> <a href="https://www.cosmopolitan.com/uk/beauty-hair/a46238/vegan-skincare/" target="_blank" rel="noopener noreferrer" style={{color:'#ff4c49'}}> Here are 9 vegan skincare brands you need to try! </a> </h3>
+            <h3 style={{fontFamily:'Source Sans Pro, Helvetica', fontSize:'20px', fontWeight:'bold', padding:'3%'}}> <a href="https://www.cosmopolitan.com/uk/beauty-hair/a46238/vegan-skincare/" target="_blank" rel="noopener noreferrer" style={{color:'#ff4c49'}}> Here are 9 vegan skincare brands you need to try! </a> </h3>
 
         </div>
       </React.Fragment>
