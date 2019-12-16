@@ -4,7 +4,7 @@ import React, { Component } from "react";
 
 
 
-export default class ArticleOne extends Component {
+export default class ArticleTwo extends Component {
     state = {
   
     }
