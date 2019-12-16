@@ -48,6 +48,7 @@ render() {
       </React.Fragment>
     );
   }
+}
 
 
         /* for an image can take up the width of its container, use: class="ui fluid image" */
