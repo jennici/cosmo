@@ -5,6 +5,7 @@ import picmakeup from '../pictures/picmakeup.png';
 import picjowett from '../pictures/picjowett.png';
 import picarrow from '../pictures/picarrow.svg';
 import piccoverfx from '../pictures/piccoverfx.png';
+import piccoverfx2 from '../pictures/piccoverfx2.png';
 import picinika from '../pictures/picinika.png';
 import picaxi from '../pictures/picaxi.png';
 import pickat from '../pictures/pickat.png';
@@ -56,6 +57,10 @@ render() {
             <a href="https://www.coverfx.com/" target="_blank" rel="noopener noreferrer" className="ui huge image">
                 <img src={piccoverfx} alt="huge" style={{margin:'auto', padding:'2%'}} />
             </a>
+
+            <div>
+                <img src={piccoverfx2} className="ui huge image" alt="huge" style={{margin:'auto', padding:'2%'}}/>
+            </div>
 
             {/* INIKA */}
 
