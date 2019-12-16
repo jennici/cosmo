@@ -5,6 +5,8 @@ import picmakeup from '../pictures/picmakeup.png';
 import picjowett from '../pictures/picjowett.png';
 import picarrow from '../pictures/picarrow.svg';
 import piccoverfx from '../pictures/piccoverfx.png';
+import picinika from '../pictures/picinika.png';
+import picaxi from '../pictures/picaxi.png';
 import ShareButton from '../components/ShareButton';
 
 export default class ArticleOne extends Component {
@@ -37,7 +39,7 @@ render() {
             Yup, more and more beauty brands are jumping on the vegan hype and ditching animal-derived ingredients all together. 
             If you're thinking about making the switch, here's where to start...
             </p>
-
+            {/* COVER FX */}
             <h2 style={{fontFamily:'Futura, Helvetica', fontSize:'30px', fontWeight:'800', letterSpacing:'2.55px', color:'#ff4c49', padding:'4%'}}> 1. Cover FX </h2>
             
             <p>
@@ -51,12 +53,38 @@ render() {
                 <img src={piccoverfx} className="ui huge image" alt="huge" style={{margin:'auto', padding:'2%'}}/>
             </div>
 
+            {/* INIKA */}
+
+            <h2 style={{fontFamily:'Futura, Helvetica', fontSize:'30px', fontWeight:'800', letterSpacing:'2.55px', color:'#ff4c49', padding:'4%'}}> 2. Inika </h2>
+            
+            <p>
+            Arguably one of the most popular vegan makeup brands, Inika has tonnes of choice from liquid foundations to highlighting creams and super-pigmented lipsticks.
+            The brand are PETA certified and cruelty-free; they don't test any of their products on animals and all products are vegan.
+            </p>
+
+            <h3 style={{fontFamily:'Source Sans Pro, Helvetica', fontSize:'20px', fontWeight:'bold'}}> Hero products: </h3>
+
+            <div>
+                <img src={picinika} className="ui huge image" alt="huge" style={{margin:'auto', padding:'2%'}}/>
+            </div>
+
+            {/* AXIOLOGY */}
+
+            <h2 style={{fontFamily:'Futura, Helvetica', fontSize:'30px', fontWeight:'800', letterSpacing:'2.55px', color:'#ff4c49', padding:'4%'}}> 3. Axiology </h2>
+            
+            <p>
+            Axiology is a vegan lipstick brand that's dedicated to producing creamy, 
+            pigment-packed lipsticks in a spectrum of shades from jet-black to poppy red.
+            </p>
+
+            <h3 style={{fontFamily:'Source Sans Pro, Helvetica', fontSize:'20px', fontWeight:'bold'}}> Hero products: </h3>
+
+            <div>
+                <img src={picaxi} className="ui huge image" alt="huge" style={{margin:'auto', padding:'2%'}}/>
+            </div>
+
         </div>
       </React.Fragment>
     );
   }
 }
-
-
-        /* for an image can take up the width of its container, use: className="ui fluid image" */
-             // Text container with header 
