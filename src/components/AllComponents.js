@@ -5,6 +5,7 @@ import Footer from './Footer'
 import Beauty from './Beauty'
 import { Route, Switch } from "react-router-dom"
 import Sex from './Sex'
+import Politics from './Politics'
 
 class AllComponents extends Component{
     render(){
@@ -25,8 +26,8 @@ class AllComponents extends Component{
                 <Sex />
                 </Route>
 
-                <Route path="/beauty">
-                <Beauty />
+                <Route path="/politics">
+                <Politics />
                 </Route>
 
                 <Route path="/beauty">
