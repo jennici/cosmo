@@ -9,6 +9,7 @@ import picbio from '../pictures/picbio.png';
 import picethical from '../pictures/picethical.png';
 import picfair from '../pictures/picfair.png';
 import picvegan from '../pictures/picvegan.png';
+import picorga from '../pictures/picorga.png';
 
 export default class ArticleTwo extends Component {
     state = {
@@ -90,7 +91,7 @@ export default class ArticleTwo extends Component {
             </p>
 
             <a href="https://www.outdoorvoices.com/products/techsweat-7-8-zoom-legging?variant=21464490180686" target="_blank" rel="noopener noreferrer" className="ui huge image">
-                <img src={picfair} alt="huge" style={{margin:'auto', padding:'2%'}} />
+                <img src={picfair} alt="huge" style={{margin:'auto', padding:'3%'}} />
             </a>
 
             {/* VEGAN */}
@@ -102,8 +103,39 @@ export default class ArticleTwo extends Component {
             These gorge python slingbacks, for instance? Not actually from an actual python.
             </p>
 
-            <a href="https://www.outdoorvoices.com/products/techsweat-7-8-zoom-legging?variant=21464490180686" target="_blank" rel="noopener noreferrer" className="ui huge image">
+            <a href="https://amourvert.com/products/angela-roihamilton-mini-chain-crossbody?variant=16678353469511&source=pepperjam&publisherId=21181&clickId=2939892115" target="_blank" rel="noopener noreferrer" className="ui huge image">
                 <img src={picvegan} alt="huge" style={{margin:'auto', padding:'2%'}} />
+            </a>
+
+            {/* RECYCLED */}
+
+            <h2 style={{fontFamily:'Futura, Helvetica', fontSize:'30px', fontWeight:'800', letterSpacing:'2.55px', color:'#ff4c49', backgroundColor:'#fff5f2', padding:'9%'}}> “Recycled” </h2>
+
+            <p style={{padding:'2%'}}>
+            One of the three Rs you learned way back in the day. 
+            It means an item was created from materials (plastic, rubber, metal, fabrics, etc.) that have been reused.
+            </p>
+
+            {/* SUSTAINABILITY */}
+
+            <h2 style={{fontFamily:'Futura, Helvetica', fontSize:'30px', fontWeight:'800', letterSpacing:'2.55px', color:'#ff4c49', backgroundColor:'#fff5f2', padding:'9%'}}> “Sustainability” </h2>
+
+            <p style={{padding:'2%'}}>
+            Sort of like a combination of “eco-friendly” and “ethical.” Translation: 
+            The company that made your gorge floral-print skirt was nice to the environment and looked out for its workers.
+            </p>
+
+             {/* ORGANIC */}
+
+             <h2 style={{fontFamily:'Futura, Helvetica', fontSize:'30px', fontWeight:'800', letterSpacing:'2.55px', color:'#ff4c49', backgroundColor:'#fff5f2', padding:'9%'}}> “Organic” </h2>
+
+            <p style={{padding:'2%'}}>
+            Sort of like a combination of “eco-friendly” and “ethical.” Translation: 
+            The company that made your gorge floral-print skirt was nice to the environment and looked out for its workers.
+            </p>
+
+            <a href="https://amourvert.com/products/angela-roihamilton-mini-chain-crossbody?variant=16678353469511&source=pepperjam&publisherId=21181&clickId=2939892115" target="_blank" rel="noopener noreferrer" className="ui huge image">
+                <img src={picorga} alt="huge" style={{margin:'auto', padding:'2%'}} />
             </a>
 
         </div>
