@@ -24,10 +24,11 @@ render() {
             <span> by VICTORIA JOWETT</span>
        </div> */}
 
-        <div className="ui header" style={{backgroundColor:'#fff5f2', padding:'10%', fontSize:'42.5px', fontWeight:'800', fontFamily:'Helvetica, Arial'}}>
-          <h1>13 vegan makeup brands you need to know about</h1> 
-          <img src={picjowett} className="ui avatar image" alt="author avatar"/>
-            <span> by VICTORIA JOWETT</span>
+        <div className="ui header" style={{backgroundColor:'#fff5f2', padding:'10%'}}>
+          <h1 style={{fontSize:'42.5px', fontWeight:'800', fontFamily:'Futura, Helvetica, Arial', letterSpacing:'2.55px'}}>13 vegan makeup brands you need to know about</h1> 
+          <br />
+          <img src={picjowett} className="ui avatar image" alt="author avatar" />
+            <span style={{fontSize:'16.75px', fontWeight:'800', letterSpacing:'2.55px', color:'#ff4c49', fontFamily:'Helvetica, Arial'}}> by VICTORIA JOWETT</span>
         </div>
 
         <div>
