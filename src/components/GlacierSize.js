@@ -37,6 +37,12 @@ export default class GlacierSize extends Component {
 
         return (
             <div>
+                <div className="row">
+                    <h1 className="graph">Glacier size</h1>
+                    <button className="circular ui icon button" style={{padding: "0.5em"}} onClick={() => this.info() }> {/*use a modal pop up*/}
+                        <i className="info icon" style={{color: "#575A89"}}></i>
+                    </button>
+                </div>
                 <div className="ui segment">
                     <div className="ui two wide grid" style={{width:"50%"}}>
                     <VictoryChart 
