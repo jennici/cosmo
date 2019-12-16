@@ -20,7 +20,7 @@ render() {
 
     return (
       <React.Fragment>
-        <div className="ui header" style={{backgroundColor:'#fff5f2', padding:'10%'}}>
+        <div className="ui header" style={{backgroundColor:'#fff5f2', padding:'9%'}}>
           <h1 style={{fontSize:'42.5px', fontWeight:'800', fontFamily:'Futura, Helvetica, Arial', letterSpacing:'2.55px'}}>5 vegan makeup brands you need to know about</h1> 
           <br />
           <img src={picjowett} className="ui avatar image" alt="author avatar" />
@@ -28,7 +28,7 @@ render() {
         </div>
 
         <div>
-            <img src={picmakeup} className="ui huge image" alt="huge" style={{margin:'auto', padding:'2%'}}/>
+            <img src={picmakeup} className="ui massive image" alt="huge" style={{margin:'auto', padding:'2%'}}/>
         </div>
 
         <div>
@@ -53,9 +53,9 @@ render() {
 
             <h3 style={{fontFamily:'Source Sans Pro, Helvetica', fontSize:'20px', fontWeight:'bold'}}> Hero products: </h3>
 
-            <div>
-                <img src={piccoverfx} className="ui huge image" alt="huge" style={{margin:'auto', padding:'2%'}}/>
-            </div>
+            <a href="https://www.coverfx.com/" target="_blank" rel="noopener noreferrer" className="ui huge image">
+                <img src={piccoverfx} alt="huge" style={{margin:'auto', padding:'2%'}} />
+            </a>
 
             {/* INIKA */}
 
@@ -68,9 +68,9 @@ render() {
 
             <h3 style={{fontFamily:'Source Sans Pro, Helvetica', fontSize:'20px', fontWeight:'bold'}}> Hero products: </h3>
 
-            <div>
-                <img src={picinika} className="ui huge image" alt="huge" style={{margin:'auto', padding:'2%'}}/>
-            </div>
+            <a href="https://www.inikaorganic.com/" target="_blank" rel="noopener noreferrer" className="ui huge image">
+                <img src={picinika} alt="huge" style={{margin:'auto', padding:'2%'}} />
+            </a>
 
             {/* AXIOLOGY */}
 
@@ -83,9 +83,9 @@ render() {
 
             <h3 style={{fontFamily:'Source Sans Pro, Helvetica', fontSize:'20px', fontWeight:'bold'}}> Hero products: </h3>
 
-            <div>
-                <img src={picaxi} className="ui huge image" alt="huge" style={{margin:'auto', padding:'2%'}}/>
-            </div>
+            <a href="https://axiologybeauty.com/" target="_blank" rel="noopener noreferrer" className="ui huge image">
+                <img src={picaxi} alt="huge" style={{margin:'auto', padding:'2%'}} />
+            </a>
 
             {/* KAT VON D BEAUTY */}
 
@@ -99,9 +99,9 @@ render() {
 
             <h3 style={{fontFamily:'Source Sans Pro, Helvetica', fontSize:'20px', fontWeight:'bold'}}> Hero products: </h3>
 
-            <div>
-                <img src={pickat} className="ui huge image" alt="huge" style={{margin:'auto', padding:'2%'}}/>
-            </div>
+            <a href="https://www.katvondbeauty.com/" target="_blank" rel="noopener noreferrer" className="ui huge image">
+                <img src={pickat} alt="huge" style={{margin:'auto', padding:'2%'}} />
+            </a>
 
             {/* ECO TOOLS */}
 
@@ -113,9 +113,9 @@ render() {
 
             <h3 style={{fontFamily:'Source Sans Pro, Helvetica', fontSize:'20px', fontWeight:'bold'}}> Hero products: </h3>
 
-            <div>
-                <img src={piceco} className="ui huge image" alt="huge" style={{margin:'auto', padding:'2%'}}/>
-            </div>
+            <a href="https://ecotools.com/" target="_blank" rel="noopener noreferrer" className="ui huge image">
+                <img src={piceco} alt="huge" style={{margin:'auto', padding:'2%'}} />
+            </a>
 
         </div>
       </React.Fragment>
