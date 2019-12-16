@@ -34,7 +34,7 @@ render() {
             <i class="linkedin icon"></i>
         </button>
         <button class="ui circular instagram icon button">
-            <i class="icon"></i>
+            <i class="instagram icon"></i>
         </button>
 
         <div class="ui text container"> 
