@@ -12,7 +12,11 @@ export default class FeelScale extends Component {
             return <div>loading...</div>;
         }
     
-        return () //insert here
+        return (
+        <div>
+            
+        </div>
+        ) //insert here: expression
 
     }
 
