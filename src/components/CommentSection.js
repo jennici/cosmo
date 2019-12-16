@@ -6,6 +6,13 @@ export default class CommentSection extends Component {
         loading: true,
     }
 
+    render() {
 
+        if (this.state.loading) {
+            return <div>loading...</div>;
+        }
+    
+        return () //insert here
 
     }
+}
