@@ -14,12 +14,26 @@ render() {
 
     return (
       <React.Fragment>
+
+        <div>
+            <h2 class="ui header">Headline</h2>
+        </div>
+
         <div>
             <img src="/images/wireframe/image.png" class="ui huge image" />  
         </div>
 
-        <div class="ui text container">
-            <h2 class="ui header">Header</h2>
+        <button class="ui circular facebook icon button">
+            <i class="facebook icon"></i>
+        </button>
+        <button class="ui circular twitter icon button">
+            <i class="twitter icon"></i>
+        </button>
+        <button class="ui circular linkedin icon button">
+            <i class="linkedin icon"></i>
+        </button>
+
+        <div class="ui text container"> 
             <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                 Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur

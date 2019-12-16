@@ -1,5 +1,22 @@
 import React, { Component } from "react";
-import ReactDOM from 'react-dom';
+import semantic from 'semantic-ui'; // whats wrong here?
+
+export default class FeelScale extends Component {
+    state = {
+        loading: true,
+    }
+
+    render() {
+
+        if (this.state.loading) {
+            return <div>loading...</div>;
+        }
+    
+        return () //insert here
+
+    }
+
+}
 
 /* HOW SOOMPI DOES IT:
 
