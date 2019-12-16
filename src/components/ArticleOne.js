@@ -7,6 +7,7 @@ import picarrow from '../pictures/picarrow.svg';
 import piccoverfx from '../pictures/piccoverfx.png';
 import picinika from '../pictures/picinika.png';
 import picaxi from '../pictures/picaxi.png';
+import pickat from '../pictures/pickat.png';
 import ShareButton from '../components/ShareButton';
 
 export default class ArticleOne extends Component {
@@ -39,7 +40,9 @@ render() {
             Yup, more and more beauty brands are jumping on the vegan hype and ditching animal-derived ingredients all together. 
             If you're thinking about making the switch, here's where to start...
             </p>
+            
             {/* COVER FX */}
+
             <h2 style={{fontFamily:'Futura, Helvetica', fontSize:'30px', fontWeight:'800', letterSpacing:'2.55px', color:'#ff4c49', padding:'4%'}}> 1. Cover FX </h2>
             
             <p>
@@ -81,6 +84,22 @@ render() {
 
             <div>
                 <img src={picaxi} className="ui huge image" alt="huge" style={{margin:'auto', padding:'2%'}}/>
+            </div>
+
+            {/* KAT VON D BEAUTY */}
+
+            <h2 style={{fontFamily:'Futura, Helvetica', fontSize:'30px', fontWeight:'800', letterSpacing:'2.55px', color:'#ff4c49', padding:'4%'}}> 4. Kat Von D Beauty </h2>
+            
+            <p>
+            Last year, Kat Von D announced plans to reformulate her entire cosmetics line to ensure every product was vegan. 
+            While the process takes a while, she already has a section of her website titled #VeganAlert which is full of 
+            products that do not contain any animal products or by-products, and have not been tested on animals.
+            </p>
+
+            <h3 style={{fontFamily:'Source Sans Pro, Helvetica', fontSize:'20px', fontWeight:'bold'}}> Hero products: </h3>
+
+            <div>
+                <img src={pickat} className="ui huge image" alt="huge" style={{margin:'auto', padding:'2%'}}/>
             </div>
 
         </div>
