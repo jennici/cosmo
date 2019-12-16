@@ -48,16 +48,18 @@ export default class ArticleTeaser extends Component {
                     {types.map(type => {
                     return (
                         <div style={{ display: "flex", flexDirection: "column", margin: "50px" }}>
-                            <h1>{type}</h1>
+                            <h1 style={{ color: "#575A89" }}>{type}</h1>
                                 {this.state.data.filter(item => item.type === type).map(item => {
                                 return (
-                                    <a style={{ display: "flex" }} href={item.url} className="App">
+                                    <div class="ui card">
+                                        <a style={{ display: "flex" }} href={item.url} className="App">
                                         <img style={{ maxHeight: "200px", maxWidth: "200px" }} src={item.image} alt={item.alt} />
                                         <div>
                                             <p>{item.title}</p>
                                             <p>-->{item.author}</p>
                                         </div>
-                                    </a>
+                                        </a>
+                                    </div>
                                     )
                                 })}
                             </div>)}
