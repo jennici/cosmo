@@ -5,7 +5,7 @@ import ShareButton from '../components/ShareButton';
 import picarrow from '../pictures/picarrow.svg';
 import picavatar2 from '../pictures/picavatar2.png';
 import picskincare2 from '../pictures/picskincare2.png';
-
+import picbio from '../pictures/picbio.png';
 
 export default class ArticleTwo extends Component {
     state = {
@@ -50,11 +50,13 @@ export default class ArticleTwo extends Component {
             (as in, not landfill filler) after being trashed.
             </p>
 
+            <div>
+                <img src={picbio} className="ui huge image" alt="huge" style={{margin:'auto', padding:'2%'}}/>
+            </div>
+
         </div>
 
           </React.Fragment>
       ); 
    }
 }
-
-// hier noch nicht begonnen weil wir ja noch die ganzen Style Geschichten in die CSS Datei rüberziehen müssen.
