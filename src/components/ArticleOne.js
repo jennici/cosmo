@@ -25,7 +25,7 @@ render() {
         </div>
 
         <div>
-            <img src={picmakeup} className="ui huge image" alt="huge" style={{alignContent:'center'}}/>
+            <img src={picmakeup} className="ui huge image" alt="huge" style={{margin: 'auto'}}/>
         </div>
 
         <button className="ui circular facebook icon button">
