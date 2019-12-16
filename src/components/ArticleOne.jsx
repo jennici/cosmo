@@ -32,6 +32,9 @@ render() {
         <button class="ui circular linkedin icon button">
             <i class="linkedin icon"></i>
         </button>
+        <button class="ui circular instagram icon button">
+            <i class="icon"></i>
+        </button>
 
         <div class="ui text container"> 
             <p>
