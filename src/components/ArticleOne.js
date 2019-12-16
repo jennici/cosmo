@@ -7,7 +7,9 @@ import picarrow from '../pictures/picarrow.svg';
 import piccoverfx from '../pictures/piccoverfx.png';
 import piccoverfx2 from '../pictures/piccoverfx2.png';
 import picinika from '../pictures/picinika.png';
+import picinika2 from '../pictures/picinika2.png';
 import picaxi from '../pictures/picaxi.png';
+import picaxi2 from '../pictures/picaxi2.png';
 import pickat from '../pictures/pickat.png';
 import piceco from '../pictures/piceco.png';
 import ShareButton from '../components/ShareButton';
@@ -77,6 +79,10 @@ render() {
                 <img src={picinika} alt="huge" style={{margin:'auto', padding:'2%'}} />
             </a>
 
+            <div>
+                <img src={picinika2} className="ui huge image" alt="huge" style={{margin:'auto', padding:'2%'}}/>
+            </div>
+
             {/* AXIOLOGY */}
 
             <h2 style={{fontFamily:'Futura, Helvetica', fontSize:'30px', fontWeight:'800', letterSpacing:'2.55px', color:'#ff4c49', padding:'4%'}}> 3. Axiology </h2>
@@ -91,6 +97,10 @@ render() {
             <a href="https://axiologybeauty.com/" target="_blank" rel="noopener noreferrer" className="ui huge image">
                 <img src={picaxi} alt="huge" style={{margin:'auto', padding:'2%'}} />
             </a>
+
+            <div>
+                <img src={picaxi2} className="ui huge image" alt="huge" style={{margin:'auto', padding:'2%'}}/>
+            </div>
 
             {/* KAT VON D BEAUTY */}
 
