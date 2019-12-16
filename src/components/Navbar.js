@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import logo from '../../src/pictures/logo.png'
-import meltingice from '../../src/pictures/meltingice.png'
 import '../../src/css/cosmo.css'
 import { Link } from 'react-router-dom'
 
@@ -33,7 +32,6 @@ class Navbar extends Component {
                         </ul>
                     </div>
                 </nav>
-                <img src={meltingice} style={{ float: "right" }} alt="melting ice" />
             </div>
         )
     }

@@ -5,7 +5,7 @@ class Beauty extends Component{
     render(){
         return(
             <div>
-                <img src={beauty} alt="beautypic" />
+                <img src={beauty} style={{width: "100%"}} alt="beautypic" />
             </div>
         )
     }

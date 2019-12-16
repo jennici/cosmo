@@ -5,7 +5,7 @@ class Sex extends Component{
     render(){
         return(
             <div>
-                <img src={sex} alt="sexpic" />
+                <img src={sex} style={{width: "100%"}} alt="sexpic" />
             </div>
         )
     }

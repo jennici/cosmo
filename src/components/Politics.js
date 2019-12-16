@@ -5,7 +5,7 @@ class Politics extends Component{
     render(){
         return(
             <div>
-                <img src={politics} alt="politicspic" />
+                <img src={politics} style={{width: "100%"}} alt="politicspic" />
             </div>
         )
     }
