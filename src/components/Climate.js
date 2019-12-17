@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import climate from '../pictures/climate.png';
 import meltingice from '../pictures/meltingice.png';
-import calm from "../pictures/keep-calm-and-be-sustainable.jpg"
+import calm from "../pictures/Keep-calm-and-be-sustainable.jpg"
 import ArticleTeaser from "../components/ArticleTeaser";
 import Menu from './Menu';
 import CO2Emission from './ClimateChangeGraph';

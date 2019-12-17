@@ -37,7 +37,7 @@ class AllComponents extends Component{
                 </Route>
 
                 </Switch>
-                <Footer />
+                <Footer path="/climate"/>
             </div>
         )
     }
