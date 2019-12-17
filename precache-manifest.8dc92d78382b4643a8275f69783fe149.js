@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c4b6189005aaac11762f76515d1dc770",
+    "revision": "9e726b7bbd8bfaf4daff585d0043e121",
     "url": "/cosmo/index.html"
   },
   {
-    "revision": "fbeb286dd864812ed316",
+    "revision": "ed5c58c3692c273462dd",
     "url": "/cosmo/static/css/2.fcaf600d.chunk.css"
   },
   {
-    "revision": "310356ed9b995a7763ac",
-    "url": "/cosmo/static/css/main.ca713243.chunk.css"
+    "revision": "1bc3b40c8988585bef45",
+    "url": "/cosmo/static/css/main.f46be124.chunk.css"
   },
   {
-    "revision": "fbeb286dd864812ed316",
-    "url": "/cosmo/static/js/2.02551395.chunk.js"
+    "revision": "ed5c58c3692c273462dd",
+    "url": "/cosmo/static/js/2.e4ece9d2.chunk.js"
   },
   {
-    "revision": "310356ed9b995a7763ac",
-    "url": "/cosmo/static/js/main.730e63e3.chunk.js"
+    "revision": "1bc3b40c8988585bef45",
+    "url": "/cosmo/static/js/main.9298baa2.chunk.js"
   },
   {
     "revision": "1eb2568d730df45afcd5",
     "url": "/cosmo/static/js/runtime-main.e28158b7.js"
+  },
+  {
+    "revision": "cc49fb1605235faf92ddb92d4ac81708",
+    "url": "/cosmo/static/media/Keep-calm-and-be-sustainable.cc49fb16.jpg"
   },
   {
     "revision": "a65444be43a264b328b210640045105a",
@@ -74,10 +78,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "faff92145777a3cbaf8e7367b4807987",
     "url": "/cosmo/static/media/icons.faff9214.woff"
-  },
-  {
-    "revision": "cc49fb1605235faf92ddb92d4ac81708",
-    "url": "/cosmo/static/media/keep-calm-and-be-sustainable.cc49fb16.jpg"
   },
   {
     "revision": "23d0811fed31365b6bef8e4fd55bd982",
