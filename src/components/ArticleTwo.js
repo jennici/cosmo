@@ -134,9 +134,15 @@ export default class ArticleTwo extends Component {
             The company that made your gorge floral-print skirt was nice to the environment and looked out for its workers.
             </p>
 
-            <a href="https://amourvert.com/products/angela-roihamilton-mini-chain-crossbody?variant=16678353469511&source=pepperjam&publisherId=21181&clickId=2939892115" target="_blank" rel="noopener noreferrer" className="ui huge image">
+            <a href="https://www.veja-store.com/fr/femme/2957-v-10-white-emeraude-black.html" target="_blank" rel="noopener noreferrer" className="ui huge image">
                 <img src={picorga} alt="huge" style={{margin:'auto', padding:'2%'}} />
             </a>
+
+            {/* ARTICLE TEASER "INTERNAL" LINK */}
+
+            <h3 style={{fontFamily:'Source Sans Pro, Helvetica', fontSize:'20px', fontWeight:'normal', padding:'2%'}}> Now that you're highly equipped for your next talk at the coffeemachine about "fashion sustainability", we are eager to show you the most fashion-forward brands out there! </h3>
+
+            <h3 style={{fontFamily:'Source Sans Pro, Helvetica', fontSize:'20px', fontWeight:'bold', padding:'3%'}}> <a href="https://www.cosmopolitan.com/style-beauty/fashion/g9255699/sustainable-eco-green-clothing-brands/" target="_blank" rel="noopener noreferrer" style={{color:'#ff4c49'}}> Here Come 21 Sustainable Clothing Brands for People Who Give a Sh*t About the Environment! </a> </h3>
 
         </div>
 
