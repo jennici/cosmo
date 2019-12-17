@@ -12,12 +12,12 @@ export default class App extends Component {
     temperature: [],
     glaciersize: [],
     sealevel: [],
-    loading: false //set to true again!
+    loading: true
   }
     
 
-  //async componentDidMount() {
-    /*const url1 = "https://my.api.mockaroo.com/co2.json?key=8eb9e6f0";
+  async componentDidMount() {
+    const url1 = "https://my.api.mockaroo.com/co2.json?key=8eb9e6f0";
     const url2 = "https://my.api.mockaroo.com/temp.json?key=8eb9e6f0";
     const url3 = "https://my.api.mockaroo.com/glaciersize.json?key=8eb9e6f0";
     const url4 = "https://my.api.mockaroo.com/sealevel.json?key=8eb9e6f0";
@@ -34,7 +34,7 @@ export default class App extends Component {
     const response4 = await fetch(url4);
     const data4 = await response4.json();
 
-    */
+    
     /*if (isNaN(data1)){
     const dataset1 = "./Dataset1_Global-CO2-Emissions-from-Fossil-Fuels.json";
     const response1 = await fetch(dataset1);
@@ -59,7 +59,7 @@ export default class App extends Component {
     const data4 = await response4.json();
   
   */
-  /*
+  
     this.setState({
       emission: data1,
       temperature: data2,
@@ -67,7 +67,7 @@ export default class App extends Component {
       sealevel: data4,
       loading: false
   });
-  */
+  
 //}}}};
 
 
@@ -75,7 +75,7 @@ export default class App extends Component {
     //console.log(this.state.temperature);
     //console.log(this.state.glaciersize);
     //console.log(this.state.sealevel);
-  //}
+  }
 
 
   render(){
