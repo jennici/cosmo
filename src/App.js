@@ -61,25 +61,6 @@ export default class App extends Component {
   */
   /*
     this.setState({
-<<<<<<< HEAD
-        emission: data1,
-        temperature: data2,
-        glaciersize: data3,
-        sealevel: data4,
-        loading: false
-    });
-
-    //console.log(this.state.emission);
-    //console.log(this.state.temperature);
-    //console.log(this.state.glaciersize);
-    //console.log(this.state.sealevel);
-  } 
-
-  render(){
-
-  return (
-    <div className="App">
-=======
       emission: data1,
       temperature: data2,
       glaciersize: data3,
@@ -120,7 +101,6 @@ export default class App extends Component {
   return (
     <div className="App">
         <AllComponents emission={this.state.emission} temperature={this.state.temperature} glaciersize={this.state.glaciersize} />
->>>>>>> a3e9bbaad23297c6e044209114c93c0a985007f7
     </div>
     );
   }

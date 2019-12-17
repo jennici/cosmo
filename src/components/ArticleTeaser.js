@@ -24,7 +24,7 @@ export default class ArticleTeaser extends Component {
                 type: "Fashion",
                 title: "Okay, but What Does 'Sustainable Fashion' Actually Mean?",
                 author: "LAUREN ADHAV",
-                url: "https://www.cosmopolitan.com/stylebeauty/fashion/g9255699/sustainable-eco-green-clothingbrands/",
+                url: "./ArticleTwo",
                 image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sustainable-fashion-1559169790.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*",
                 alt: "sustainable fashion explained"
               },
