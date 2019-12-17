@@ -5,7 +5,7 @@ import {
     VictoryLine, 
     VictoryBrushContainer,
     VictoryAxis,
-    VictoryTooltip 
+   // VictoryTooltip 
 } from 'victory';
 import '../../src/css/cosmo.css';
 

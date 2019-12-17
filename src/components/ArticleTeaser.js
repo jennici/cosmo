@@ -21,6 +21,14 @@ export default class ArticleTeaser extends Component {
               alt: "nail polish for vegan"
             },
             {
+                type: "Fashion",
+                title: "Okay, but What Does 'Sustainable Fashion' Actually Mean?",
+                author: "LAUREN ADHAV",
+                url: "https://www.cosmopolitan.com/stylebeauty/fashion/g9255699/sustainable-eco-green-clothingbrands/",
+                image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sustainable-fashion-1559169790.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*",
+                alt: "sustainable fashion explained"
+              },
+            {
               type: "Fashion",
               title: "21 Sustainable Clothing Brands for People Who Give a Sh*t About the Environment",
               author: "CARLI CARDELLINO",
@@ -44,22 +52,23 @@ export default class ArticleTeaser extends Component {
 
         return (
             <div>
-                <div style={{ display: "flex" }}>
+                <div style={{ display: "flex", justifyContent: "center" }}>
                     {types.map(type => {
                     return (
                         <div style={{ display: "flex", flexDirection: "column", margin: "50px" }}>
                             <h1 style={{ color: "#575A89" }}>{type}</h1>
                                 {this.state.data.filter(item => item.type === type).map(item => {
                                 return (
-                                    <div class="ui card">
-                                        <a style={{ display: "flex" }} href={item.url} className="App">
-                                        <img style={{ maxHeight: "200px", maxWidth: "200px" }} src={item.image} alt={item.alt} />
-                                        <div>
-                                            <p>{item.title}</p>
-                                            <p>-->{item.author}</p>
+                                        <div class="ui card">
+                                            <a style={{ display: "flex" }} href={item.url} className="App">
+                                                <img className="teaser-img" src={item.image} alt={item.alt} />
+                                                <div>
+                                                    <p className="teaserlink">{item.title}</p>
+                                                    <p className="teaserlink">-->{item.author}</p>
+                                                </div>
+                                            </a>
                                         </div>
-                                        </a>
-                                    </div>
+                                  
                                     )
                                 })}
                             </div>)}

@@ -5,7 +5,7 @@ import {
     VictoryLine, 
     VictoryBrushContainer,
     VictoryAxis,
-    VictoryTooltip
+   // VictoryTooltip
 } from 'victory';
 
 export default class GlobalTemperature extends Component {
