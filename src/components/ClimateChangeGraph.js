@@ -32,7 +32,7 @@ export default class CO2Emission extends Component {
         const dataLineChart = emission.map(item => {
             return { 
                 Year: new Date(item["Year"], 1, 1), 
-                Value: parseInt(item["Gas Fuel"])
+                Value: parseInt(item["Total"])
             };
         });
 
@@ -52,8 +52,8 @@ export default class CO2Emission extends Component {
         return (
             <div>
                 <h1 className="graph">Global CO2 emissions from fossil fuels  
-                    <button className="circular ui icon button" style={{padding: "1.6em", marginLeft: "2%"}} onClick={() => this.info() }> {/*use a modal pop up*/}
-                        <i className="info icon" style={{color: "#575A89"}}></i>
+                    <button className="circular ui icon button" style={{padding: "1.6em", marginLeft: "2%"}}  > {/*use a modal pop up*/} {/*onClick={() => this.info() }*/}
+                <i className="info icon" style={{color: "#575A89"}}></i>
                     </button>
                 </h1>
                 

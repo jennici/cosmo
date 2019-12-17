@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import climate from '../pictures/climate.png';
 import meltingice from '../pictures/meltingice.png';
-import calm from "../pictures/keep-calm-and-be-sustainable.jpg"
+import calm from "../pictures/Keep-calm-and-be-sustainable.jpg"
 import ArticleTeaser from "../components/ArticleTeaser";
 import Menu from './Menu';
 import CO2Emission from './ClimateChangeGraph';
@@ -79,7 +79,7 @@ class Climate extends Component{
 
         return(
             <div>
-                <img src={meltingice} style={{ float: "right", width: "18%" }} alt="melting ice" />
+                {/*<img src={meltingice} style={{ float: "right", width: "18%" }} alt="melting ice" />*/}
                 <img src={climate} style={{width: "100%"}} alt="climatepic" />
                 <div style={{marginLeft: "5em", marginRight: "5em", height: "100%"}}>
                     <Menu 
