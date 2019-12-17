@@ -1,25 +1,35 @@
 {
   "files": {
-    "main.css": "/cosmo/static/css/main.817a8c9f.chunk.css",
-    "main.js": "/cosmo/static/js/main.41625995.chunk.js",
-    "main.js.map": "/cosmo/static/js/main.41625995.chunk.js.map",
+    "main.css": "/cosmo/static/css/main.ca713243.chunk.css",
+    "main.js": "/cosmo/static/js/main.730e63e3.chunk.js",
+    "main.js.map": "/cosmo/static/js/main.730e63e3.chunk.js.map",
     "runtime-main.js": "/cosmo/static/js/runtime-main.e28158b7.js",
     "runtime-main.js.map": "/cosmo/static/js/runtime-main.e28158b7.js.map",
     "static/css/2.fcaf600d.chunk.css": "/cosmo/static/css/2.fcaf600d.chunk.css",
-    "static/js/2.19457405.chunk.js": "/cosmo/static/js/2.19457405.chunk.js",
-    "static/js/2.19457405.chunk.js.map": "/cosmo/static/js/2.19457405.chunk.js.map",
+    "static/js/2.02551395.chunk.js": "/cosmo/static/js/2.02551395.chunk.js",
+    "static/js/2.02551395.chunk.js.map": "/cosmo/static/js/2.02551395.chunk.js.map",
     "index.html": "/cosmo/index.html",
-    "precache-manifest.6f9e24f0e81ad86048c2dc9327503dd5.js": "/cosmo/precache-manifest.6f9e24f0e81ad86048c2dc9327503dd5.js",
+    "precache-manifest.06d965d022524140111bbfb600f0aea9.js": "/cosmo/precache-manifest.06d965d022524140111bbfb600f0aea9.js",
     "service-worker.js": "/cosmo/service-worker.js",
     "static/css/2.fcaf600d.chunk.css.map": "/cosmo/static/css/2.fcaf600d.chunk.css.map",
-    "static/css/main.817a8c9f.chunk.css.map": "/cosmo/static/css/main.817a8c9f.chunk.css.map",
-    "static/media/semantic.css": "/cosmo/static/media/outline-icons.ef60a4f6.woff"
+    "static/css/main.ca713243.chunk.css.map": "/cosmo/static/css/main.ca713243.chunk.css.map",
+    "static/media/beauty.png": "/cosmo/static/media/beauty.a65444be.png",
+    "static/media/semantic.css": "/cosmo/static/media/outline-icons.ef60a4f6.woff",
+    "static/media/climate.png": "/cosmo/static/media/climate.7417b91e.png",
+    "static/media/keep-calm-and-be-sustainable.jpg": "/cosmo/static/media/keep-calm-and-be-sustainable.cc49fb16.jpg",
+    "static/media/loading_earth2.gif": "/cosmo/static/media/loading_earth2.23d0811f.gif",
+    "static/media/logo.png": "/cosmo/static/media/logo.478100a2.png",
+    "static/media/meltingice.png": "/cosmo/static/media/meltingice.1c8f7462.png",
+    "static/media/politics.png": "/cosmo/static/media/politics.45123c4f.png",
+    "static/media/sex.png": "/cosmo/static/media/sex.f5a8e488.png",
+    "static/media/style.png": "/cosmo/static/media/style.76ea2ffa.png",
+    "static/media/styletext.png": "/cosmo/static/media/styletext.62d499bd.png"
   },
   "entrypoints": [
     "static/js/runtime-main.e28158b7.js",
     "static/css/2.fcaf600d.chunk.css",
-    "static/js/2.19457405.chunk.js",
-    "static/css/main.817a8c9f.chunk.css",
-    "static/js/main.41625995.chunk.js"
+    "static/js/2.02551395.chunk.js",
+    "static/css/main.ca713243.chunk.css",
+    "static/js/main.730e63e3.chunk.js"
   ]
 }

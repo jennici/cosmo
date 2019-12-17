@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c012c62e1bbe771ecc74c45c733d147a",
+    "revision": "c4b6189005aaac11762f76515d1dc770",
     "url": "/cosmo/index.html"
   },
   {
-    "revision": "bedbfeaca37acb574bb4",
+    "revision": "fbeb286dd864812ed316",
     "url": "/cosmo/static/css/2.fcaf600d.chunk.css"
   },
   {
-    "revision": "14667ca97fadd957545a",
-    "url": "/cosmo/static/css/main.817a8c9f.chunk.css"
+    "revision": "310356ed9b995a7763ac",
+    "url": "/cosmo/static/css/main.ca713243.chunk.css"
   },
   {
-    "revision": "bedbfeaca37acb574bb4",
-    "url": "/cosmo/static/js/2.19457405.chunk.js"
+    "revision": "fbeb286dd864812ed316",
+    "url": "/cosmo/static/js/2.02551395.chunk.js"
   },
   {
-    "revision": "14667ca97fadd957545a",
-    "url": "/cosmo/static/js/main.41625995.chunk.js"
+    "revision": "310356ed9b995a7763ac",
+    "url": "/cosmo/static/js/main.730e63e3.chunk.js"
   },
   {
     "revision": "1eb2568d730df45afcd5",
     "url": "/cosmo/static/js/runtime-main.e28158b7.js"
+  },
+  {
+    "revision": "a65444be43a264b328b210640045105a",
+    "url": "/cosmo/static/media/beauty.a65444be.png"
   },
   {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",
@@ -42,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e8c322de9658cbeb8a774b6624167c2c",
     "url": "/cosmo/static/media/brand-icons.e8c322de.woff2"
+  },
+  {
+    "revision": "7417b91eec75d9155bdc0090eed67af1",
+    "url": "/cosmo/static/media/climate.7417b91e.png"
   },
   {
     "revision": "9c74e172f87984c48ddf5c8108cabe67",
@@ -68,6 +76,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cosmo/static/media/icons.faff9214.woff"
   },
   {
+    "revision": "cc49fb1605235faf92ddb92d4ac81708",
+    "url": "/cosmo/static/media/keep-calm-and-be-sustainable.cc49fb16.jpg"
+  },
+  {
+    "revision": "23d0811fed31365b6bef8e4fd55bd982",
+    "url": "/cosmo/static/media/loading_earth2.23d0811f.gif"
+  },
+  {
+    "revision": "478100a23dfe427d5b0f521cf7e3a255",
+    "url": "/cosmo/static/media/logo.478100a2.png"
+  },
+  {
+    "revision": "1c8f746292622234effe04604f9fde14",
+    "url": "/cosmo/static/media/meltingice.1c8f7462.png"
+  },
+  {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
     "url": "/cosmo/static/media/outline-icons.701ae6ab.eot"
   },
@@ -86,5 +110,21 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
     "url": "/cosmo/static/media/outline-icons.ef60a4f6.woff"
+  },
+  {
+    "revision": "45123c4fdf543d490d7994835dc44664",
+    "url": "/cosmo/static/media/politics.45123c4f.png"
+  },
+  {
+    "revision": "f5a8e488c453444531990946fd26000d",
+    "url": "/cosmo/static/media/sex.f5a8e488.png"
+  },
+  {
+    "revision": "76ea2ffa7950ecbf3858e26830bebf7c",
+    "url": "/cosmo/static/media/style.76ea2ffa.png"
+  },
+  {
+    "revision": "62d499bd8adf3556ed675e575d054bc4",
+    "url": "/cosmo/static/media/styletext.62d499bd.png"
   }
 ]);
