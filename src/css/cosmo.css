@@ -87,3 +87,26 @@
     max-width: 150px;
     padding: 5%;
   }
+
+  h1{
+    color: #38BF3E;
+    font-size: 70px;
+    font-weight: 900;
+  }
+
+  h2{
+    font-size: 40px;
+    color: #575A89;
+    text-align: center;
+    margin: auto;
+    width: 70%;
+  }
+
+  h3{
+    font-size: 30px;
+    color: #575A89;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    width: 85%;
+  }
