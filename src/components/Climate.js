@@ -3,7 +3,7 @@ import climateheader from '../pictures/climateheader.jpg';
 import cartoongirl from '../pictures/cartoongirl.png';
 import bush from '../pictures/bush.png';
 import arrow from '../pictures/arrow.png';
-import calm from "../pictures/Keep-calm-and-be-sustainable.jpg"
+import cartoongirl2 from '../pictures/cartoongirl2.png';
 import ArticleTeaser from "../components/ArticleTeaser";
 import Menu from './Menu';
 import CO2Emission from './ClimateChangeGraph';
@@ -108,7 +108,15 @@ class Climate extends Component{
                     />
                     {currentChart}
                 </div>
-                <img src={calm} style={{ width: "100%" }} alt="be sustainable" />
+                <div className="ui grid">
+                <div className="ten wide column">
+                    <h4>KEEP CALM AND BE SUSTAINABLE</h4>
+                    <p>With a more green lifestyle and a shift of preceptions, a whole new world opens up! We show you a range of brilliant beauty products and how sustainable brands level up the fashion game with irresistible new materials and creations. Also, our most beloved celeberties lead the way and encourage you to join them - stay tuned for our new interview series!</p>
+                </div>
+                <div className="three wide column">
+                <img src={cartoongirl2} style={{  }} alt="girl 2" />
+                </div>
+                </div>
                 <ArticleTeaser />
             </div>
         )
