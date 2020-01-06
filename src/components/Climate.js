@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import climate from '../pictures/climate.png';
+import climateheader from '../pictures/climateheader.jpg';
 import calm from "../pictures/Keep-calm-and-be-sustainable.jpg"
 import ArticleTeaser from "../components/ArticleTeaser";
 import Menu from './Menu';
@@ -79,7 +80,7 @@ class Climate extends Component{
         return(
             <div>
                 {/*<img src={meltingice} style={{ float: "right", width: "18%" }} alt="melting ice" />*/}
-                <img src={climate} style={{width: "100%"}} alt="climatepic" />
+                <img src={climateheader} style={{width: "100%"}} alt="climateheader" />
                 <img src={climate} style={{width: "100%"}} alt="climatepic" />
                 <div style={{marginLeft: "5em", marginRight: "5em", height: "100%"}}>
                     <Menu 
