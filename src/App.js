@@ -9,6 +9,7 @@ export default class App extends Component {
 
   state = {
     emission: [],
+    filteredEmissions: [],
     temperature: [],
     glaciersize: [],
     sealevel: [],
@@ -62,6 +63,7 @@ export default class App extends Component {
   
     this.setState({
       emission: data1,
+      filteredEmissions: data1,
       temperature: data2,
       glaciersize: data3,
       sealevel: data4,
@@ -76,6 +78,44 @@ export default class App extends Component {
     //console.log(this.state.glaciersize);
     //console.log(this.state.sealevel);
   }
+
+  //Filter emission
+handleFilterYear = (year) => {
+  if (year.length === 0) {
+      alert("Year is empty.");
+      return;
+  }
+
+  if (year.length === 0) {
+      year = "1751";
+  }
+
+  if (isNaN(year)) {
+      alert("Please enter a valid year.");
+      return;
+  }
+
+  if (parseInt(year) < 1750 ) {
+      alert("Please enter a valid year between 1800 and 2019.");
+      return;
+  }
+
+  this.filterClimateChangeAPI(year);
+};
+
+//doesn't need arrows because it is already bound through the arrows later on and the setState later on
+filterClimateChangeAPI(year) {
+  let filtered = this.state.emission;
+
+  filtered = filtered.filter(emission => emission.Year >= year);
+
+  
+ 
+  this.setState({
+      filteredEmissions: filtered,
+      year: year
+  });
+};
 
 
   render(){
@@ -96,11 +136,11 @@ export default class App extends Component {
       if (!this.state.emission || !this.state.temperature || !this.state.glaciersize || !this.state.sealevel) {
       return <div>didn't get Climate Change Graph</div>;
       }
-
+      
   
   return (
     <div className="App">
-        <AllComponents emission={this.state.emission} temperature={this.state.temperature} glaciersize={this.state.glaciersize} />
+        <AllComponents emission={this.state.emission} temperature={this.state.temperature} glaciersize={this.state.glaciersize} onFilterYear={this.handleFilterYear} emissions={this.state.filteredEmissions}/>
     </div>
     );
   }

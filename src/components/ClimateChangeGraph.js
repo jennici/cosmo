@@ -5,10 +5,14 @@ import {
     VictoryLine, 
     VictoryBrushContainer,
     VictoryAxis,
-   // VictoryTooltip 
+    VictoryTooltip,
+    VictoryBar,
+    VictoryTheme,
+    VictoryVoronoiContainer
 } from 'victory';
 import '../../src/css/cosmo.css';
-import { Button, Header, Icon, Image, Modal } from 'semantic-ui-react'
+import { Button, Header, Icon, Image, Modal } from 'semantic-ui-react';
+import Filter from "./Filter";
 
 export default class CO2Emission extends Component {
     
@@ -57,6 +61,9 @@ export default class CO2Emission extends Component {
         );
     };
       
+    filterYear = (year) => {
+        this.props.onFilterYear(year);
+    };
 
     render() {
 
@@ -71,17 +78,51 @@ export default class CO2Emission extends Component {
             };
         });
 
+        const dataGasFuel = emission.map(item => {
+            return { 
+                Year: new Date(item["Year"], 1, 1), 
+                Value: parseInt(item["Gas Fuel"])
+            };
+        });
+
+        const dataLiquidFuel = emission.map(item => {
+            return { 
+                Year: new Date(item["Year"], 1, 1), 
+                Value: parseInt(item["Liquid Fuel"])
+            };
+        });
+
+        const dataSolidFuel = emission.map(item => {
+            return { 
+                Year: new Date(item["Year"], 1, 1), 
+                Value: parseInt(item["Solid Fuel"])
+            };
+        });
+
+        const dataCement = emission.map(item => {
+            return { 
+                Year: new Date(item["Year"], 1, 1), 
+                Value: parseInt(item["Cement"])
+            };
+        });
+
+        const dataGasFlaring = emission.map(item => {
+            return { 
+                Year: new Date(item["Year"], 1, 1), 
+                Value: parseInt(item["Gas Flaring"])
+            };
+        });
 
 
         return (
             <div>
                 <h1 className="graph">Global CO2 emissions from fossil fuels  
-                    <button class="circular ui button" style={{padding: "1em", marginLeft: "2%"}} onClick={this.ModalScrollingInfo}>
+                    <button className="circular ui button" style={{padding: "1em", marginLeft: "2%"}} onClick={this.ModalScrollingInfo}>
                         <i className="info icon" style={{color: "#575A89", paddingLeft: "50%"}}></i>
                     </button> 
                 </h1>
                 
-                <div className="ui segment">
+                <div>
                     <div className="ui two wide grid" style={{width:"50%"}}>
                     <VictoryChart 
                             padding={{ top: 5, left: 50, right: 50, bottom: 30 }}
@@ -89,22 +130,49 @@ export default class CO2Emission extends Component {
                             height={250} 
                             scale={{ x: "time" }}
                             containerComponent={
-                                <VictoryZoomContainer
-                                    zoomDimension="x"
-                                    zoomDomain={this.state.zoomDomain}
-                                    onZoomDomainChange={this.handleZoom.bind(this)}
-                                />
-                            }
+                            <VictoryZoomContainer
+                                zoomDimension="x"
+                                zoomDomain={this.state.zoomDomain}
+                                onZoomDomainChange={this.handleZoom.bind(this)}
+                            />}
+                            containerComponent={<VictoryVoronoiContainer />}
                         >
                             <VictoryLine
+                                labelComponent={
+                                    <VictoryTooltip />
+                                }
+                                
                                 style={{
                                     data: { stroke: "tomato" }
                                 }}
                                 data={dataLineChart}
-                                //labels={({ dataLineChart }) => `Gas Fuel: ${dataLineChart.y}`}
-                                //labelComponent={<VictoryTooltip  cornerRadius={({ dataLineChart }) => dataLineChart.x * 2} />}
                                 x="Year"
                                 y="Value"
+                                events={[{
+                                    target: "data",
+                                    eventHandlers: {
+                                      onMouseOver: () => {
+                                        return [
+                                          {
+                                            target: "data"
+                                          }, {
+                                            target: "labels"
+                                            
+                                          }
+                                        ];
+                                    },
+                                    onMouseOut: () => {
+                                      return [
+                                        {
+                                          target: "data"
+                                          
+                                        }, {
+                                          target: "labels"
+                                        }
+                                      ];
+                                    }
+                                }
+                              }]}
                             /> 
                     </VictoryChart>
 
@@ -133,6 +201,20 @@ export default class CO2Emission extends Component {
                             y="Value"
                         />
                     </VictoryChart>
+                    </div>
+                    <div>
+                    <VictoryChart
+                    theme={VictoryTheme.material}
+                    domainPadding={10}
+                    >
+                        <VictoryBar
+                        style={{ data: { fill: "#c43a31" } }}
+                        data={[{ dataGasFuel }, { dataLiquidFuel }, { dataSolidFuel }, { dataCement }, { dataGasFlaring}]}
+                        x="Year"
+                        y="Value"
+                        />
+                    </VictoryChart>
+                        <Filter onFilter={this.filterYear}/>
                     </div>
                 </div>
             </div>

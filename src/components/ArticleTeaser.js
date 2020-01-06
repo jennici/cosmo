@@ -52,10 +52,10 @@ export default class ArticleTeaser extends Component {
 
         return (
             <div>
-                <div style={{ display: "flex", justifyContent: "center" }}>
+                <div style={{ display: "flex" /*justifyContent: "center"*/ }}>
                     {types.map(type => {
                     return (
-                        <div style={{ display: "flex", flexDirection: "column", margin: "50em" }}>
+                        <div style={{ display: "flex", /*flexDirection: "column"*/ margin: "50em" }}>
                             <h1 style={{ color: "#575A89" }}>{type}</h1>
                                 {this.state.data.filter(item => item.type === type).map(item => {
                                 return (

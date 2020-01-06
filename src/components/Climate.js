@@ -50,6 +50,7 @@ class Climate extends Component{
             <CO2Emission 
                 emission={this.props.emission} 
                 co2={this.state.isCO2} 
+                onFilterYear={this.props.onFilterYear}
             />
         );
         if(this.state.isCO2) {
@@ -57,6 +58,7 @@ class Climate extends Component{
             <CO2Emission 
                 emission={this.props.emission} 
                 co2={this.state.isCO2} 
+                onFilterYear={this.props.onFilterYear}
             />
             );
         } 
