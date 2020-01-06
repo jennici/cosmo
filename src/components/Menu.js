@@ -22,21 +22,21 @@ export default class Menu extends Component {
 
         return (
             <div>
-                <div className="ui secondary pointing menu" id="myMenu" style={{marginTop: "15%"}}>
+                <div className="ui vertical buttons" id="myMenu" style={{marginTop: "15%"}}>
                     <button 
-                        className="item"
+                        className="ui button"
                         onClick={() => this.props.co2() }
                     >
                         Global CO2 emissions
                     </button>
                     <button 
-                        className="item" 
+                        className="ui button" 
                         onClick={() => this.props.temp() }
                     >
                         Global Temperature
                     </button>
                     <button 
-                        className="item" 
+                        className="ui button" 
                         onClick={() => this.props.glacier() }
                     >
                         Glacier Size
