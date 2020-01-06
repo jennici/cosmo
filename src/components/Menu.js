@@ -22,9 +22,9 @@ export default class Menu extends Component {
 
         return (
             <div>
-                <div className="ui vertical buttons" id="myMenu" style={{marginTop: "15%"}}>
+                <div className="ui vertical buttons" id="myMenu">
                     <button 
-                        className="ui button"
+                        className="ui button" 
                         onClick={() => this.props.co2() }
                     >
                         Global CO2 emissions
