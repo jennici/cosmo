@@ -24,7 +24,7 @@ export default class ArticleTeaser extends Component {
                 type: "Fashion",
                 title: "Okay, but What Does 'Sustainable Fashion' Actually Mean?",
                 author: "LAUREN ADHAV",
-                url: "./ArticleTwo",
+                url: "https://www.cosmopolitan.com/style-beauty/beauty/how-to/a10886/obsessive-compulsivecosmetics-vpl-nail-polish/",
                 image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sustainable-fashion-1559169790.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*",
                 alt: "sustainable fashion explained"
               },
@@ -59,7 +59,6 @@ export default class ArticleTeaser extends Component {
                             <h1 style={{ color: "#575A89" }}>{type}</h1>
                                 {this.state.data.filter(item => item.type === type).map(item => {
                                 return (
-                                        <div class="ui card">
                                             <a style={{ display: "flex" }} href={item.url} className="App">
                                                 <img className="teaser-img" src={item.image} alt={item.alt} />
                                                 <div>
@@ -67,8 +66,6 @@ export default class ArticleTeaser extends Component {
                                                     <p className="teaserlink">-->{item.author}</p>
                                                 </div>
                                             </a>
-                                        </div>
-                                  
                                     )
                                 })}
                             </div>)}
