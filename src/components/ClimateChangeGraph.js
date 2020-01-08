@@ -129,6 +129,7 @@ export default class CO2Emission extends Component {
                             width={400}
                             height={250} 
                             scale={{ x: "time" }}
+                            style={{ parent: { overflow: 'visible' }}}
                             containerComponent={
                             <VictoryZoomContainer
                                 zoomDimension="x"
