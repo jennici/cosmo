@@ -87,3 +87,44 @@
     max-width: 150px;
     padding: 5%;
   }
+
+  h1{
+    color: #38BF3E;
+    font-size: 70px;
+    font-weight: 900;
+  }
+
+  h2{
+    font-size: 40px;
+    color: #575A89;
+    text-align: center;
+    margin: auto;
+    width: 70%;
+  }
+
+  h3{
+    font-size: 30px;
+    color: #575A89;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    width: 85%;
+  }
+
+  h4{
+      font-size: 50px;
+      color: #575A89;
+      width: 70%;
+      font-weight: 900;
+      margin-left: 200px;
+      margin-bottom: 30px;
+      margin-top: 50px;
+  }
+
+  p{
+    font-size: 25px;
+    color: #575A89;
+    margin-left: 200px;
+    width: 80%;
+    font-weight: 600;
+  }
