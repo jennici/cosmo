@@ -128,3 +128,35 @@
     width: 80%;
     font-weight: 600;
   }
+
+  .teaser{
+    background-color:#fff5f2;
+    padding: 30px;
+  }
+
+  .five.wide.column{
+    font-size: 40px;
+    font-weight: bold;
+    color: #575A89;
+    margin: auto;
+    background-color: antiquewhite;
+    text-align: center;
+    letter-spacing: 10px;
+    
+    
+  }
+
+  .two.wide.column{
+    font-size: 25px;
+    background-color: antiquewhite;
+    color: #575A89;
+  }
+
+  .article-pic{
+    padding: 10px;
+    width: 200px;
+  }
+
+  .first-column{
+    background-color: antiquewhite;
+  }

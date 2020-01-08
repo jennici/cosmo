@@ -4,11 +4,11 @@ import cartoongirl from '../pictures/cartoongirl.png';
 import bush from '../pictures/bush.png';
 import arrow from '../pictures/arrow.png';
 import cartoongirl2 from '../pictures/cartoongirl2.png';
-import ArticleTeaser from './ArticleTeaser';
 import Menu from './Menu';
 import CO2Emission from './ClimateChangeGraph';
 import GlobalTemperature from './GlobalTemperature';
 import GlacierSize from './GlacierSize';
+import ArticleT from './ArticleT';
 
 class Climate extends Component{
 
@@ -117,7 +117,7 @@ class Climate extends Component{
                 <img src={cartoongirl2} style={{  }} alt="girl 2" />
                 </div>
                 </div>
-                <ArticleTeaser />
+                <ArticleT />
             </div>
         )
     }
