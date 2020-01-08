@@ -88,13 +88,13 @@
     padding: 5%;
   }
 
-  h1{
+  .intro-h1{
     color: #38BF3E;
     font-size: 70px;
     font-weight: 900;
   }
 
-  h2{
+  .intro-h2{
     font-size: 40px;
     color: #575A89;
     text-align: center;
@@ -102,7 +102,7 @@
     width: 70%;
   }
 
-  h3{
+  .intro-h3{
     font-size: 30px;
     color: #575A89;
     text-align: center;
@@ -111,7 +111,7 @@
     width: 85%;
   }
 
-  h4{
+  .intro-h4{
       font-size: 50px;
       color: #575A89;
       width: 70%;
@@ -121,7 +121,7 @@
       margin-top: 50px;
   }
 
-  p{
+  .intro-p{
     font-size: 25px;
     color: #575A89;
     margin-left: 200px;
