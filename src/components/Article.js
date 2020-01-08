@@ -2,13 +2,13 @@
 import React, { Component } from 'react'
 export default function Article ({ item }) {
   return (<a style={{ display: 'flex', background: 'white' }} href={item.url} className="App">
-    <div style={{ height: '200px', width: '200px', margin: '10px' }}>
-      <img style={{ 'max-height': '200px', 'max-width': '200px' }} src={item.image}></img>
+    <div style={{ height: '160px', width: '160px', margin: '5px' }}>
+      <img style={{  }} src={item.image}></img>
     </div>
     <div style={{
       'max-height': '200px',
       'max-width': '200px',
-      margin: '10px',
+      margin: '2px',
       'font-size': 'small',
       'font-weight': 'bold',
       color: 'cornflowerblue'

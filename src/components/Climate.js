@@ -4,7 +4,7 @@ import cartoongirl from '../pictures/cartoongirl.png';
 import bush from '../pictures/bush.png';
 import arrow from '../pictures/arrow.png';
 import cartoongirl2 from '../pictures/cartoongirl2.png';
-import ArticleTeaser from "../components/ArticleTeaser";
+import ArticleTeaser from './ArticleTeaser';
 import Menu from './Menu';
 import CO2Emission from './ClimateChangeGraph';
 import GlobalTemperature from './GlobalTemperature';
@@ -87,9 +87,9 @@ class Climate extends Component{
                 <div class="three wide column">
                 <img src={cartoongirl} style={{width: "110%"}} alt="climategirl" />
                 </div>
-                <div class="twelve wide column"><h1>CLIMATE CHANGE, DARLING...</h1>
-                <h2>...will affect us all and since it's not going anywhere, it's time to get you involved and empowered!</h2>
-                <h3>It is easy to feel overwhelmed with everything that's going on right now. With our new series about the topic, we fill you in with what you need to know and how you can elevate your lifestyle to a more sustainable one - all in a fun and easy way!</h3>
+                <div class="twelve wide column"><h1 className="intro-h1">CLIMATE CHANGE, DARLING...</h1>
+                <h2 className="intro-h2">...will affect us all and since it's not going anywhere, it's time to get you involved and empowered!</h2>
+                <h3 className="intro-h3">It is easy to feel overwhelmed with everything that's going on right now. With our new series about the topic, we fill you in with what you need to know and how you can elevate your lifestyle to a more sustainable one - all in a fun and easy way!</h3>
                 </div>
                 <div class="eight wide column"></div>
                 <div class="four wide column">
@@ -110,8 +110,8 @@ class Climate extends Component{
                 </div>
                 <div className="ui grid">
                 <div className="ten wide column">
-                    <h4>KEEP CALM AND BE SUSTAINABLE</h4>
-                    <p>With a more green lifestyle and a shift of preceptions, a whole new world opens up! We show you a range of brilliant beauty products and how sustainable brands level up the fashion game with irresistible new materials and creations. Also, our most beloved celeberties lead the way and encourage you to join them - stay tuned for our new interview series!</p>
+                    <h4 className="intro-h4">KEEP CALM AND BE SUSTAINABLE</h4>
+                    <p className="intro-p">With a more green lifestyle and a shift of preceptions, a whole new world opens up! We show you a range of brilliant beauty products and how sustainable brands level up the fashion game with irresistible new materials and creations. Also, our most beloved celeberties lead the way and encourage you to join them - stay tuned for our new interview series!</p>
                 </div>
                 <div className="three wide column">
                 <img src={cartoongirl2} style={{  }} alt="girl 2" />

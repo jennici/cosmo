@@ -87,7 +87,7 @@ export default class App extends Component {
                   <img src={earth} style={{width: "300px"}} alt="crying earth" />
                 </div>
                 <div>
-                  <p className="loading">    loading...</p>
+                  <p className="loading">loading...</p>
                   
                 </div>
               </div>;
