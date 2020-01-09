@@ -99,3 +99,9 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance:textfield; /* Firefox */
 }
+
+.label {
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+}

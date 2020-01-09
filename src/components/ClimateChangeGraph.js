@@ -6,13 +6,10 @@ import {
     VictoryBrushContainer,
     VictoryAxis,
     VictoryTooltip,
-    VictoryBar,
-    VictoryTheme,
-    VictoryVoronoiContainer
+    VictoryTheme
 } from 'victory';
 import '../../src/css/cosmo.css';
 import { Button, Header, Icon, Image, Modal } from 'semantic-ui-react';
-import Filter from "./Filter";
 
 export default class CO2Emission extends Component {
     
@@ -78,40 +75,16 @@ export default class CO2Emission extends Component {
             };
         });
 
-        const dataGasFuel = emission.map(item => {
+       /* const dataGas = emission.map(item => {
             return { 
                 Year: new Date(item["Year"], 1, 1), 
-                Value: parseInt(item["Gas Fuel"])
+                Value1: parseInt(item["Gas Fuel"]),
+                Value2: parseInt(item["Liquid Fuel"]),
+                Value3: parseInt(item["Solid Fuel"]),
+                Value4: parseInt(item["Cement"]),
+                Value5: parseInt(item["Gas Flaring"])
             };
-        });
-
-        const dataLiquidFuel = emission.map(item => {
-            return { 
-                Year: new Date(item["Year"], 1, 1), 
-                Value: parseInt(item["Liquid Fuel"])
-            };
-        });
-
-        const dataSolidFuel = emission.map(item => {
-            return { 
-                Year: new Date(item["Year"], 1, 1), 
-                Value: parseInt(item["Solid Fuel"])
-            };
-        });
-
-        const dataCement = emission.map(item => {
-            return { 
-                Year: new Date(item["Year"], 1, 1), 
-                Value: parseInt(item["Cement"])
-            };
-        });
-
-        const dataGasFlaring = emission.map(item => {
-            return { 
-                Year: new Date(item["Year"], 1, 1), 
-                Value: parseInt(item["Gas Flaring"])
-            };
-        });
+        });*/
 
 
         return (
@@ -125,6 +98,7 @@ export default class CO2Emission extends Component {
                 <div>
                     <div className="ui two wide grid" style={{width:"50%"}}>
                     <VictoryChart 
+                            theme={VictoryTheme.material}
                             padding={{ top: 5, left: 50, right: 50, bottom: 30 }}
                             width={400}
                             height={250} 
@@ -136,7 +110,6 @@ export default class CO2Emission extends Component {
                                 zoomDomain={this.state.zoomDomain}
                                 onZoomDomainChange={this.handleZoom.bind(this)}
                             />}
-                            containerComponent={<VictoryVoronoiContainer />}
                         >
                             <VictoryLine
                                 labelComponent={
@@ -202,24 +175,11 @@ export default class CO2Emission extends Component {
                             y="Value"
                         />
                     </VictoryChart>
-                    </div>
-                    <div>
-                    <VictoryChart
-                    theme={VictoryTheme.material}
-                    domainPadding={10}
-                    >
-                        <VictoryBar
-                        style={{ data: { fill: "#c43a31" } }}
-                        data={[{ dataGasFuel }, { dataLiquidFuel }, { dataSolidFuel }, { dataCement }, { dataGasFlaring}]}
-                        x="Year"
-                        y="Value"
-                        />
-                    </VictoryChart>
-                        <Filter onFilter={this.filterYear}/>
-                    </div>
+                    </div>                   
                 </div>
             </div>
         )
     }
 }
   
+

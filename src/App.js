@@ -13,7 +13,9 @@ export default class App extends Component {
     temperature: [],
     glaciersize: [],
     sealevel: [],
-    loading: true
+    loading: true,
+    indexYear1: 0,
+    indexYear2: 0
   }
     
 
@@ -79,43 +81,28 @@ export default class App extends Component {
     //console.log(this.state.sealevel);
   }
 
-  //Filter emission
-handleFilterYear = (year) => {
-  if (year.length === 0) {
-      alert("Year is empty.");
-      return;
-  }
+  handleYearFilter=(chartName, Year) =>{
+    let index = this.state.emission.findIndex(
+      co2=>co2.Year === parseInt(Year)
+    );
+    
 
-  if (year.length === 0) {
-      year = "1751";
-  }
-
-  if (isNaN(year)) {
-      alert("Please enter a valid year.");
-      return;
-  }
-
-  if (parseInt(year) < 1750 ) {
-      alert("Please enter a valid year between 1800 and 2019.");
-      return;
-  }
-
-  this.filterClimateChangeAPI(year);
-};
-
-//doesn't need arrows because it is already bound through the arrows later on and the setState later on
-filterClimateChangeAPI(year) {
-  let filtered = this.state.emission;
-
-  filtered = filtered.filter(emission => emission.Year >= year);
-
-  
+    if(index!== -1){
+      switch(chartName){
+        case "Bar1":
+          this.setState({ indexYear1: index });
+          break;
+        case "Bar2":
+          this.setState({ indexYear2: index });
+          break;
+     
+      }
+    }
+    else {
+      alert ("Year could not be found in data.");
+    }
+  };
  
-  this.setState({
-      filteredEmissions: filtered,
-      year: year
-  });
-};
 
 
   render(){
@@ -140,7 +127,12 @@ filterClimateChangeAPI(year) {
   
   return (
     <div className="App">
-        <AllComponents emission={this.state.emission} temperature={this.state.temperature} glaciersize={this.state.glaciersize} onFilterYear={this.handleFilterYear} emissions={this.state.filteredEmissions}/>
+      <AllComponents emission={this.state.emission} temperature={this.state.temperature} glaciersize={this.state.glaciersize} 
+      
+      CO2Emission1={this.state.emission[this.state.indexYear1]}
+      CO2Emission2={this.state.emission[this.state.indexYear2]}
+      onYearFilter={this.handleYearFilter}
+      />
     </div>
     );
   }
