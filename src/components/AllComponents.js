@@ -33,7 +33,7 @@ class AllComponents extends Component{
                 </Route>
 
                 <Route path="/climate">
-                <Climate emission={this.props.emission} temperature={this.props.temperature} glaciersize={this.props.glaciersize} />
+                <Climate emission={this.props.emission} temperature={this.props.temperature} glaciersize={this.props.glaciersize} onFilterYear={this.props.onFilterYear} emissions={this.props.emissions} />
                 </Route>
 
                 </Switch>

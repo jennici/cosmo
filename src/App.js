@@ -9,10 +9,13 @@ export default class App extends Component {
 
   state = {
     emission: [],
+    filteredEmissions: [],
     temperature: [],
     glaciersize: [],
     sealevel: [],
-    loading: true
+    loading: true,
+    indexYear1: 0,
+    indexYear2: 0
   }
     
 
@@ -62,6 +65,7 @@ export default class App extends Component {
   
     this.setState({
       emission: data1,
+      filteredEmissions: data1,
       temperature: data2,
       glaciersize: data3,
       sealevel: data4,
@@ -76,6 +80,29 @@ export default class App extends Component {
     //console.log(this.state.glaciersize);
     //console.log(this.state.sealevel);
   }
+
+  handleYearFilter=(chartName, Year) =>{
+    let index = this.state.emission.findIndex(
+      co2=>co2.Year === parseInt(Year)
+    );
+    
+
+    if(index!== -1){
+      switch(chartName){
+        case "Bar1":
+          this.setState({ indexYear1: index });
+          break;
+        case "Bar2":
+          this.setState({ indexYear2: index });
+          break;
+     
+      }
+    }
+    else {
+      alert ("Year could not be found in data.");
+    }
+  };
+ 
 
 
   render(){
@@ -96,11 +123,16 @@ export default class App extends Component {
       if (!this.state.emission || !this.state.temperature || !this.state.glaciersize || !this.state.sealevel) {
       return <div>didn't get Climate Change Graph</div>;
       }
-
+      
   
   return (
     <div className="App">
-        <AllComponents emission={this.state.emission} temperature={this.state.temperature} glaciersize={this.state.glaciersize} />
+      <AllComponents emission={this.state.emission} temperature={this.state.temperature} glaciersize={this.state.glaciersize} 
+      
+      CO2Emission1={this.state.emission[this.state.indexYear1]}
+      CO2Emission2={this.state.emission[this.state.indexYear2]}
+      onYearFilter={this.handleYearFilter}
+      />
     </div>
     );
   }

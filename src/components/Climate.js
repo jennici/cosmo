@@ -9,6 +9,7 @@ import CO2Emission from './ClimateChangeGraph';
 import GlobalTemperature from './GlobalTemperature';
 import GlacierSize from './GlacierSize';
 import ArticleT from './ArticleT';
+import MyBarChart from "./BarChart";
 
 class Climate extends Component{
 
@@ -53,13 +54,35 @@ class Climate extends Component{
                 emission={this.props.emission} 
                 co2={this.state.isCO2} 
             />
+            &&
+            <MyBarChart
+                chartName="Bar1"
+                CO2Emission1={this.props.CO2Emission1}
+                onYearFilter={this.props.onYearFilter}
+            />
+            &&
+            <MyBarChart
+                chartName="Bar2"
+                CO2Emission2={this.state.CO2Emission2}
+                onYearFilter={this.props.onYearFilter}
+            />
         );
         if(this.state.isCO2) {
             currentChart = (
             <CO2Emission 
                 emission={this.props.emission} 
                 co2={this.state.isCO2} 
-            />
+            />,
+            <MyBarChart
+                chartName="Bar1"
+                CO2Emission1={this.props.CO2Emission1}
+                onYearFilter={this.props.onYearFilter}>
+            </MyBarChart>,
+            <MyBarChart
+                chartName="Bar2"
+                CO2Emission2={this.props.CO2Emission2}
+                onYearFilter={this.props.onYearFilter}>
+            </MyBarChart>
             );
         } 
         if(this.state.isTemp) {
@@ -74,7 +97,7 @@ class Climate extends Component{
             currentChart = (
             <GlacierSize 
                 glaciersize={this.props.glaciersize}
-                glacier={this.state.isGlacier} 
+                glacier={this.state.isGlacier}
                 />
             );
         }

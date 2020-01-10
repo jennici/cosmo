@@ -9,7 +9,7 @@ class Navbar extends Component {
         return (
             <div>
                 <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                    <Link className="nav-link" to="/"><img src={logo} classNameName="nav-logo" style={{ height: "30px", width: "auto" }} alt="logo" /></Link>
+                    <Link className="nav-link" to="/"><img src={logo} className="nav-logo" style={{ height: "30px", width: "auto" }} alt="logo" /></Link>
                     {/*Make Toggler working*/}
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -17,19 +17,19 @@ class Navbar extends Component {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <Link className="nav-link" activeClassName="chosen" to="/style">style</Link>
+                                <Link className="nav-link" activeclassname="chosen" to="/style">style</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" activeClassName="chosen" to="/beauty">beauty</Link>
+                                <Link className="nav-link" activeclassname="chosen" to="/beauty">beauty</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" activeClassName="chosen" to="/sex">sex</Link>
+                                <Link className="nav-link" activeclassname="chosen" to="/sex">sex</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" activeClassName="chosen" to="/politics">politics</Link>
+                                <Link className="nav-link" activeclassname="chosen" to="/politics">politics</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" activeClassName="chosen" to="/climate">climate</Link>
+                                <Link className="nav-link" activeclassname="chosen" to="/climate">climate</Link>
                             </li>
                         </ul>
                     </div>
