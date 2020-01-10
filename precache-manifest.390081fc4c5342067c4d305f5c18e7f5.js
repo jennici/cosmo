@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9e726b7bbd8bfaf4daff585d0043e121",
+    "revision": "23a80da0c5017e8f5c7e19ae4375690b",
     "url": "/cosmo/index.html"
   },
   {
-    "revision": "ed5c58c3692c273462dd",
-    "url": "/cosmo/static/css/2.fcaf600d.chunk.css"
+    "revision": "1bc2b2173d12dd22e12d",
+    "url": "/cosmo/static/css/2.3957b517.chunk.css"
   },
   {
-    "revision": "1bc3b40c8988585bef45",
-    "url": "/cosmo/static/css/main.f46be124.chunk.css"
+    "revision": "dd564676fe5edad3f258",
+    "url": "/cosmo/static/css/main.5db99f6b.chunk.css"
   },
   {
-    "revision": "ed5c58c3692c273462dd",
-    "url": "/cosmo/static/js/2.e4ece9d2.chunk.js"
+    "revision": "1bc2b2173d12dd22e12d",
+    "url": "/cosmo/static/js/2.a9f0d0d2.chunk.js"
   },
   {
-    "revision": "1bc3b40c8988585bef45",
-    "url": "/cosmo/static/js/main.9298baa2.chunk.js"
+    "revision": "380251f6792b7f26147bff13c262f105",
+    "url": "/cosmo/static/js/2.a9f0d0d2.chunk.js.LICENSE"
   },
   {
-    "revision": "1eb2568d730df45afcd5",
-    "url": "/cosmo/static/js/runtime-main.e28158b7.js"
+    "revision": "dd564676fe5edad3f258",
+    "url": "/cosmo/static/js/main.8c33617e.chunk.js"
   },
   {
-    "revision": "cc49fb1605235faf92ddb92d4ac81708",
-    "url": "/cosmo/static/media/Keep-calm-and-be-sustainable.cc49fb16.jpg"
+    "revision": "a038327a211ece34d7bf",
+    "url": "/cosmo/static/js/runtime-main.bfbd46ea.js"
   },
   {
     "revision": "a65444be43a264b328b210640045105a",
@@ -52,8 +52,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cosmo/static/media/brand-icons.e8c322de.woff2"
   },
   {
-    "revision": "7417b91eec75d9155bdc0090eed67af1",
-    "url": "/cosmo/static/media/climate.7417b91e.png"
+    "revision": "afa016dbec524f54f20d15b2de8b087d",
+    "url": "/cosmo/static/media/cartoongirl.afa016db.png"
+  },
+  {
+    "revision": "c0f39655bf7a7ef8f360100e6f909335",
+    "url": "/cosmo/static/media/cartoongirl2.c0f39655.png"
+  },
+  {
+    "revision": "de817362c3aff24298095bd69f8b9352",
+    "url": "/cosmo/static/media/climateheader.de817362.jpg"
   },
   {
     "revision": "9c74e172f87984c48ddf5c8108cabe67",
@@ -88,10 +96,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cosmo/static/media/logo.478100a2.png"
   },
   {
-    "revision": "1c8f746292622234effe04604f9fde14",
-    "url": "/cosmo/static/media/meltingice.1c8f7462.png"
-  },
-  {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
     "url": "/cosmo/static/media/outline-icons.701ae6ab.eot"
   },
@@ -110,6 +114,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
     "url": "/cosmo/static/media/outline-icons.ef60a4f6.woff"
+  },
+  {
+    "revision": "359da39728038a5850b5a8bacfea51b1",
+    "url": "/cosmo/static/media/picmakeup.359da397.png"
   },
   {
     "revision": "45123c4fdf543d490d7994835dc44664",
