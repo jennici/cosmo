@@ -40,26 +40,36 @@ import {
         
 
       return (
-        <AreaChart
-          width={500}
-          height={400}
-          data={dataArea}
-          margin={{
-            top: 10, right: 30, left: 0, bottom: 0,
-          }}
-        >
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip />
-          <defs>
-            <linearGradient id="splitColor" x1="0" y1="0" x2="0" y2="1">
-              <stop offset={off} stopColor="green" stopOpacity={1} />
-              <stop offset={off} stopColor="red" stopOpacity={1} />
-            </linearGradient>
-          </defs>
-          <Area type="monotone" dataKey="value" stroke="#000" fill="url(#splitColor)" />
-        </AreaChart>
+        <div>
+            <h1 className="graph">Glacier size
+              <button className="circular ui icon button" style={{padding: "1.6em", marginLeft: "2%"}} onClick={() => this.info() }>
+                  <i className="info icon" style={{color: "#575A89"}}></i>
+              </button>
+            </h1>
+            <div>
+                <div className="ui two wide grid" style={{width:"50%", marginLeft: "5em"}}></div>
+                <AreaChart
+                  width={500}
+                  height={400}
+                  data={dataArea}
+                  margin={{
+                    top: 10, right: 30, left: 0, bottom: 0,
+                  }}
+                >
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="name" />
+                  <YAxis />
+                  <Tooltip />
+                  <defs>
+                    <linearGradient id="splitColor" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset={off} stopColor="green" stopOpacity={1} />
+                      <stop offset={off} stopColor="red" stopOpacity={1} />
+                    </linearGradient>
+                  </defs>
+                  <Area type="monotone" dataKey="value" stroke="#000" fill="url(#splitColor)" />
+                </AreaChart>
+            </div>
+        </div>
       );
     }
   }
