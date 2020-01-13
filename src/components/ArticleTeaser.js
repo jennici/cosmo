@@ -24,8 +24,8 @@ export default class ArticleTeaser extends Component {
     super(props)
     this.state = {
       /*
-        Hier werden die Daten für die Artikel statisch gespeichert.
-        Diese können durch weitere Einträge erweitert werden
+        The data for the articles is being staticly saved here.
+        New data can be added.
       */
       data: [
         {
@@ -158,11 +158,11 @@ export default class ArticleTeaser extends Component {
     }
   }
     render () {
-        // Aufteilung der Artikel in benannte Kategorien
+        // The articles are split into these categories
         const types = ['Beauty', 'Fashion', 'Interviews']
         return (
           <div style={{ display: 'flex', background: 'antiquewhite' }}>
-            {/* Jede Kategorie bekommt eine Spalte */}
+            {/* Each category has its column */}
             {types.map(type => <Column type={type} state={this.state}></Column>)}
           </div>
         )
