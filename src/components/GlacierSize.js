@@ -2,13 +2,27 @@ import React, { Component } from 'react'
 import {
   AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip,
 } from 'recharts';
+import ModalPopUp from "./Modal";
 
 
   
   export default class GlacierSize extends Component {
+
+    constructor(props) {
+      super(props);
+      this.state = {
+        modal: []
+      };
+    }
     
     static jsfiddleUrl = 'https://jsfiddle.net/alidingling/64v6ocdx/';
     
+    triggerModal = () => {
+      this.setState({
+          ...this.state,
+          modal: true,
+  })
+};
   
     render() {
 
@@ -17,9 +31,19 @@ import {
 
         const dataArea = [
             {
-                name: 'Mean cumulative mass balance', value: glaciersize["Mean cumulative mass balance"],
+                name: "Mean cumulative mass balance", value: glaciersize["Mean cumulative mass balance"]
               },
             ];
+
+            glaciersize.map( (GlacierSize) => { //map ≈ for each. Each object iterated in the data array is called a "Mean"
+          let concStr = parseInt(GlacierSize.Year)
+                          // also the genious who came up with the idea of including a "space" in their api is to be commended!
+                  {glaciersize.push( { //pushes the selected data into the const data declared at line 10
+                      Year: concStr,
+                      MeanCumulativeMassBalance: Math.round(GlacierSize["Mean cumulative mass balance"])
+                  } )}
+          }
+      );
           
           const gradientOffset = () => {
             const dataMax = Math.max(...dataArea.map(i => i.value));
@@ -37,17 +61,29 @@ import {
           
           const off = gradientOffset();
 
-        
+          let showModal = (
+            <ModalPopUp 
+                modal={this.state.modal}
+            />
+            );
+        if(this.state.modal) {
+            showModal = (
+            <ModalPopUp 
+                modal={this.state.modal}
+                />
+            );
+        }
 
       return (
         <div>
             <h1 className="graph">Glacier size
-              <button className="circular ui icon button" style={{padding: "1.6em", marginLeft: "2%"}} onClick={() => this.info() }>
-                  <i className="info icon" style={{color: "#575A89"}}></i>
-              </button>
+              {showModal}
+                    <button className="circular ui button" style={{padding: "1em", marginLeft: "2%", display: "none"}} onClick={() => this.triggerModal()}>
+                        <i className="info icon" style={{color: "#575A89", paddingLeft: "50%"}}></i>
+                    </button>
             </h1>
             <div>
-                <div className="ui two wide grid" style={{width:"50%", marginLeft: "5em"}}></div>
+                <div className="ui two wide grid graph" style={{width:"50%", marginLeft: "5em"}}></div>
                 <AreaChart
                   width={500}
                   height={400}

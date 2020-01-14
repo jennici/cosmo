@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { 
     VictoryChart, 
     VictoryZoomContainer, 
@@ -9,54 +9,37 @@ import {
     VictoryTheme
 } from 'victory';
 import '../../src/css/cosmo.css';
-import { Button, Header, Icon, Image, Modal } from 'semantic-ui-react';
+import ModalPopUp from "./Modal";
 
 export default class CO2Emission extends Component {
     
-    constructor(props) {
+      
+      constructor(props) {
         super(props);
         this.state = {
             zoomDomain: { x: [new Date(1950, 1, 1), new Date(2014, 1, 1)],},
-            isCO2: []
+            isCO2: [],
+            modal: false,
+            clicked_index: 0
         };
+        this.clickHandler = this.clickHandler.bind(this);
       }
 
       handleZoom(domain) {
         this.setState({ zoomDomain: domain });
       }
 
+      clickHandler(index){
+        console.log(index)
+          this.setState({clicked_index: index});
+      };
 
-      ModalScrollingInfo = () => {
-        console.log("it works");
-          return (
-            <Modal trigger={<Button>Long Modal</Button>}>
-                <Modal.Header>Profile Picture</Modal.Header>
-                <Modal.Content image>
-                    <Image wrapped size='medium' src='https://react.semantic-ui.com/images/wireframe/image.png' />
-                    <Modal.Description>
-                        <Header>Modal Header</Header>
-                        <p>
-                        This is an example of expanded content that will cause the modal's
-                        dimmer to scroll
-                        </p>
-                        <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
-                        <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
-                        <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
-                        <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
-                        <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
-                        <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
-                        <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
-                        <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
-                    </Modal.Description>
-                </Modal.Content>
-            <Modal.Actions>
-                <Button primary>
-                    Proceed <Icon name='right chevron' />
-                </Button>
-            </Modal.Actions>
-        </Modal>
-        );
-    };
+      triggerModal = () => {
+        this.setState({
+            ...this.state,
+            modal: true,
+    })
+};
       
     filterYear = (year) => {
         this.props.onFilterYear(year);
@@ -75,28 +58,33 @@ export default class CO2Emission extends Component {
             };
         });
 
-       /* const dataGas = emission.map(item => {
-            return { 
-                Year: new Date(item["Year"], 1, 1), 
-                Value1: parseInt(item["Gas Fuel"]),
-                Value2: parseInt(item["Liquid Fuel"]),
-                Value3: parseInt(item["Solid Fuel"]),
-                Value4: parseInt(item["Cement"]),
-                Value5: parseInt(item["Gas Flaring"])
-            };
-        });*/
 
+        let showModal = (
+            <ModalPopUp 
+                modal={this.state.modal}
+            />
+            );
+        if(this.state.modal) {
+            showModal = (
+            <ModalPopUp 
+                modal={this.state.modal}
+                />
+            );
 
+    }
         return (
-            <div>
-                <h1 className="graph">Global CO2 emissions from fossil fuels  
-                    <button className="circular ui button" style={{padding: "1em", marginLeft: "2%"}} onClick={this.ModalScrollingInfo}>
+            <div className="ui grid" id="block">
+                <h1 className="graph">Global CO2 emissions from fossil fuels
+                    
+                    <button className="circular ui button" style={{padding: "1em", marginLeft: "2%", display: "none"}} onClick={() => this.triggerModal()}>
                         <i className="info icon" style={{color: "#575A89", paddingLeft: "50%"}}></i>
-                    </button> 
+                    </button>
+                    
                 </h1>
+                {showModal} 
                 
                 <div>
-                    <div className="ui two wide grid" style={{width:"50%"}}>
+                    <div className="ui two wide grid graph" style={{width:"50%"}}>
                     <VictoryChart 
                             theme={VictoryTheme.material}
                             padding={{ top: 5, left: 50, right: 50, bottom: 30 }}
@@ -179,7 +167,5 @@ export default class CO2Emission extends Component {
                 </div>
             </div>
         )
-    }
-}
-  
-
+    
+    }}

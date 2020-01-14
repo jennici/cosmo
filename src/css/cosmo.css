@@ -55,11 +55,26 @@
   /*Graph components*/
   .graph {
     color: #575A89;
+    align-items: center;
+  }
+
+  #graph {
+    display: inline;
+  }
+
+  #block {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #myMenu {
+    color: #ff4c49;
   }
 
   .ui.circular.button {
-    border-radius: 20em;
+    border-radius: 16em;
   }
+
 
   i.icon, i.icons {
     font-size: 2em;
@@ -72,6 +87,10 @@
   .ui.card {
     width: 300px;
     height: 200px;
+  }
+
+  .ui.two.wide.grid.graph {
+    margin-left: 2em;
   }
 
   /*Teaser Cards*/
@@ -148,15 +167,23 @@
 
   .article-card{
     font-size: 10px;
-    padding: 50px;
+    padding: 30px;
   }
 
-  .article-text{
-    font-size: 25px;
+  .article-text {
+    font-size: 20px;
     background-color: antiquewhite;
     color: #575A89;
     font-weight: 500;
     letter-spacing: 0px;
+    text-decoration-style: none;
+    margin-left : auto; 
+    margin-right: auto ;
+  }
+
+  .article-link {
+    color: #575A89;
+    text-decoration-style: none;
   }
 
   .article-pic{
@@ -183,4 +210,29 @@ input[type=number] {
     padding: 20px;
     font-weight: bold;
     text-align: center;
+}
+
+.ui.vertical.button {
+    font-family: "Futura", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 15px;
+    color: #F14B31;
+}
+
+/* Here starts the modal*/
+p.modal {
+  font-family: "Futura", sans-serif;
+  font-size: 10px;
+  color: #575A89;
+}
+
+h5.modal {
+  color: #F14B31;
+}
+
+.modal.header {
+  font-family: "Futura", sans-serif;
+  letter-spacing: 3px;
 }

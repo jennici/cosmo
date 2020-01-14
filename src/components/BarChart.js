@@ -18,12 +18,23 @@ import {
        if(co2 === undefined) return <p>There is no data.</p>
      
        const dataBarChart = [
-           {name: 'Gas', uv: co2["Gas Fuel"]},
-           {name: 'Liquid', uv: co2["Liquid Fuel"]},
-           {name: 'Cement', uv: co2["Cement"]},
-           {name: 'Solid', uv: co2["Solid Fuel"]}
+           {name: 'Gas', value: co2["Gas Fuel"]},
+           {name: 'Liquid', value: co2["Liquid Fuel"]},
+           {name: 'Cement', value: co2["Cement"]},
+           {name: 'Solid', value: co2["Solid Fuel"]}
         
      ];
+
+     /* const dataGas = emission.map(item => {
+            return { 
+                Year: new Date(item["Year"], 1, 1), 
+                Value1: parseInt(item["Gas Fuel"]),
+                Value2: parseInt(item["Liquid Fuel"]),
+                Value3: parseInt(item["Solid Fuel"]),
+                Value4: parseInt(item["Cement"]),
+                Value5: parseInt(item["Gas Flaring"])
+            };
+        });*/
      
        return(
            <div>
@@ -36,7 +47,7 @@ import {
       <CartesianGrid strokeDasharray="3 3"/>
       <XAxis dataKey="name"/>
       <YAxis/>
-      <Bar dataKey="uv" fill="#82ca9d" />
+      <Bar dataKey="value" fill="#82ca9d" />
      </BarChart>
      </div>
        );

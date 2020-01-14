@@ -133,6 +133,64 @@ export default class App extends Component {
       CO2Emission2={this.state.emission[this.state.indexYear2]}
       onYearFilter={this.handleYearFilter}
       />
+      {/*<table className="ui celled table" align="center">
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Total</th>
+                            <th>Gas Fuel</th>
+                            <th>Liquid Fuel</th>
+                            <th>Solid Fuel</th>
+                            <th>Cement</th>
+                            <th>Gas Flaring</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {this.state.emission.map((emission, idx) => (
+                        <tr key={idx}>
+                            <td data-label="Name">{emission.Year}</td>
+                            <td data-label="Total">{emission.Total}</td>
+                            <td data-label="Gas Fuel">{emission['Gas Fuel']}</td>
+                            <td data-label="Liquid Fuel">{emission['Liquid Fuel']}</td>
+                            <td data-label="Solid Fuel">{emission['Solid Fuel']}</td>
+                            <td data-label="Cement">{emission.Cement}</td>
+                            <td data-label="Gas Flaring">{emission['Gas Flaring']}</td>
+                        </tr>
+                         ))}
+                    </tbody>
+                </table>
+                <table className="ui celled table" align="center">
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Mean</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {this.state.temperature.map((temperature, idx) => (
+                        <tr key={idx}>
+                            <td data-label="Year">{temperature.Year}</td>
+                            <td data-label="Mean">{temperature.Mean}</td>
+                        </tr>
+                         ))}
+                    </tbody>
+                </table>
+                <table className="ui celled table" align="center">
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Mean cumulative mass balance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {this.state.glaciersize.map((glaciersize, idx) => (
+                        <tr key={idx}>
+                            <td data-label="Year">{glaciersize.Year}</td>
+                            <td data-label="Mean cumulative mass balance">{glaciersize["Mean cumulative mass balance"]}</td>
+                        </tr>
+                         ))}
+                    </tbody>
+                        </table>*/}
     </div>
     );
   }

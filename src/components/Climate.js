@@ -10,6 +10,7 @@ import GlobalTemperature from './GlobalTemperature';
 import GlacierSize from './GlacierSize';
 import ArticleT from './ArticleT';
 import MyBarChart from "./BarChart";
+import FeelScale from './FeelScale';
 
 class Climate extends Component{
 
@@ -50,20 +51,20 @@ class Climate extends Component{
 
         //current Chart is shown
         let currentChart = (
-            <CO2Emission 
-                emission={this.props.emission} 
-                co2={this.state.isCO2} 
-            />
-            /*<MyBarChart
+            <MyBarChart
                 chartName="Bar1"
                 CO2Emission1={this.props.CO2Emission1}
                 onYearFilter={this.props.onYearFilter}
+            />,
+            <CO2Emission 
+                emission={this.props.emission} 
+                co2={this.state.isCO2} 
             />,
             <MyBarChart
                 chartName="Bar2"
                 CO2Emission2={this.state.CO2Emission2}
                 onYearFilter={this.props.onYearFilter}
-            />*/
+            />
         );
         if(this.state.isCO2) {
             currentChart = (
@@ -104,39 +105,44 @@ class Climate extends Component{
             <div>
                 {/*<img src={meltingice} style={{ float: "right", width: "18%" }} alt="melting ice" />*/}
                 <img src={climateheader} style={{width: "100%"}} alt="climateheader" />
-                <div class="ui grid">
-                <div class="three wide column">
-                <img src={cartoongirl} style={{width: "110%"}} alt="climategirl" />
-                </div>
-                <div class="twelve wide column"><h1 className="intro-h1">CLIMATE CHANGE, DARLING...</h1>
-                <h2 className="intro-h2">...will affect us all and since it's not going anywhere, it's time to get you involved and empowered!</h2>
-                <h3 className="intro-h3">It is easy to feel overwhelmed with everything that's going on right now. With our new series about the topic, we fill you in with what you need to know and how you can elevate your lifestyle to a more sustainable one - all in a fun and easy way!</h3>
-                </div>
-                <div class="eight wide column"></div>
-                <div class="four wide column">
-                <img src={arrow} style={{width: "20%"}}alt="greenarrow" /> 
-                </div>
-                <div class="three wide column">
-                <img src={bush} alt="bushdetail" />
-                </div>
-                </div>   
-
-                <div style={{marginLeft: "5em", marginRight: "5em", height: "100%"}}>
-                    <Menu 
-                        co2={this.triggerCO2EmissionState} 
-                        temp={this.triggerGlobalTemperatureState} 
-                        glacier={this.triggerGlacierSizeState} 
-                    />
-                    {currentChart}
-                </div>
                 <div className="ui grid">
-                <div className="ten wide column">
-                    <h4 className="intro-h4">KEEP CALM AND BE SUSTAINABLE</h4>
-                    <p className="intro-p">With a more green lifestyle and a shift of preceptions, a whole new world opens up! We show you a range of brilliant beauty products and how sustainable brands level up the fashion game with irresistible new materials and creations. Also, our most beloved celeberties lead the way and encourage you to join them - stay tuned for our new interview series!</p>
-                </div>
-                <div className="three wide column">
-                <img src={cartoongirl2} style={{  }} alt="girl 2" />
-                </div>
+                    <div className="three wide column">
+                        <img src={cartoongirl} style={{width: "110%"}} alt="climategirl" />
+                    </div>
+                    <div className="twelve wide column">
+                        <h1 className="intro-h1">CLIMATE CHANGE, DARLING...</h1>
+                        <h2 className="intro-h2">...will affect us all and since it's not going anywhere, it's time to get you involved and empowered!</h2>
+                        <h3 className="intro-h3">It is easy to feel overwhelmed with everything that's going on right now. With our new series about the topic, we fill you in with what you need to know and how you can elevate your lifestyle to a more sustainable one - all in a fun and easy way!</h3>
+                    </div>
+                    <div className="eight wide column"></div>
+                    <div className="four wide column">
+                        <img src={arrow} style={{width: "20%"}}alt="greenarrow" /> 
+                    </div>
+                    <div className="three wide column">
+                        <img src={bush} alt="bushdetail" />
+                    </div>
+                </div>   
+                <div className="ui grid" id="graph">
+                    <div className="row" style={{marginLeft: "5em", marginRight: "5em", marginBottom: "5em"}}>
+                        
+                        <Menu 
+                            co2={this.triggerCO2EmissionState} 
+                            temp={this.triggerGlobalTemperatureState} 
+                            glacier={this.triggerGlacierSizeState} 
+                        />
+                        {currentChart}
+                    </div>
+                    <div>
+                        <FeelScale />
+                    </div>
+                
+                    <div className="ten wide column">
+                        <h4 className="intro-h4">KEEP CALM AND BE SUSTAINABLE</h4>
+                        <p className="intro-p">With a more green lifestyle and a shift of preceptions, a whole new world opens up! We show you a range of brilliant beauty products and how sustainable brands level up the fashion game with irresistible new materials and creations. Also, our most beloved celeberties lead the way and encourage you to join them - stay tuned for our new interview series!</p>
+                    </div>
+                    <div className="three wide column">
+                        <img src={cartoongirl2} style={{  }} alt="girl 2" />
+                    </div>
                 </div>
                 <ArticleT />
             </div>

@@ -15,8 +15,6 @@ export default class Menu extends Component {
       };
 
       render() {
-
-       // if (props.clicked) make it active and show colour difference, look up work from other girl or Kayvan or YT
             
 
 

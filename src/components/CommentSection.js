@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import 'semantic-ui-css/semantic.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import '../cosmocss/cosmocsstest.css'
+import '../css/cosmo.css'
 
 export default class CommentSection extends Component {
     state = {

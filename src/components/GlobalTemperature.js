@@ -5,6 +5,7 @@ import {
     VictoryBar,
     VictoryTooltip
 } from 'victory';
+import ModalPopUp from "./Modal";
 
 export default class GlobalTemperature extends Component {
 
@@ -12,7 +13,8 @@ export default class GlobalTemperature extends Component {
         super();
         this.state = {
           zoomDomain: { x: [new Date(1950, 1, 1), new Date(2016, 1, 1)] },
-          isTemp: []
+          isTemp: [],
+          modal: false
         };
       }
 
@@ -20,28 +22,52 @@ export default class GlobalTemperature extends Component {
         this.setState({ zoomDomain: domain });
       }
 
+      triggerModal = () => {
+        this.setState({
+            ...this.state,
+            modal: true,
+    })
+};
+   
+
     render() {
 
         const temperature = this.props.temperature;
+        
         if (temperature === undefined) return <p>No data avaiable.</p>
 
         // map every row from emission (array) to x and y values
         const dataChart = temperature.map(item => {
             return { 
                 Year: new Date(item["Year"], 1, 1), 
-                Value: parseInt(item["Mean"]/1000)
+                Value: parseInt(item["Mean"])
             };
         });
+
+        let showModal = (
+            <ModalPopUp 
+                modal={this.state.modal}
+            />
+            );
+        if(this.state.modal) {
+            showModal = (
+            <ModalPopUp 
+                modal={this.state.modal}
+                />
+            );
+        }
+    
         
         return (
             <div>
                 <h1 className="graph">Global temperature
-                    <button className="circular ui icon button" style={{padding: "1.6em", marginLeft: "2%"}} onClick={() => this.info() }> {/*use a modal pop up*/}
-                        <i className="info icon" style={{color: "#575A89"}}></i>
+                    {showModal}
+                    <button className="circular ui button" style={{padding: "1em", marginLeft: "2%", display: "none"}} onClick={() => this.triggerModal()}>
+                        <i className="info icon" style={{color: "#575A89", paddingLeft: "50%"}}></i>
                     </button>
                 </h1>                
                 <div>
-                    <div className="ui two wide grid" style={{width:"50%"}}>
+                    <div className="ui two wide grid graph">
                     <VictoryChart
                         theme={VictoryTheme.material}
                         domainPadding={10}
