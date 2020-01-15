@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/cosmo/static/css/main.01f72b66.chunk.css",
-    "main.js": "/cosmo/static/js/main.000a98dc.chunk.js",
-    "main.js.map": "/cosmo/static/js/main.000a98dc.chunk.js.map",
+    "main.css": "/cosmo/static/css/main.d812c29d.chunk.css",
+    "main.js": "/cosmo/static/js/main.4fa34474.chunk.js",
+    "main.js.map": "/cosmo/static/js/main.4fa34474.chunk.js.map",
     "runtime-main.js": "/cosmo/static/js/runtime-main.bfbd46ea.js",
     "runtime-main.js.map": "/cosmo/static/js/runtime-main.bfbd46ea.js.map",
     "static/css/2.fcaf600d.chunk.css": "/cosmo/static/css/2.fcaf600d.chunk.css",
-    "static/js/2.a134e75b.chunk.js": "/cosmo/static/js/2.a134e75b.chunk.js",
-    "static/js/2.a134e75b.chunk.js.map": "/cosmo/static/js/2.a134e75b.chunk.js.map",
+    "static/js/2.e7c00606.chunk.js": "/cosmo/static/js/2.e7c00606.chunk.js",
+    "static/js/2.e7c00606.chunk.js.map": "/cosmo/static/js/2.e7c00606.chunk.js.map",
     "index.html": "/cosmo/index.html",
-    "precache-manifest.bd17e80e067bd001c052608f6be00d52.js": "/cosmo/precache-manifest.bd17e80e067bd001c052608f6be00d52.js",
+    "precache-manifest.9a0a383cef54808d286e6bc3f035f9b8.js": "/cosmo/precache-manifest.9a0a383cef54808d286e6bc3f035f9b8.js",
     "service-worker.js": "/cosmo/service-worker.js",
     "static/css/2.fcaf600d.chunk.css.map": "/cosmo/static/css/2.fcaf600d.chunk.css.map",
-    "static/css/main.01f72b66.chunk.css.map": "/cosmo/static/css/main.01f72b66.chunk.css.map",
-    "static/js/2.a134e75b.chunk.js.LICENSE": "/cosmo/static/js/2.a134e75b.chunk.js.LICENSE",
+    "static/css/main.d812c29d.chunk.css.map": "/cosmo/static/css/main.d812c29d.chunk.css.map",
+    "static/js/2.e7c00606.chunk.js.LICENSE": "/cosmo/static/js/2.e7c00606.chunk.js.LICENSE",
     "static/media/6-innovative-materials-to-save-earth.png": "/cosmo/static/media/6-innovative-materials-to-save-earth.a059e09a.png",
     "static/media/JessieJ.png": "/cosmo/static/media/JessieJ.7c793fd6.png",
     "static/media/Stories-behind DiCaprios-new-documentary.png": "/cosmo/static/media/Stories-behind DiCaprios-new-documentary.dad608d2.png",
@@ -22,8 +22,8 @@
     "static/media/cartoongirl.png": "/cosmo/static/media/cartoongirl.afa016db.png",
     "static/media/cartoongirl2.png": "/cosmo/static/media/cartoongirl2.c0f39655.png",
     "static/media/climateheader.jpg": "/cosmo/static/media/climateheader.de817362.jpg",
-    "static/media/example1.png": "/cosmo/static/media/example1.37a2cdcf.png",
-    "static/media/example2.png": "/cosmo/static/media/example2.9df55827.png",
+    "static/media/fashion.png": "/cosmo/static/media/fashion.6e136365.png",
+    "static/media/gruen-neben-first-question.png": "/cosmo/static/media/gruen-neben-first-question.6e1c6df2.png",
     "static/media/loading_earth2.gif": "/cosmo/static/media/loading_earth2.23d0811f.gif",
     "static/media/logo.png": "/cosmo/static/media/logo.478100a2.png",
     "static/media/picarrow.svg": "/cosmo/static/media/picarrow.07f5b512.svg",
@@ -44,8 +44,9 @@
     "static/media/pickat.png": "/cosmo/static/media/pickat.04e206c1.png",
     "static/media/pickat2.png": "/cosmo/static/media/pickat2.cae2ee27.png",
     "static/media/pickesandu.png": "/cosmo/static/media/pickesandu.aa82ed45.png",
-    "static/media/picmakeup.png": "/cosmo/static/media/picmakeup.359da397.png",
+    "static/media/picmakeup.png": "/cosmo/static/media/picmakeup.47838a8a.png",
     "static/media/picorga.png": "/cosmo/static/media/picorga.7b28b8e1.png",
+    "static/media/picpobear.png": "/cosmo/static/media/picpobear.913f023c.png",
     "static/media/picskincare2.png": "/cosmo/static/media/picskincare2.360c5105.png",
     "static/media/picvegan.png": "/cosmo/static/media/picvegan.3bd5a67e.png",
     "static/media/politics.png": "/cosmo/static/media/politics.45123c4f.png",
@@ -54,13 +55,13 @@
     "static/media/styletext.png": "/cosmo/static/media/styletext.62d499bd.png",
     "static/media/the-benefits-of-natural-conditioners.png": "/cosmo/static/media/the-benefits-of-natural-conditioners.853d5d6a.png",
     "static/media/three-women.png": "/cosmo/static/media/three-women.ecbd31b1.png",
-    "static/media/zoombar.gif": "/cosmo/static/media/zoombar.9538a43b.gif"
+    "static/media/zoombar.gif": "/cosmo/static/media/zoombar.b502a334.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.bfbd46ea.js",
     "static/css/2.fcaf600d.chunk.css",
-    "static/js/2.a134e75b.chunk.js",
-    "static/css/main.01f72b66.chunk.css",
-    "static/js/main.000a98dc.chunk.js"
+    "static/js/2.e7c00606.chunk.js",
+    "static/css/main.d812c29d.chunk.css",
+    "static/js/main.4fa34474.chunk.js"
   ]
 }

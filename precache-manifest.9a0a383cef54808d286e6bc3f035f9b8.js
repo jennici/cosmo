@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e53062ecd9300888e847f3df126c837f",
+    "revision": "330ddcfeb427b276a56475625c40d90a",
     "url": "/cosmo/index.html"
   },
   {
-    "revision": "da5819c5391c32faeaa5",
+    "revision": "70d800b493adddedc986",
     "url": "/cosmo/static/css/2.fcaf600d.chunk.css"
   },
   {
-    "revision": "6595f1b132b9f44bdd02",
-    "url": "/cosmo/static/css/main.01f72b66.chunk.css"
+    "revision": "72c8e00f216c695e20ed",
+    "url": "/cosmo/static/css/main.d812c29d.chunk.css"
   },
   {
-    "revision": "da5819c5391c32faeaa5",
-    "url": "/cosmo/static/js/2.a134e75b.chunk.js"
+    "revision": "70d800b493adddedc986",
+    "url": "/cosmo/static/js/2.e7c00606.chunk.js"
   },
   {
     "revision": "380251f6792b7f26147bff13c262f105",
-    "url": "/cosmo/static/js/2.a134e75b.chunk.js.LICENSE"
+    "url": "/cosmo/static/js/2.e7c00606.chunk.js.LICENSE"
   },
   {
-    "revision": "6595f1b132b9f44bdd02",
-    "url": "/cosmo/static/js/main.000a98dc.chunk.js"
+    "revision": "72c8e00f216c695e20ed",
+    "url": "/cosmo/static/js/main.4fa34474.chunk.js"
   },
   {
     "revision": "a038327a211ece34d7bf",
@@ -76,16 +76,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cosmo/static/media/climateheader.de817362.jpg"
   },
   {
-    "revision": "37a2cdcf0e9d3c795a462a67cfc04f13",
-    "url": "/cosmo/static/media/example1.37a2cdcf.png"
-  },
-  {
-    "revision": "9df55827c5f478c36889c296a68c236f",
-    "url": "/cosmo/static/media/example2.9df55827.png"
+    "revision": "6e136365f4750e7cd2d0dd5ab5ee39d2",
+    "url": "/cosmo/static/media/fashion.6e136365.png"
   },
   {
     "revision": "9c74e172f87984c48ddf5c8108cabe67",
     "url": "/cosmo/static/media/flags.9c74e172.png"
+  },
+  {
+    "revision": "6e1c6df26a9a816ff13b744477e11ec2",
+    "url": "/cosmo/static/media/gruen-neben-first-question.6e1c6df2.png"
   },
   {
     "revision": "0ab54153eeeca0ce03978cc463b257f7",
@@ -208,12 +208,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cosmo/static/media/pickesandu.aa82ed45.png"
   },
   {
-    "revision": "359da39728038a5850b5a8bacfea51b1",
-    "url": "/cosmo/static/media/picmakeup.359da397.png"
+    "revision": "47838a8ab58d0628bf717976f874f11e",
+    "url": "/cosmo/static/media/picmakeup.47838a8a.png"
   },
   {
     "revision": "7b28b8e187f69607982c35aee77033e2",
     "url": "/cosmo/static/media/picorga.7b28b8e1.png"
+  },
+  {
+    "revision": "913f023c55236342f7868df0fa8ff309",
+    "url": "/cosmo/static/media/picpobear.913f023c.png"
   },
   {
     "revision": "360c51053e596794a88e86363624bf36",
@@ -248,7 +252,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cosmo/static/media/three-women.ecbd31b1.png"
   },
   {
-    "revision": "9538a43b0a43f48207a5427c8ba63844",
-    "url": "/cosmo/static/media/zoombar.9538a43b.gif"
+    "revision": "b502a334065074c25bb38a9bcaed2de7",
+    "url": "/cosmo/static/media/zoombar.b502a334.gif"
   }
 ]);
