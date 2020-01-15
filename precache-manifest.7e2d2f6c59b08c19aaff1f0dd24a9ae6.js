@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "330ddcfeb427b276a56475625c40d90a",
+    "revision": "82b5caac33f152edbbd46090f7d2381d",
     "url": "/cosmo/index.html"
   },
   {
-    "revision": "70d800b493adddedc986",
+    "revision": "9ec245d580f14615c66a",
     "url": "/cosmo/static/css/2.fcaf600d.chunk.css"
   },
   {
-    "revision": "72c8e00f216c695e20ed",
+    "revision": "8b15f1f99c226cc9db86",
     "url": "/cosmo/static/css/main.d812c29d.chunk.css"
   },
   {
-    "revision": "70d800b493adddedc986",
-    "url": "/cosmo/static/js/2.e7c00606.chunk.js"
+    "revision": "9ec245d580f14615c66a",
+    "url": "/cosmo/static/js/2.47456318.chunk.js"
   },
   {
     "revision": "380251f6792b7f26147bff13c262f105",
-    "url": "/cosmo/static/js/2.e7c00606.chunk.js.LICENSE"
+    "url": "/cosmo/static/js/2.47456318.chunk.js.LICENSE"
   },
   {
-    "revision": "72c8e00f216c695e20ed",
-    "url": "/cosmo/static/js/main.4fa34474.chunk.js"
+    "revision": "8b15f1f99c226cc9db86",
+    "url": "/cosmo/static/js/main.6a64f468.chunk.js"
   },
   {
     "revision": "a038327a211ece34d7bf",
