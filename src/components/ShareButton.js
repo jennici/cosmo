@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import 'semantic-ui-css/semantic.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import '../../src/css/cosmo.css';
 
 export default class ShareButton extends Component {
     state = {
@@ -9,7 +10,7 @@ export default class ShareButton extends Component {
   render() {
   
       return (
-        <div style={{padding:'2px'}}>
+        <div style={{padding: "1em", verticalAlign: "none"}}>
             <button className="ui circular facebook icon button">
                 <i className="facebook icon"></i>
             </button>

@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import 'semantic-ui-css/semantic.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import ShareButton from '../components/ShareButton';
+import ShareButton from './ShareButton';
+import FeelScale from "./FeelScale";
+import CommentSection from "./CommentSection";
 import picarrow from '../pictures/picarrow.svg';
 import picavatar2 from '../pictures/picavatar2.png';
 import picskincare2 from '../pictures/picskincare2.png';
@@ -10,6 +12,7 @@ import picethical from '../pictures/picethical.png';
 import picfair from '../pictures/picfair.png';
 import picvegan from '../pictures/picvegan.png';
 import picorga from '../pictures/picorga.png';
+
 
 export default class ArticleTwo extends Component {
     state = {
@@ -142,7 +145,11 @@ export default class ArticleTwo extends Component {
 
             <h3 style={{fontFamily:'Source Sans Pro, Helvetica', fontSize:'20px', fontWeight:'normal', padding:'2%'}}> Now that you're highly equipped for your next talk at the coffeemachine about "fashion sustainability", we are eager to show you the most fashion-forward brands out there! </h3>
 
+            <FeelScale />
+
             <h3 style={{fontFamily:'Source Sans Pro, Helvetica', fontSize:'20px', fontWeight:'bold', padding:'3%'}}> <a href="https://www.cosmopolitan.com/style-beauty/fashion/g9255699/sustainable-eco-green-clothing-brands/" target="_blank" rel="noopener noreferrer" style={{color:'#ff4c49'}}> Here Come 21 Sustainable Clothing Brands for People Who Give a Sh*t About the Environment! </a> </h3>
+
+            <CommentSection />
 
         </div>
 

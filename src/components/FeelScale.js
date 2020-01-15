@@ -61,7 +61,7 @@ export default class FeelScale extends Component {
             
         <React.Fragment>
 
-            <div className="ui five column centered grid">
+            <div className="ui five column centered grid" style={{marginTop: "2em", marginBottom: "2em"}}>
                 
                 <div>
                 <button className="circular ui icon button"><img src={dizzy} className="ui tiny image" alt="reaction button dizzy eyes" onClick={this.incrementdizzy} /></button>

@@ -10,6 +10,7 @@ import {
 } from 'victory';
 import '../../src/css/cosmo.css';
 import ModalPopUp from "./Modal";
+import zoombar from '../pictures/zoombar.gif';
 
 export default class CO2Emission extends Component {
     
@@ -73,99 +74,115 @@ export default class CO2Emission extends Component {
 
     }
         return (
-            <div className="ui grid" id="block">
-                <h1 className="graph">Global CO2 emissions from fossil fuels
-                    
-                    <button className="circular ui button" style={{padding: "1em", marginLeft: "2%", display: "none"}} onClick={() => this.triggerModal()}>
-                        <i className="info icon" style={{color: "#575A89", paddingLeft: "50%"}}></i>
-                    </button>
-                    
-                </h1>
-                {showModal} 
+            <div id="block">
+                <div className="row">
+                    <div className="ten wide column">
+                        <h1 className="graph">Global CO2 emissions from fossil fuels
+                            
+                            <button className="circular ui button" style={{padding: "1em", marginLeft: "2%", display: "none"}} onClick={() => this.triggerModal()}>
+                                <i className="info icon" style={{color: "#575A89", paddingLeft: "50%"}}></i>
+                            </button>
+                            
+                        </h1>
+                    </div>
+                    <div className="six wide column">
+                        {showModal}
+                    </div>
+                </div>
                 
-                <div>
-                    <div className="ui two wide grid graph" style={{width:"50%"}}>
-                    <VictoryChart 
-                            theme={VictoryTheme.material}
-                            padding={{ top: 5, left: 50, right: 50, bottom: 30 }}
-                            width={400}
-                            height={250} 
-                            scale={{ x: "time" }}
-                            style={{ parent: { overflow: 'visible' }}}
-                            containerComponent={
-                            <VictoryZoomContainer
-                                zoomDimension="x"
-                                zoomDomain={this.state.zoomDomain}
-                                onZoomDomainChange={this.handleZoom.bind(this)}
-                            />}
-                        >
-                            <VictoryLine
-                                labelComponent={
-                                    <VictoryTooltip />
+                    <div className="container">
+                    <div className="row">
+                        <div className="col-6 graph">
+                        <p>million tons of C</p>
+                        <VictoryChart
+                                theme={VictoryTheme.material}
+                                padding={{ top: 5, left: 50, right: 50, bottom: 30 }}
+                                width={400}
+                                height={250} 
+                                scale={{ x: "time" }}
+                                style={{ parent: { overflow: 'visible' }}}
+                                containerComponent={
+                                <VictoryZoomContainer
+                                    zoomDimension="x"
+                                    zoomDomain={this.state.zoomDomain}
+                                    onZoomDomainChange={this.handleZoom.bind(this)}
+                                />}
+                            >
+                                <VictoryLine
+                                    labelComponent={
+                                        <VictoryTooltip />
+                                    }
+                                    
+                                    style={{
+                                        data: { stroke: "tomato" }
+                                    }}
+                                    data={dataLineChart}
+                                    x="Year"
+                                    y="Value"
+                                    events={[{
+                                        target: "data",
+                                        eventHandlers: {
+                                        onMouseOver: () => {
+                                            return [
+                                            {
+                                                target: "data"
+                                            }, {
+                                                target: "labels"
+                                                
+                                            }
+                                            ];
+                                        },
+                                        onMouseOut: () => {
+                                        return [
+                                            {
+                                            target: "data"
+                                            
+                                            }, {
+                                            target: "labels"
+                                            }
+                                        ];
+                                        }
+                                    }
+                                }]}
+                                /> 
+                        </VictoryChart>
+                        <p style={{marginLeft: "85%"}}>year</p>
+
+                        <VictoryChart
+                                padding={{ top: 5, left: 50, right: 50, bottom: 30 }}
+                                width={600} 
+                                height={100} 
+                                scale={{ x: "time" }}
+                                containerComponent={
+                                    <VictoryBrushContainer
+                                        brushDimension="x"
+                                        brushDomain={this.state.zoomDomain}
+                                        onBrushDomainChange={this.handleZoom.bind(this)}
+                                    />
                                 }
-                                
+                            >
+                            <VictoryAxis
+                                tickFormat={(x) => new Date(x).getFullYear()}
+                            />
+                            <VictoryLine
                                 style={{
                                     data: { stroke: "tomato" }
                                 }}
                                 data={dataLineChart}
                                 x="Year"
                                 y="Value"
-                                events={[{
-                                    target: "data",
-                                    eventHandlers: {
-                                      onMouseOver: () => {
-                                        return [
-                                          {
-                                            target: "data"
-                                          }, {
-                                            target: "labels"
-                                            
-                                          }
-                                        ];
-                                    },
-                                    onMouseOut: () => {
-                                      return [
-                                        {
-                                          target: "data"
-                                          
-                                        }, {
-                                          target: "labels"
-                                        }
-                                      ];
-                                    }
-                                }
-                              }]}
-                            /> 
-                    </VictoryChart>
-
-                    <VictoryChart
-                            padding={{ top: 5, left: 50, right: 50, bottom: 30 }}
-                            width={600} 
-                            height={100} 
-                            scale={{ x: "time" }}
-                            containerComponent={
-                                <VictoryBrushContainer
-                                    brushDimension="x"
-                                    brushDomain={this.state.zoomDomain}
-                                    onBrushDomainChange={this.handleZoom.bind(this)}
-                                />
-                            }
-                        >
-                        <VictoryAxis
-                            tickFormat={(x) => new Date(x).getFullYear()}
-                        />
-                        <VictoryLine
-                            style={{
-                                data: { stroke: "tomato" }
-                            }}
-                            data={dataLineChart}
-                            x="Year"
-                            y="Value"
-                        />
-                    </VictoryChart>
-                    </div>                   
-                </div>
-            </div>
+                            />
+                        </VictoryChart> 
+                        
+                        </div>
+                           <div className="col-6">
+                                <h3 className="intro-h3" style={{margin: "auto", textAlign: "left", float: "right"}}>Use the grey bar to learn more about the history of CO2 emissions and how the emissions have exploded over the last decades.</h3>
+                                <img src={zoombar} alt="how to drag the zoombar" style={{width: "50%", padding: "1em", border: "1px solid #575A89", textAlign: "center", marginLeft: "12em", float: "center"}} /> 
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                              
         )
     
     }}

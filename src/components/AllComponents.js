@@ -15,11 +15,8 @@ import NotFound from './NotFound';
 
 class AllComponents extends Component{
 
-    componentDidUpdate() {
-        window.scrollTo(0, 0);
-      }
-
     render(){
+
         return(
             <div>
                 <Navbar />
@@ -49,7 +46,7 @@ class AllComponents extends Component{
                 <ArticleOne />
                 </Route>
 
-                <Route path="/okay-but-what-does-“sustainable-fashion”-actually-mean?">
+                <Route path="/okay-but-what-does-sustainable-fashion-actually-mean">
                 <ArticleTwo />
                 </Route>
 

@@ -55,7 +55,6 @@
   /*Graph components*/
   .graph {
     color: #575A89;
-    align-items: center;
   }
 
   #graph {
@@ -71,13 +70,21 @@
     color: #ff4c49;
   }
 
-  .ui.circular.button {
+  .ui.circular.button, .ui.circular.facebook.icon.button, 
+  .ui.circular.instagram.icon.button, .ui.circular.linkedin.icon.button, .ui.circular.twitter.icon.button, 
+  .facebook.icon, .twitter.icon, .linkedin.icon, .instagram.icon {
     border-radius: 16em;
+    vertical-align: "none";
+  }
+
+  .ui.icon.button {
+    padding: 0.8em 0.8em 0.6em;
   }
 
 
   i.icon, i.icons {
     font-size: 2em;
+    vertical-align: "none";
   }
 
   .ui.button{
@@ -89,7 +96,7 @@
     height: 200px;
   }
 
-  .ui.two.wide.grid.graph {
+  .eight.wide.column.graph {
     margin-left: 2em;
   }
 
@@ -109,12 +116,12 @@
 
   .intro-h1{
     color: #38BF3E;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 900;
   }
 
   .intro-h2{
-    font-size: 40px;
+    font-size: 30px;
     color: #575A89;
     text-align: center;
     margin: auto;
@@ -122,7 +129,7 @@
   }
 
   .intro-h3{
-    font-size: 30px;
+    font-size: 25px;
     color: #575A89;
     text-align: center;
     padding: 20px;
@@ -177,8 +184,7 @@
     font-weight: 500;
     letter-spacing: 0px;
     text-decoration-style: none;
-    margin-left : auto; 
-    margin-right: auto ;
+    text-align: left;
   }
 
   .article-link {
@@ -236,3 +242,32 @@ h5.modal {
   font-family: "Futura", sans-serif;
   letter-spacing: 3px;
 }
+
+/*second menu*/
+button.btn.btn-lg.active{
+  
+  background-color: white;
+  color: #575A89;
+  font-weight: bold;
+  font-family: sans-serif;
+  border-top-color: white;
+  border-right-color: white;
+  border-left-color: white;
+  border-bottom: white;
+  box-shadow: none;
+  margin-left: 2.5em;
+  letter-spacing: 3px;
+  font-size: 18pt;
+  
+}
+ 
+button.btn.btn-lg:active, button.btn.btn-lg:focus {
+  border-bottom: 3px solid #38BF3E;
+  outline: none;
+}
+
+div.col-6.graph {
+  height: 0%;
+  padding-right: 0;
+}
+

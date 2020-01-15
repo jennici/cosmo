@@ -1,5 +1,5 @@
-import React, {Component} from 'react'
-import beauty from '../pictures/beauty.png'
+import React, {Component} from 'react';
+import beauty from '../pictures/beauty.png';
 
 class Beauty extends Component{
     render(){

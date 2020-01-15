@@ -70,7 +70,8 @@ export default class App extends Component {
       glaciersize: data3,
       sealevel: data4,
       loading: false
-  });
+  })
+  window.scrollTo(0, 0);
   
 //}}}};
 
@@ -79,9 +80,13 @@ export default class App extends Component {
     //console.log(this.state.temperature);
     //console.log(this.state.glaciersize);
     //console.log(this.state.sealevel);
-  }
+  };
 
-  handleYearFilter=(chartName, Year) =>{
+  componentDidUpdate() {
+    window.scrollTo(0, 0);
+  };
+
+  /*handleYearFilter=(chartName, Year) =>{
     let index = this.state.emission.findIndex(
       co2=>co2.Year === parseInt(Year)
     );
@@ -101,8 +106,8 @@ export default class App extends Component {
     else {
       alert ("Year could not be found in data.");
     }
-  };
- 
+};*/
+
 
 
   render(){

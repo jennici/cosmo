@@ -4,9 +4,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 import picjessiej from '../pictures/picjessiej.jpg';
 import pickesandu from '../pictures/pickesandu.png';
 import picarrow from '../pictures/picarrow.svg';
-import ShareButton from '../components/ShareButton';
-import FeelScale from '../components/FeelScale';
-import CommentSection from '../components/CommentSection';
+import ShareButton from './ShareButton';
+import FeelScale from './FeelScale';
+import CommentSection from './CommentSection';
 
 export default class ArticleThree extends Component {
     state = {
@@ -49,7 +49,7 @@ export default class ArticleThree extends Component {
             <br/>
 
             <div className="embed-responsive embed-responsive-16by9">
-            <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/OKxlL4ZJHtg" allowfullscreen></iframe>
+            <iframe title="video" className="embed-responsive-item" src="https://www.youtube.com/embed/OKxlL4ZJHtg" allowfullscreen></iframe>
             </div>
 
             <br/>
@@ -64,7 +64,7 @@ export default class ArticleThree extends Component {
             <br/>
 
             <div>
-            <iframe src="https://giphy.com/embed/l2QDQXCNb2nN9iVXO" width="480" height="269" frameBorder="0" className="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/jessiej-jessie-j-real-deal-l2QDQXCNb2nN9iVXO">via GIPHY</a></p>
+            <iframe title="gif" src="https://giphy.com/embed/l2QDQXCNb2nN9iVXO" width="480" height="269" frameBorder="0" className="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/jessiej-jessie-j-real-deal-l2QDQXCNb2nN9iVXO">via GIPHY</a></p>
             </div>
 
             <br/>

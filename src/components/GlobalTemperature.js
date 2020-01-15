@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import { 
+/*import { 
     VictoryChart, 
     VictoryTheme,
     VictoryBar,
     VictoryTooltip
-} from 'victory';
+} from 'victory';*/
 import ModalPopUp from "./Modal";
 
 export default class GlobalTemperature extends Component {
@@ -37,12 +37,12 @@ export default class GlobalTemperature extends Component {
         if (temperature === undefined) return <p>No data avaiable.</p>
 
         // map every row from emission (array) to x and y values
-        const dataChart = temperature.map(item => {
+        /*const dataChart = temperature.map(item => {
             return { 
                 Year: new Date(item["Year"], 1, 1), 
                 Value: parseInt(item["Mean"])
             };
-        });
+        });*/
 
         let showModal = (
             <ModalPopUp 
@@ -60,13 +60,21 @@ export default class GlobalTemperature extends Component {
         
         return (
             <div>
-                <h1 className="graph">Global temperature
-                    {showModal}
-                    <button className="circular ui button" style={{padding: "1em", marginLeft: "2%", display: "none"}} onClick={() => this.triggerModal()}>
-                        <i className="info icon" style={{color: "#575A89", paddingLeft: "50%"}}></i>
-                    </button>
-                </h1>                
-                <div>
+                <div className="row">
+                    <div className="ten wide column">
+                        <h1 className="graph">Global temperature
+                            <button className="circular ui button" style={{padding: "1em", marginLeft: "2%", display: "none"}} onClick={() => this.triggerModal()}>
+                                <i className="info icon" style={{color: "#575A89", paddingLeft: "50%"}}></i>
+                            </button>
+                        </h1> 
+                    </div>
+                    <div className="six wide column">
+                        {showModal}
+                    </div>
+                    <h3 className="intro-h3">In Progress...</h3>
+                </div> 
+                                     
+                {/*<div>
                     <div className="ui two wide grid graph">
                     <VictoryChart
                         theme={VictoryTheme.material}
@@ -81,6 +89,7 @@ export default class GlobalTemperature extends Component {
                     </VictoryChart>
                     </div>
                 </div>
+                */}
             </div>
         )
     }
