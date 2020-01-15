@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import Style from './Style';
 import Footer from './Footer';
 import Beauty from './Beauty';
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import Sex from './Sex';
 import Politics from './Politics';
 import Climate from './Climate';
@@ -20,6 +20,7 @@ class AllComponents extends Component{
         return(
             <div>
                 <Navbar />
+                <Redirect exact from="/" to="/style" />
                 <Switch>
 
                 <Route path="/style">
