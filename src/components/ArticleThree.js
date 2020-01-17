@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import 'semantic-ui-css/semantic.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import '../css/cosmo.css';
 import picjessiej from '../pictures/picjessiej.jpg';
 import pickesandu from '../pictures/pickesandu.png';
 import picarrow from '../pictures/picarrow.svg';
@@ -81,11 +82,10 @@ export default class ArticleThree extends Component {
 
             <h3 style={{fontFamily:'Source Sans Pro, Helvetica', fontSize:'20px', fontWeight:'bold'}}>Let us know what you think!</h3>
 
+            <CommentSection />
+            
         </div>
             
-            <div>
-            <CommentSection />
-            </div>
 
           </React.Fragment>
       ); 

@@ -20,8 +20,9 @@ class AllComponents extends Component{
         return(
             <div>
                 <Navbar />
-                <Redirect exact from="/" to="/style" />
+                
                 <Switch>
+                <Redirect exact from="/" to="/style" />
 
                 <Route path="/style">
                 <Style />

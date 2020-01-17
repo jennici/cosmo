@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../css/cosmo.css'
-import { Button, Header, Icon, Image, Modal } from 'semantic-ui-react';
+import { Button, Header, Image, Modal } from 'semantic-ui-react';
 import threewomen from '../pictures/three-women.png'
 
 export default class ModalPopUp extends Component {
@@ -21,7 +21,7 @@ export default class ModalPopUp extends Component {
 
     const ModalScrolling = () => (
   
-      <Modal style={{marginLeft: "20em", marginBottom: "20em", marginTop: "5em"}} trigger={<Button className="circular ui button" style={{padding: "1em", marginTop: "60%", alignItems: "left"}}>
+      <Modal style={{marginLeft: "20em", marginBottom: "20em", marginTop: "3em"}} trigger={<Button className="circular ui button" style={{padding: "1em", marginTop: "60%", alignItems: "left"}}>
                     <i className="info icon" style={{color: "#575A89", paddingLeft: "50%"}}></i>
                     </Button>} closeIcon> 
         <Modal.Header>Info</Modal.Header>
@@ -53,7 +53,7 @@ export default class ModalPopUp extends Component {
               the human-influenced climate drivers compared by the IPCC.
               Other gases have more potent heat-trapping ability molecule per molecule than CO2
               (e.g. methane), but are simply far less abundant in the atmosphere.</p>
-              <Image src='https://www.nature.com/immersive/d41586-019-02711-4/public/img/emissions-3-small.png' />
+              <Image className="modal-img" src='https://www.nature.com/immersive/d41586-019-02711-4/public/img/emissions-3-small.png' />
               <p style={{fontFamily: "sans-serif", color: "black", fontWeight: "bold", fontSize: "13pt"}}>CO2 sticks around</p>
               <p>CO2 remains in the atmosphere longer than the other major heat-trapping gases
               emitted as a result of human activities. It takes about a decade for methane (CH4)
@@ -119,9 +119,6 @@ export default class ModalPopUp extends Component {
           </Modal.Description>
         </Modal.Content>
         <Modal.Actions>
-          <Button primary>
-            Proceed <Icon name='right chevron' />
-          </Button>
         </Modal.Actions>
       </Modal>
     )

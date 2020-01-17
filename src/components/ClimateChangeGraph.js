@@ -89,37 +89,8 @@ export default class CO2Emission extends Component {
                         {showModal}
                     </div>
                 </div>
-                
-                    <div className="container">
-                    <div className="row">
-                        <div className="col-6 graph">
-                        <p>million tons of C</p>
-                        <VictoryChart
-                                theme={VictoryTheme.material}
-                                padding={{ top: 5, left: 50, right: 50, bottom: 30 }}
-                                width={400}
-                                height={250} 
-                                scale={{ x: "time" }}
-                                style={{ parent: { overflow: 'visible' }}}
-                                containerComponent={
-                                <VictoryZoomContainer
-                                    zoomDimension="x"
-                                    zoomDomain={this.state.zoomDomain}
-                                    onZoomDomainChange={this.handleZoom.bind(this)}
-                                />}
-                            >
-                                <VictoryLine
-                                    labelComponent={
-                                        <VictoryTooltip />
-                                    }
-                                    
-                                    style={{
-                                        data: { stroke: "tomato" }
-                                    }}
-                                    data={dataLineChart}
-                                    x="Year"
-                                    y="Value"
-                                    events={[{
+
+                {/*events={[{
                                         target: "data",
                                         eventHandlers: {
                                         onMouseOver: () => {
@@ -143,7 +114,35 @@ export default class CO2Emission extends Component {
                                         ];
                                         }
                                     }
-                                }]}
+                                }]} */}
+                
+                    <div className="container">
+                    <div className="row">
+                        <div className="col-6 graph">
+                        <p>million tons of C</p>
+                        <VictoryChart
+                                theme={VictoryTheme.material}
+                                padding={{ top: 5, left: 50, right: 50, bottom: 30 }}
+                                width={400}
+                                height={250} 
+                                scale={{ x: "time" }}
+                                style={{ parent: { overflow: 'visible' }}}
+                                containerComponent={
+                                <VictoryZoomContainer
+                                    zoomDimension="x"
+                                    zoomDomain={this.state.zoomDomain}
+                                    onZoomDomainChange={this.handleZoom.bind(this)}
+                                />}
+                            >
+                                <VictoryLine
+                                    labelComponent={<VictoryTooltip/>}
+                                    
+                                    style={{
+                                        data: { stroke: "tomato" }
+                                    }}
+                                    data={dataLineChart}
+                                    x="Year"
+                                    y="Value"
                                 /> 
                         </VictoryChart>
                         <p style={{marginLeft: "85%"}}>year</p>

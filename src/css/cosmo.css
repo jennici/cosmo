@@ -101,11 +101,16 @@
   }
 
   /*Teaser Cards*/
-  .teaserlink, .teaserlink.a:hover {
+ .article-link {
     color: #575A89;
     text-decoration: none;
-    font-size: 10pt;
-    padding-top: 5%;
+    text-decoration-style: none;
+  }
+
+  a:hover, .article-link.a:hover {
+    color: #ff4c49;
+    text-decoration: none;
+    text-decoration-style: none;
   }
 
   .teaser-img {
@@ -164,7 +169,7 @@
     font-size: 40px;
     font-weight: bold;
     color: #575A89;
-    margin: auto;
+    margin: 1%;
     background-color: antiquewhite;
     text-align: center;
     letter-spacing: 6px;
@@ -174,7 +179,10 @@
 
   .article-card{
     font-size: 10px;
-    padding: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
   }
 
   .article-text {
@@ -271,3 +279,7 @@ div.col-6.graph {
   padding-right: 0;
 }
 
+
+.modal-img:hover {
+  width: 500px
+}
