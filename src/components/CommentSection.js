@@ -11,7 +11,6 @@ export default class CommentSection extends Component {
     // Next lines are for the facebook comment section plugin. DON'T FORGET to put the code from index.html into the master branch later!
         return (
             <div>
-                <p>Hello there! How are you?</p>
                 <div class="fb-comments" 
                 data-href="https://developers.facebook.com/docs/plugins/comments#configurator" 
                 data-width="700" 
